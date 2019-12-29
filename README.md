@@ -117,6 +117,7 @@ Think about your own research. If someone accused you of research misconduct, wo
 The following are real examples where researchers or data centers have lost crucial data. Could any of these ever happen to you? With good planning you could avoid or reduce the impact of such occurrences.
 
 <iframe src="https://h5p.org/h5p/embed/581076" width="699" height="571" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 
 ## University policy framework for research data
 
@@ -190,4 +191,4 @@ We recommend that graduate researchers share their data management plans with th
 !?[DMPonline introduction](https://player.vimeo.com/video/251506151)
 
 About RDM Support
-RDM Support provides all kinds of research data management assistance to researchers of Utrecht University in all stages of their research. This can range from one-off individual advice to large-scale infrastructure coordination
+RDM Support provides all kinds of research data management assistance to researchers of VIB in all stages of their research. This can range from one-off individual advice to large-scale infrastructure coordination
