@@ -8,7 +8,6 @@ narrator: US English Female
 comment:  DMP Introduction
 
 link:     https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
-import:   https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js
 
 -->
 
