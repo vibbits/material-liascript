@@ -989,7 +989,345 @@ You can ask your faculty or project data manager or RDM Support for a review of 
 
 ## Handle: Data security
 
-### TODO: add chapter on data security
+### Introduction to data security
+
+By now you know more about how to manage your data collection, how to organise and document your research data and where and how to store your data.
+
+Now we will take you into the world of keeping data safe and secure.
+
+In this part of the course you will learn to:
+
+* Understand different ways data breaches can happen so you know how to avoid this;
+* Understand different ways to achieve data security and reasons for access restrictions;
+* Link situations to different legal contracts that arrange access and security;
+* Recognise indirectly identifiable data;
+* Store and manage privacy-sensitive data;
+* Apply the gained knowledge about data security to your own research data and write the data security section for your data management plan.
+
+**Loss of data, loss of academic career**
+
+The loss of scientific data can have a devastating impact on careers. Imagine that you loose all of the research data you've been diligently collecting for four years. Now imagine the knock-on effect: you won't get the PhD you've been working towards, affecting your future career. This nightmare happened to Billy Hinchen, a biologist at Cambridge University. Listen to his story.
+
+!?[Billy Hinchen data loss](https://youtu.be/3xlax_Iin0Y)
+
+### Data breaches
+
+There are several examples of (mainly online) data storage going wrong, leading to leaks of sensitive and personal information.
+
+The picture below shows the biggest cases of data breaches in the past 10 years. They involve some well-known, highly regarded and trusted companies as well as some practices from the academic world.
+
+[![examples about data breaches](img/data-breaches.png)](http://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/)
+
+### Prevent unauthorised access
+
+Data security may be needed to protect intellectual property rights, commercial interests, or to keep personal or sensitive information safe. Data security involves security of data files, computer system security and physical data security. All three need to be considered to ensure the security of your data files and to prevent unauthorised access, changes, disclosure or even destruction. Data security arrangements need to be proportionate to the nature of the data and the risks involved. Attention to security is also needed when data are to be destroyed.  If data destruction is in order, you need to make sure that the destruction process is irreversible.
+
+Learn about different measures depending on the kind of security you need.
+
+            {{1}}
+**Security of data files**
+
+            {{2-3}}
+**************************
+
+The information in data files can be protected by:
+
+* Controlling access to restricted materials with encryption. By coding your data, your files will become unreadable to anyone who does not have the correct encryption key. You may code an individual file, but also (part of) a hard disk or USB stick
+* Procedural arrangements like imposing non-disclosure agreements for managers or users of confidential data
+* Not sending personal or confidential data via email or through File Transfer Protocol (FTP), but rather by transmitting it as encrypted data (eg. [FileSender](https://filesender.belnet.be) )
+* Destroying data in a consistent and reliable manner when needed
+* Authorisation and authentication: for personal data you have to give very selective access rights to specified individuals.
+
+**************************
+
+            {{3}}
+**************************
+
+**Computer security systems**
+
+***************************
+
+            {{4-5}}
+***************************
+
+The computer you use to consult, process and store your data, must be secured:
+
+* Use a firewall
+* Install anti-virus software
+* Install updates for your operating system and software
+* Only use secured wireless networks
+* Use passwords and do not share them with anyone. Do not use passwords on your UU computer only, but also on your laptop or home computer. If necessary, secure individual files with a password.
+* Encrypt your devices (laptop, smartphone, USB stick/disk).
+
+****************************
+
+            {{5}}
+**************************
+
+**Physical data security**
+
+***************************
+
+            {{6-7}}
+***************************
+
+With a number of simple measures, you can ensure the physical security of your research data:
+
+* Lock your computer when leaving it for just a moment (Windows key + L)
+* Lock your door if you are not in your room
+* Keep an eye on your laptop
+* Transport your USB stick or external hard disk in such a way that you cannot lose it
+* Keep non-digital material which should not be seen by others, in a locked cupboard or drawer.
+
+****************************
+
+            {{7}}
+**************************
+
+**Data classification**
+
+***************************
+
+            {{8-9}}
+***************************
+
+TODO: what to do with classified data
+
+****************************
+
+            {{9}}
+**************************
+
+**Data that contain personal information**
+
+***************************
+
+            {{10-11}}
+***************************
+
+These data should be treated with higher levels of security than data which do not. You will learn more about privacy-sensitive data in the e-module.
+
+****************************
+
+### What is your experience with unauthorised access to your research data?
+
+We are interested to know if you have ever experienced unauthorized access to any of your research data. When you give your reply, we will show you an overview with the responses of other researchers in this course. All responses will be processed anonymously.
+
+[(1)] No, I am sure about that
+[(2)] Not that I am aware of
+[(3)] Yes, without much consequences
+[(0)] Yes, with severe consequences
+
+### Legal agreements and contracts
+
+Often other people are required to handle your data, or you might be the person that handles other people’s data.
+
+To arrange the security of the research data you work with, in many cases you have to make a (legal) agreement with other people involved. These agreements will make explicit permitted uses, retention time, and agreed upon security measures. Find out what legal contracts you can use by studying the figure below.  TODO: Visit the Guide 'Legal instruments and agreements' for more information
+
+For tailored advice and templates, contact Legal Affairs via your faculty Research Support Officer (RSO)
+TODO: add link
+![Legal Agreement contacts](img/AgreementsPicture.png)
+
+### When to use which legal contract?
+
+You have been acquainted with the different flavors of legal agreements. Is it clear to you when you need which agreement? Please answer the following questions by choosing the right kind of agreement.
+
+TODO: add quiz or H5P quiz
+
+### Privacy-sensitive data
+
+             {{1-2}}
+**************************
+
+![start privacy-sensitive data](img/00_privacy-sensitive-data.png)
+
+**************************
+
+             {{2-3}}
+**************************
+
+![start privacy-sensitive data](img/01_privacy-sensitive-data-learning-objectives.png)
+
+***************************
+
+             {{3-4}}
+**************************
+
+**Privacy in a nutshell**
+
+---
+
+Privacy is a fundamental right. With regards to privacy, we all have two perspectives:
+
+1. How is your privacy protected?
+2. How can we, as a researcher, protect the privacy of the people involved in our research (the data subjects)?
+
+TODO: add link to document and image screenshot
+![privacy reference card](img/LCRDM-privacy-reference-card -why-Version-02.pdf)
+
+***************************
+
+           {{4-5}}
+***************************
+
+**Six principles from the European General Data Protection Regulation 1/2**
+
+The European General Data Protection Regulation (GDPR) outlines how we should work with privacy-sensitive data.
+
+TODO: create working infographics
+see http://gdprcoalition.ie/infographics
+
+**************************
+
+           {{5-6}}
+***************************
+
+**Six principles from the European General Data Protection Regulation 2/2**
+
+According to the GDPR  processing of personal data must be done according to 6 principles.
+
+TODO: create HP5 document
+see UU learn and Understanding the GDPR University Groningen
+
+**************************
+
+           {{6-7}}
+***************************
+
+**Privacy by design**
+
+To comply with the six principles from the GDPR, you can implement privacy by design. This means that you design a data management plan with measures on both IT and procedural level.
+
+TODO: Video privacy by design?
+
+**************************
+
+           {{7-8}}
+***************************
+
+**Which data breach is breached?**
+
+Can you recognise the principles that are breached in the different ways personal data is processed?
+
+TODO: H5P quiz 7 cases
+
+**************************
+
+           {{8-9}}
+***************************
+
+**Storing personal data 1/2**
+
+![storing personal data](img/02_privacy-sensitive-data-personal-data-01.png)
+
+**************************
+
+           {{9-10}}
+***************************
+
+**Storing personal data 2/2**
+
+Only if the access can be unambiguously be restricted to authorised persons, can data be stored without such measures.
+
+Should you want an elaborate visualisation of what is considered identifiable data, check out the information sheet at the Future Privacy Forum.
+
+[visual guide to practical data de-identification](https://fpf.org/2016/04/25/a-visual-guide-to-practical-data-de-identification/)
+
+**************************
+
+           {{10-11}}
+***************************
+
+**Can you recognize identifiable data?**
+
+[[X]] a collection of GPS data of daily routines
+[[ ]] a list of households sizes associated with number of pets
+[[X]] MRI scans without identifying metadata.
+[[X]] audio recordings with no metadata and no names of the recorded persons
+[[ ]] transcripts of interviews without any directly identifying information
+[[ ]] a list of gender and grades for a de-identified course
+******************************
+               {{10}}
+Correct! GPS data holds information on where people go. In a daily routine, the track ends at a particular location which is likely the home of the subject. AN MRI scan from the profile of the head can be identifiable. Audio recordings can be identifiable from the tone of the voice. A list of surnames in itself is not identifying nor personal information.
+
+****************************
+
+****************************
+
+            {{11-12}}
+***************************
+
+**Access to privacy-sensitive data**
+
+If and how you can make personal data available, depends n the level of sensitivity of your data. The more sensitive, the more restrictions and safeguards need to be put in place to make sure the data does not fall into the hands of unauthorised persons both during and after research.
+
+To determine where the privacy risks lie for your data you will have to do a Data Privacy Impact Assessment (DPIA).
+For more information:
+TODO:
+link to: https://www.uu.nl/en/research/research-data-management/guides/handling-personal-data
+
+Towards the data subjects, you need to be transparent regarding the possible reuse, or retaining of the data for verification requirements, and get their prior consent.
+
+***************************
+
+            {{12-13}}
+***************************
+
+**Cases on how to make personal data accessible**
+
+Case 1: YOUth cohort study
+
+YOUTH COHORT STUDY
+YOUth (Youth Of Utrecht) is a large-scale, longitudinal cohort following children in their development from pregnancy until early adulthood.
+
+A total of 6,000 babies and children from Utrecht and its surrounding areas will be included in two different age groups and followed at regular intervals.
+
+The YOUth data enables researchers to look for answers to all sorts of scientific questions on child development. A few examples of YOUth data: human bodily material, hours of videos, MRI images, questionnaires, ultrasounds and IQ scores. YOUth encourages and facilitates data sharing. It is one of the leading human cohorts in FAIR and open data in the Netherlands.
+
+More information at: https://www.uu.nl/en/research/youth-cohort-study
+
+Case 2: TODO: other example from Wings?
+
+***************************
+
+            {{13-14}}
+***************************
+
+**An introduction to informed consent**
+
+In the module 'Legal agreements and contracts' you learned about informed consent. Informed consetn is very important when working with data which is in any way related to people.
+
+TODO: add graphics on informed consent
+
+One thing to arrange in your informed consent is the possibility for future use, for verification or reuse. In your informed consent, it is important to be clear on future use of data.
+
+***************************
+
+            {{14-15}}
+***************************
+
+**Informed consent for data sharing**
+
+One thing to arrange and to be crystal clear about in your informed consent is the possibility for future use of your data, for verification or reuse.
+
+Check the sentences that do permit data sharing if used as a single statement.
+
+[[X]] Any personal information that reasonably could identify you will be removed or changed before files are shared with other researchers or results are made public.
+[[X]] Other genuine researchers (may) have acces to tis data only if they agree to preserve the confidentiality on the information as requested in this form.
+[[ ]] Any data that could identify you will be accessible only to the researchers responsible for performing this study.
+[[ ]] All personally identifying information collected about you will be destroyed after the study.
+******************************
+               {{14}}
+Correct!
+
+Sharing of research data that relates to people can often be achieved using a combination of obtaining consent, anonymizing data and regulating data access. If the statement towards the data only mentions the current study, sharing is not explicitly possible. You should add some sentence to make it clear to participants that the data could be used for further research, deidentified where possible, or identifiable with enough safeguards and security measures, if it is not.
+******************************
+
+******************************
+
+
+
+***************************
 
 ### Write your data management plan for your data security
 
@@ -1004,7 +1342,135 @@ To whom will access be granted/restricted?
 
 ## Share: Data selection and preservation
 
-### TODO: add chapter on data preservation
+### Introduction to data selection and preservation
+
+Research should be transparent and you should always be able to revert back to your data if necessary and be able to show others how you came to your results. Therefore, your research data with all information reasonably necessary for verification needs to be preserved.
+
+With well-managed and preserved research data, you can defend yourself against allegations of mistakes. You can also prevent wrong conclusions from further spreading into the scientific community if there really are mistakes.
+
+In this part of the course you will learn to:
+
+* Select what part of your data should be  preserved for verification purposes;
+* Understand the benefits of preserving your data in a public data repository;
+* Preserve you data technically correct.
+
+### Long term data preservation
+
+Research data can be preserved for different reasons such as verification and/or possible reuse. It can be your own wish or that of your university, funder or journal.
+
+**Verification**
+TODO: adapt this part
+
+The Netherlands Code of Conduct for Academic Practice (VSNU) states that raw data from research must be kept available for a minimum of ten years. This statement is also included in the Utrecht University Policy framework for research data: “Archived research data are to be retained for a minimum of ten years, commencing from the date that the research results are published.”
+
+**Reuse**
+It may be worthwhile to make (part of) your data available for a longer period of time and/or for a wider audience. Data which are suitable to keep for reuse are interpretable data on which new research can be based,  independent of the publication.
+
+On the one hand, making research data reusable will need extra effort. On the other hand, possible reuse, even by your future self, might bring you lots of benefits and credits. Consider if your data is worth the effort of making it reusable or if preserving and archiving for verification is enough.
+
+Reuse is explained more in depth in the next part of this course; ‘Availability for reuse’. In this part we will focus on selection and preservation of research data for verification purposes.
+
+### Data package
+
+Keeping data for verification serves the specific goal of having transparent, reproducible research.
+
+**Alternatives to preserving raw data**
+If preserving your raw data poses problems, alternatives can also ensure verfication. For instance, transcripts of recorded interviews could hold all important information and may be less privacy-sensitive, so it is reasonable to preserve those instead of the recordings themselves. Also, if raw data is very large, preserving your data only in some processed form could be an alternative. Combined with, for instance, a demonstrable quality check on the processing.
+
+**The contents of your data package**
+
+TODO: add image for illustration/zenodo?
+
+Others should be able to understand what you did. It is not enough to just provide data. Instead you should preserve a package with everything included that is necessary to reproduce your results. Think of including the following:
+
+* Primary (raw) data;
+* Secondary (processed) data;
+* Protocols;
+* Computer code/scripts;
+* Lab journals;
+* Metadata and/or codebooks describing the data;
+* An overview of what the contents of the data package stating what file contains what information, and how these are related.
+
+The data should contain a reference to any publication which is based on the data.
+
+To make understanding your data less dependent on information in the publication, you can also add information on:
+
+* Collection methods;
+* Procedures;
+* Experimental protocol;
+* Your research question;
+* Stimuli used;
+* Sample descriptions.
+
+This is especially practical if the data package can be found and used on its own account. This is the case if it is published in a data repository or data journal as a data package for reuse.
+
+Do not forget to explicitly state who is responsible for the content of the data package, who is to be contacted in case of a request for access, and under what conditions access is granted.
+
+### Where to preserve what type of data?
+
+During your research, you generate research results that can be made available for others.
+
+A paper or publication is the most traditional way of making results available, but it is by no means the only way. A relatively new way of making results available is using a public data repository.
+
+As you have just learned, preserving your data may serve the purpose of verification or  reuse. Public data repositories cater to both needs. In addition, they handle requests to view or use your data which means you do not have to take care of such requests yourself.
+
+In the example below, you find a workflow for experimental research. What information can be made available in what place? Drag the items on the right to the correct place in the figure. Please note that some items can be used more than once.
+
+TODO: add H5P quiz and PDF solution?
+
+### Accounting for data of others
+
+If you are permitted to use data from other parties, you will have to account for those as well if your research is to be verifiable and reproducible by others. You may recognise this from chapter 1 of this course: Data collection: Discover existing data, weblecture ‘Assessing usefulness of research data of others’ (5 of 10).
+
+You have the following options:
+
+If the used data is preserved correctly somewhere for the coming ten years, refer to the data repository in question;
+If it is not taken care of, contact the responsible persons, negotiate correct preservation in a data repository for ten years, and refer to that repository.
+If this isn’t possible, try to arrange a local copy that you preserve yourself;
+If this isn’t allowed, you will not be able to present the data in case of questions. Therefore, you should question yourself whether you can actually use the data.
+
+![alt-t](img/Cont_5_Share_SelectPreserve_Chart10years.png)
+
+**Accounting for data of others on websites**
+
+If you find interesting information on a website that you want to refer to, it is possible that this information will not be future proof.
+
+The link or web address might change over time (link rot). Or the information on a website is updated, changed or replaced with other content (content drift).
+
+It is possible to archive web pages on a web archive like the [Internet Archive](https://archive.org/web/). You can capture a web page as it appears now for use as a trusted citation in the future (save a page). You will get an alternative link, pointing to the archived, static version of the page. Use this alternative link as a reference to the online information.
+
+### How to preserve your data correctly
+
+In order for the data to survive for the long term, an active preservation regime has to be applied. The bad news is, data automatically gets lost over time.
+
+There are five main ways your data can be lost:
+
+* Digital sources degrade over time ('bit rot');
+* File formats and software become outdated;
+* The media on which your data is stored becomes outdated or defective;
+* Disaster strikes the storage location;
+* The person that understands the data finds another job or data simply becomes forgotten.
+
+In this video below you will learn how to minimise the risk of losing data. You are also given good preservation practices.
+
+!?[Preserving data](https://www.youtube.com/watch?v=qENaO0Lk6eo)
+
+### Match the solutions to the data loss
+
+From the weblecture you learned how to prevent data loss. Can you recall all applicable active regimes, as explained in the weblecture?
+
+Below you see a list of solutions to prevent data loss. Underneath that list you see a list of risks for data loss. Please add the number of each solution to the correct risk.
+
+**Solutions to prevent data loss**
+
+1. Have multiple copies. Use a checksum to identify faulty copies
+2. Use preferred file formats that can be opened by a wide range of software. Update the file format to a current one.
+3. Move data to fresh media well before the media’s expiration date.
+4. Have multiple copies. Move data to fresh media well before the media’s expiration date.
+5. Document your data well.
+6. Advertise the content in a data catalogue.
+
+TODO: add quiz text solution
 
 ### Write your data management plan for your data preservation
 
@@ -1015,9 +1481,272 @@ You have now completed the module on data selection and preservation. You should
 * Which data should be preserved and/or shared?
 * How and where will you keep your data for the long term?
 
-## Share: Share: Data availability for reuse
+## Share: Data availability for reuse
 
-### TODO: add chapter on data reuse
+### Introduction to data availability for reuse
+
+Thanks to information and communication technology and globalisation new opportunities arise to exchange results of scientific research - publications and research data - and even of scientific methods and practices. This new way of practising science is called ‘open science’.
+
+Open data is a part of this movement towards open science. It is the ambition of universities, governments, funders and publishers to make research data optimally suited for reuse.
+
+There are different reasons why you may not be able to share your research data. Thinking about these issues and challenges when developing your data management plan will help you reflect on such reasons in an early stage.
+
+In this part of the course you will learn to:
+
+* Discern various repositories to store and/or share your data;
+* Understand that you should manage a license for use of data yourself;
+* Identify ways to ensure that privacy-sensitive data can be shared
+* Understand how shared datasets can be cited.
+
+**How frustrating a data request can be**
+
+Not being prepared to share your data can lead to problems in using the data. In this short video, you see what shouldn't happen when a researcher makes a data sharing request! Topics include storage, documentation, and file formats. A made up, yet not unrealistic story.
+
+!?[Data Sharing 3 Short Acts](https://youtu.be/66oNv_DJuPc)
+
+### Introduction to data repositories
+
+In order to preserve, manage, and provide access to your research data, you can deposit your data in a data repository. Data repositories allow permanent access to datasets in a trustworthy environment and enable search, discovery, and reuse of the data they host.
+
+Click on the topics below to find out more about data repositories.
+
+TODO: add repositories from Elixir
+
+                 {{1}}
+************************************************
+
+**A wide variety**
+
+************************************************
+
+                 {{2-3}}
+************************************************
+
+There is a wide variety of data repositories. Most have the option to publish your dataset using a persistent identifier and some provide the service of long-term preservation. Some repositories host data from various disciplines and others are domain- or discipline specific.
+
+************************************************
+
+                 {{3}}
+************************************************
+
+** Choosing a data repository**
+
+************************************************
+                 {{4-5}}
+************************************************
+
+When choosing a repository for your data be sure to check if the repository meets your criteria or the criteria set by your funder or journal editors.
+
+Criteria to select a certain repository can be:
+
+* Is the repository certified with a [CoreTrustSeal](https://www.coretrustseal.org/) or Data Seal of Approval?
+Repositories with a Data Seal of Approval are recognised in the community as a trustworthy source of data.
+* Is long term archiving guaranteed or not?
+Some repositories will guarantee the legibility of the data, even if the hardware and software become obsolete.
+* What are the costs per dataset or gigabyte?
+Repositories differ in their cost model, some allow free deposits up to a certain amount of storage
+* What is the physical storage location of data?
+The location of your data determines under which data protection law it falls. Some repositories store data in the US and others in the EU.
+* What is the default license?
+Some repositories allow for open or restricted access, or you can specify which license for use you want for your data.
+
+You can use this [repository selection tool](https://www.uu.nl/en/research/research-data-management/tools-services/tools-for-storing-and-managing-data/decision-aid-data-repositories) to help you select a suitable repository.
+
+************************************************
+
+                 {{5}}
+************************************************
+
+**Registry of research data repositories**
+
+************************************************
+
+                 {{5-6}}
+************************************************
+
+You can browse or search for a data repository in re3data.org. This is a global registry of research data repositories covering different academic disciplines. You can search or browse by subject, content type or country. You can filter the search and browse results on criteria for choosing a data repository as described above.
+
+[https://www.re3data.org/](https://www.re3data.org/)
+
+************************************************
+
+                 {{6}}
+************************************************
+
+**Some well-known and more generic repositories**
+
+************************************************
+
+                 {{6-7}}
+************************************************
+
+* [Zenodo](https://zenodo.org/) – a repository that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities;
+* [Dryad](http://www.datadryad.org/) – a curated general-purpose repository that makes the data underlying scientific publications discoverable, freely reusable and citable. Dryad has integrated data submission for a growing list of journals;
+* [Open Science Framework (OSF)](https://osf.io/) - a scholarly commons to connect the entire research cycle. It is part network of research materials, part version control system, and part collaboration software;
+* [Figshare](https://figshare.com/) – a repository that allows researchers to publish all of their research outputs in an easily citable, sharable and discoverable manner.
+
+### Explore data repositories
+
+You have just learned about the existence of a global registry of research data repositories that covers repositories from different academic disciplines.
+
+Re3data.org makes it possible to search for a repository that meets your criteria.
+
+Go to [www.re3data.org/search](http://www.re3data.org/search) and find a repository that meets all three of the following criteria:
+
+* Certificate → CoreTrustSeal
+* Data licenses → CC0 (Creative Commons 0)
+* Persistent identifier (PID systems) → DOI (Digital Object Identifier)
+
+Make use of the filters offered on the left side of the screen, as visualized here:
+
+TODO: quiz with ELIXIR resources
+
+************************************************
+
+### Give clarity with (Creative Commons) licenses
+
+In order to publish your data and make it reusable, you require a license. A license creates clarity and certainty for potential users of your data. A license is not an option for all data; some of it may be too confidential or privacy-sensitive to be published.
+
+**Creative Commons licenses**
+
+Licenses such as the [Creative Commons](https://creativecommons.org/share-your-work/licensing-types-examples/) (CC) licenses replace 'all rights reserved' copyright with 'some rights reserved'. There are seven standard CC licenses. CC-BY is the most commonly used license, in which attribution is mandatory when using data. You can also choose restrictions like non-commercial, no derivatives, or share alike. Creative Commons offers a [guide](https://creativecommons.org/choose/?lang=en) to help you determine your preferred license.
+
+![Creative Commons](img/CC.png)
+
+**Assigning a license to your data**
+
+Assigning licenses to data can also have disadvantages. Licenses are static and do not change with the quick developments in the field of research data. Therefore, some data repositories work with a CC0 license whereby no rights are reserved. Instructions regarding use are completed with codes of conduct, which may be adapted more easily.
+
+A short movie explaining the different Creative Commons elements is shown below. Remember that sharing without a license can still lead to conflicts.
+
+TODO: add video on CC licenses?
+
+**Question**
+
+We are very interested to know what license you would choose if you were to share the underlying research data of your most recent publication.  
+
+An explanation for each license can be found by clicking on the links below.
+
+1. CC BY: [Attribution](https://creativecommons.org/share-your-work/licensing-types-examples/licensing-examples/#by)
+2. CC BY-SA: [Attribution ShareAlike](https://creativecommons.org/share-your-work/licensing-types-examples/licensing-examples/#sa)
+3. CC BY-ND: [Attribution-NoDerivs](https://creativecommons.org/share-your-work/licensing-types-examples/licensing-examples/#nd)
+4. CC BY-NC: [Attribution-NonCommercial](https://creativecommons.org/share-your-work/licensing-types-examples/licensing-examples/#nc)
+5. CC BY-NC-SA: [Attribution-NonCommercial-ShareAlike](https://creativecommons.org/share-your-work/licensing-types-examples/licensing-examples/#by-nc-sa)
+6. CC BY-NC-ND: [Attribution-NonCommercial-NoDerivs](https://creativecommons.org/share-your-work/licensing-types-examples/licensing-examples/#by-nc-nd)
+7. CC0: [Public Domain](https://creativecommons.org/share-your-work/public-domain/)
+
+### Publishing in a data journal
+
+Data journals are publications whose primary purpose is to publish datasets. They enable you as an author to focus on the data itself, rather than producing an extensive analysis of the data which occurs in the traditional journal model. Fundamentally, data journals seek to:
+
+* Promote scientific accreditation and reuse;
+* Improve transparency of scientific methods and results;
+* Support good data management practices;
+* Provide an accessible and permanent route to the dataset.
+
+**The benefits of publishing in a data journal**
+
+Publishing in a data journal may be of interest to researchers and data producers for whom data is a primary research output. In some cases, the publication cycle may be quicker than that of traditional journals, and where there is a requirement to deposit data in an "approved repository", long-term curation and access to the data is assured.
+
+Publishing a data paper may be regarded as best practice in data management as it:
+
+* Includes an element of peer review of the dataset;
+* Maximises opportunities for reuse of the dataset;
+* Provides academic accreditation for data scientists as well as for front-line researchers.
+(source: [ANDS Guide](http://www.ands.org.au/working-with-data/publishing-and-reusing-data/data-journals))
+
+**General and disciplinary data journals**
+
+There are data journals for various disciplines and also more general data journals exist. A widespread standard PID is the DOI. DOI stands for ‘Digital Object Identifier’. A DOI is an alphanumeric string assigned to an object which allows for an object to be identified over time. Often a DOI will be presented as a link which looks like: https://doi.org/10.1109/5.771073. There are other identifiers available which some repositories may use instead. If you are depositing in a reputable repository then you should be given some type of persistent identifier which you can use to cite and link to your data.
+
+Examples of generic data journals:
+
+* [Scientific Data](http://www.nature.com/sdata/about)  
+* [Data in Brief](http://www.journals.elsevier.com/data-in-brief)   
+* [Data Science Journal](http://www.codata.org/publications/data-science-journal)
+
+Examples of disciplinary data journals:
+
+TODO: check for life science additions
+
+Open archaeology data;
+Earth System Science Data;
+Research Data Journal for the Humanities and Social Sciences.
+
+### How to cite a dataset
+
+Citations to your data can add to your academic impact.
+
+A citation should include enough information so that the exact version of the data being cited can be located. Including a Persistent Identifier (PID) in the citation ensures that even if the location of the data changes, the PID will always link to the data that were used.
+
+You can indicate in your (Creative Commons) license or user agreement that you want your data cited when reused.
+
+Data citations work just like book or journal article citations and can include the following information:
+
+* Author;
+* Year;
+* Dataset title;
+* Repository;
+* Version;
+* Persistent IDentifier (PID), often works as a functional link/URL.
+
+**Examples**
+
+A widespread standard PID is the DOI. DOI stands for ‘Digital Object Identifier’. A DOI is an alphanumeric string assigned to an object which allows for an object to be identified over time. Often a DOI will be presented as a link which looks like: https://doi.org/10.1109/5.771073. There are other identifiers available which some repositories may use instead. If you are depositing in a reputable repository then you should be given some type of persistent identifier which you can use to cite and link to your data.
+
+Irino, T; Tada, R (2009): Chemical and mineral compositions of sediments from ODP Site 127‐797. Geological Institute, University of Tokyo. http://dx.doi.org/10.1594/PANGAEA.726855
+
+
+**Tips**
+
+Tip1: Get a PID at the data repository of your choice.
+Tip2: Is your PID a DOI and do you want to cite it in the format of a specific journal? Use the [DOI formatter](https://citation.crosscite.org/) from CrossCite.
+
+
+TODO: add short quiz
+
+### FAIR data
+
+FAIR stands for ‘Findable, Accessible, Interoperable, and Reusable’. The FAIR data principles act as an international guideline for the result of high-quality data management.
+
+With the increase in volume, complexity and creation speed of data, humans are more and more relying on computational support for dealing with data. The principles were defined with the focus on machine-actionability, i.e. the capacity of computational systems to find, access, interoperate and reuse data with none or minimal human intervention.
+
+* F – Findable
+
+By using correct metadata to describe the data, it will be findable. By using a persistent identifier the data can be found by computer systems automatically.
+
+* A – Accessible
+
+The data should be accessible for the long term. Even when underlying data is not accessible, the describing metadata should remain available.
+
+* I – Interoperable
+
+The data can be used and combined with other datasets. To achieve this, the data should be stored in generic file types, not in software specific file types.
+
+* R – Reusable
+
+The options for reuse should be stated clearly in a license. Without a license there is no certainty about the options for reuse and creator rights are implicit.
+
+**How to achieve FAIR data**
+
+In general, having a good data management plan will lead to FAIR data. In the case of privacy-sensitive data, it is possible to meet the criteria, but not to share the data openly. In this case you can make sure that a well-described dataset can be found online, while preventing the underlying data to be downloaded and used without permission.
+
+If you anonymise your data, presuming the data is of limited sensitivity and you are very sure the data cannot lead back to the persons involved, you can share your data openly.
+
+The FAIR Guiding Principles were put together and published in Scientific Data (Mark D. Wilkinson et al., “The FAIR Guiding Principles for Scientific Data Management and Stewardship,” Scientific Data 3 (March 15, 2016): 160018.).
+
+TODO: add question H5P quiz?
+
+### Open science
+
+“Open Science is the practice of science in such a way that others can collaborate and contribute, where research data, lab notes and other research processes are freely available, under terms that enable reuse, redistribution and reproduction of the research and its underlying data and methods.”
+
+(Source: ]FOSTER](https://www.fosteropenscience.eu/foster-taxonomy/open-science-definition)).
+
+You have learned that good data management contributes to the findability, accessibility, interoperability and reusability of your research data. This does not necessarily mean that you should make your data openly available. But to open up data, you do need good data management from the earliest possible stage of your research project.
+
+TODO: add links to ORION course or other relevant elements
+Flemish open science plan?
 
 ### Write your data management plan for your data reuse
 
