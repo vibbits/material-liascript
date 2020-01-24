@@ -31,15 +31,14 @@ add one slide over transcription / translation /
 
 ## Amino acids and peptide structure
 
-![](/topics/protein-structure-analysis/images/amino-acids.png)
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/amino-acids.png)
 
 ## The Structure-Function Connection
 
-.pull-left[
 - Folded proteins provide a well-defined 3D arrangement of functional groups, creating microenvironments and active sites.
 - Structural changes  are often involved in functional  mechanisms  (motor proteins, ...)
-]
-.image-90[![](/topics/protein-structure-analysis/images/hemoglobin.png)]
+
+![](/topics/protein-structure-analysis/images/hemoglobin.png)]
 
 ## Databases
 
