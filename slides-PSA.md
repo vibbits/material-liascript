@@ -38,19 +38,24 @@ add one slide over transcription / translation /
 - Folded proteins provide a well-defined 3D arrangement of functional groups, creating microenvironments and active sites.
 - Structural changes  are often involved in functional  mechanisms  (motor proteins, ...)
 
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/hemoglobin.png)<!-- width="100%" -->
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/hemoglobin.png)<!-- height="600px" -->
 
 ## Databases
 
+                           {{0-1}}
+*********************
 **Uniprot** approx. 1100,000 sequences
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/uniprot-logo.png)<!-- width="50%" -->
 
 - mainly determined by large-scale DNA sequencing of individual genes or whole genomes
+
 - increasingly automated annotation
 
----
+*******************
 
+                            {{1}}
+*******************
 **Protein Data Bank** approx. 141,000 experimentally determined structures
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/pdb-logo.png)<!-- width="50%" -->
@@ -58,22 +63,28 @@ add one slide over transcription / translation /
 - Mainly determined by X-ray crystallography and high-resolution NMR spectroscopy
 - Automation is increasing, but there are still significant limitations in the rate of solving new structures
 
+*******************
+
 ## X-Ray Crystallography
 
+
+                     {{0-1}}
+*********************
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/xray-tech-setup.png)<!-- width="100%" -->
 
-In a crystal, a large number  of macromolecules are  packed together in a regular grid, with consistent  orientations and relative  distances.
-When exposed  to an X-ray beam, this  arrangement gives rise to
-diffracted rays in specific directions,  resulting in discrete spots on the planar
-detector. By rotating the crystal, a series  of images is obtained. From these, the
-intensities of all the diffracted rays of the  crystal can be derived.
+*******************
 
+                       --{{0}}--
+In a crystal, a large number  of macromolecules are packed together in a regular grid, with consistent  orientations and relative distances.
+When exposed  to an X-ray beam, this  arrangement gives rise to diffracted rays in specific directions, resulting in discrete spots on the planar detector. By rotating the crystal, a series  of images is obtained. From these, the intensities of all the diffracted rays of the crystal can be derived.
+
+                      {{1}}
+*******************
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/diffraction-pattern.png)<!-- width="50%" -->
 
+*******************
 
 ## X-Ray Crystallography
-
-
 
 |![](https://material.bits.vib.be/topics/protein-structure-analysis/images/diffraction-pattern.png)<!-- width="100%" -->|![](https://material.bits.vib.be/topics/protein-structure-analysis/images/electron-density.png)<!-- width="100%" -->|
 
@@ -85,17 +96,26 @@ intensities of all the diffracted rays of the  crystal can be derived.
 
 ## The Protein Databank
 
+                                  {{0-1}}
+*********************
 [http://www.wwpdb.org](http://www.wwpdb.org)
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/wwpdb-welcome-page.png)
 
+*******************
+
+ {{1}}
+*******************
 - contains structures of  proteins, nucleic acids  and complexes,  determined by X-ray  crystallography, NMR  spectroscopy
 - No purely theoretical  or ab initio models  (since 2006)
 - Also stores supporting  experimental data
 - Full deposition now  required by all peer-reviewed journals
 
+*******************
 
 ## Exercise 1: Search the PDB
+
+[Link to exercise 1](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/explore-pdb/tutorial.html)
 
 - Use the UniProt site to search for “dnak”.  
 - Use the PDB site to search for “dnak”.
@@ -106,12 +126,12 @@ intensities of all the diffracted rays of the  crystal can be derived.
 
 ## PDB File Format
 
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/pdb-file-format.png)<!-- width="100%" -->
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/pdb-file-format.png)<!-- height="600px" -->
 
 ## Occupancy
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/occupancy.png)<!-- width="100%" -->
-
+TODO: add explanation
 
 ## Related Web sites
 
@@ -119,7 +139,7 @@ intensities of all the diffracted rays of the  crystal can be derived.
 
   [http://ndbserver.rutgers.edu/](http://ndbserver.rutgers.edu/)
 
-- PDB-REDO: automatically re-refined deposited  structures, using the latest methods
+- PDB-REDO: automatically re-refined deposited structures, using the latest methods
 
   [http://www.cmbi.ru.nl/pdb_redo/](http://www.cmbi.ru.nl/pdb_redo)
 
@@ -144,16 +164,16 @@ which therefore more or less uniquely  identify each atom. Multidimensional spec
 
 When two atoms are near each other in 3D space, they can exchange magnetization, giving rise to crosspeaks at the  intersection of their respective frequencies.]
 
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/nmr-noe.jpg)<!-- width="100%" -->
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/nmr-noe.jpg)<!-- height="600px" -->
 
 This nuclear Overhauser effect (NOE) is used to effectively measure the distances between pairs of atoms, at least qualitatively.
 
-### High-Resolution NMR Spectroscopy
+## High-Resolution NMR Spectroscopy
 
-After identification of the atoms by means of their unique chemical shifts, distance restraints are derived from the  Overhauser crosspeaks. An extended model of the protein  is  generated,  
-and  then  condensed  into  a  shape  that  is consistent with as many of distance restraints as possible.]
+After identification of the atoms by means of their unique chemical shifts, distance restraints are derived from the Overhauser crosspeaks. An extended model of the protein is generated,  
+and then condensed into a shape that is consistent with as many of distance restraints as possible.
 
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/nmr-model-example.png)<!-- width="100%" -->
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/nmr-model-example.png)<!-- height="600px" -->
 
 ## Other methods
 
@@ -219,17 +239,19 @@ An add-on module for NMR structures is  available.
 
 The program can be combined with the WHAT-  IF program for structure validation, and with  FoldX for energy calculations.
 
-# Exercise 2: show a structure
+## Exercise 2: show a structure
 
-Load PDB entry 1TRZ using the File menu.
+[Link to exercise 2](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/visualise-structures/tutorial.html)
 
-Compare the default representations (F1-F8)  and use the various controls to change the view  of the protein.
+- Load PDB entry 1TRZ using the File menu.
 
-Explore the Edit and View menus to change  various aspects of the graphical representation  of the structure.
+- Compare the default representations (F1-F8)  and use the various controls to change the view  of the protein.
 
-Examine the hydrogen bonding patterns.  Display a molecular surface.
+- Explore the Edit and View menus to change  various aspects of the graphical representation  of the structure.
 
-Create an interesting view of the molecule and  save it as a high-resolution image.
+- Examine the hydrogen bonding patterns.  Display a molecular surface.
+
+- Create an interesting view of the molecule and  save it as a high-resolution image.
 
 ## Protein folds are the structures of domains
 
@@ -262,15 +284,17 @@ Different algorithms use different combinations of  sequence- and secondary of t
 
 ## Exercise 3: Compare Structures
 
-Download the five provided PDB files and open  them in Yasara.
+[Link to exercise 3](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/compare-structures/tutorial.html)
 
-Use the `Analyze|Align|Objects` with MUSTANG  function to align the four last objects with the first one.
+- Download the five provided PDB files and open  them in Yasara.
 
-Use the space bar to open the text console and  see the reported root mean square deviations as well as the number of residues matched.
+- Use the `Analyze|Align|Objects` with MUSTANG  function to align the four last objects with the first one.
+
+- Use the space bar to open the text console and  see the reported root mean square deviations as well as the number of residues matched.
 
 $$ rmsd = \sqrt{\frac{1}{N}\sum_{i=1}^{N}R_{i}^{2}} $$
 
-Color all structures by B factor and compare the  distribution to the local variability of the structures.
+- Color all structures by B factor and compare the  distribution to the local variability of the structures.
 
 ## PDB File Surprises
 
@@ -294,7 +318,7 @@ Color all structures by B factor and compare the  distribution to the local vari
 
 - Consistency and careful consideration of the  properties to be simulated are essential.
 
-### Force Field Terms
+## Force Field Terms
 
 Each energy term has a functional form, which includes one or more parameters:
 
@@ -324,21 +348,25 @@ More information can be found at [wiki](http://foldxyasara.switchlab.org/index.p
 
 ## Exercise 4a: Repair a PDB File
 
+[Link to exercise 4](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/mutate-structure/tutorial.html)
+
 - Load the 1CRN PDB file.
-- Use the “Repair object” option in the `Analysis|FoldX` menu to activate the corresponding FoldX  function.
+- Use the “Repair object” option in the `Analysis|FoldX` menu to activate the corresponding FoldX function.
 - Select the object to repair.
 
-This exports the object as a temporary PDB file,  starts FoldX with the appropriate options, and loads  the repaired PDB file as a new object in Yasara.
+This exports the object as a temporary PDB file,  starts FoldX with the appropriate options, and loads the repaired PDB file as a new object in Yasara.
 
 - Compare the original and repaired objects.  
 - Describe the changes that were introduced.
 
 ## Exercise 4b: Model a Mutation
 
+[Link to exercise 4](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/mutate-structure/tutorial.html)
+
 - Load the 2AC0.sce Yasara scene file.
 - Set an appropriate structure representation.
-- Locate residue Ala159 using the sequence view,  and right-click to access the `FoldX|Mutate` residue function. Change it to a Trp residue.
-- Look at the effect of the substitution on the  structure, and use the space bar to open the text  console and read the output of the FoldX  calculation.
+- Locate residue Ala159 using the sequence view, and right-click to access the `FoldX|Mutate` residue function. Change it to a Trp residue.
+- Look at the effect of the substitution on the structure, and use the space bar to open the text  console and read the output of the FoldX calculation.
 - Mutate Arg273 to an alanine side chain. Discuss  the effects of this substitution.
 
 ## Homology Modelling
@@ -350,7 +378,7 @@ This exports the object as a temporary PDB file,  starts FoldX with the appropri
 
 ## Exercise 5: Make a Homology Model using Swiss Model
 
-see []()
+[Link to exercise 5](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/homology-modeling/tutorial.html)
 
 ## Predict protein structures by fold recognition
 
@@ -391,21 +419,16 @@ Can help to find active sites
 
 ## Exercise 6: Study Protein-Ligand Interactions
 
-see []()
+[Link to exercise 6](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/protein-ligand-interaction/tutorial.html)
 
 ## On-Line References
 
-- Crystallography 101 (Bernhard Rupp)
-  (http://www.ruppweb.org/Xray/101index.html)
+- [Crystallography 101 (Bernhard Rupp)](http://www.ruppweb.org/Xray/101index.html)
 
-- Protein NMR, A Practical Guide (Vicky Higman)
-  (http://www.protein-nmr.org.uk/)
+- [Protein NMR, A Practical Guide (Vicky Higman)](http://www.protein-nmr.org.uk/)
 
-- Model validation course
-  (http://xray.bmc.uu.se/gerard/embo2001/modval/index.html)
+- [Model validation course](http://xray.bmc.uu.se/gerard/embo2001/modval/index.html)
 
-- Assessing model quality
-  (http://spdbv.vital-it.ch/TheMolecularLevel/ModQual/)
+- [Assessing model quality](http://spdbv.vital-it.ch/TheMolecularLevel/ModQual/)
 
-- Lectures by Burkhard Rost on protein structure  prediction
-  (https://www.youtube.com/channel/UCU6j8BG4RbEtTgyIZJ6Vpow)
+- [Lectures by Burkhard Rost on protein structure prediction](https://www.youtube.com/channel/UCU6j8BG4RbEtTgyIZJ6Vpow)
