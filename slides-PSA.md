@@ -27,7 +27,8 @@ debug: true
 
 ## Sequences and Structures
 
-add one slide over transcription / translation /
+!?[What is a protein](https://youtu.be/wvTv8TqWC48)<!-- width="890px" height="488px" -->
+[^1](https://pdb101.rcsb.org/learn/videos/what-is-a-protein-video)
 
 ## Amino acids and peptide structure
 
@@ -36,7 +37,7 @@ add one slide over transcription / translation /
 ## The Structure-Function Connection
 
 - Folded proteins provide a well-defined 3D arrangement of functional groups, creating microenvironments and active sites.
-- Structural changes  are often involved in functional  mechanisms  (motor proteins, ...)
+- Structural changes are often involved in functional  mechanisms  (motor proteins, ...)
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/hemoglobin.png)<!-- height="600px" -->
 
@@ -86,13 +87,14 @@ When exposed  to an X-ray beam, this  arrangement gives rise to diffracted rays 
 
 ## X-Ray Crystallography
 
-|![](https://material.bits.vib.be/topics/protein-structure-analysis/images/diffraction-pattern.png)<!-- width="100%" -->|![](https://material.bits.vib.be/topics/protein-structure-analysis/images/electron-density.png)<!-- width="100%" -->|
 
-|              |          |               |
-|:---------------------------------------|:--------:|----------------:|
-|Diffraction Spot Intensities and Phases |          | Electron density|
-| $$F_{obs}(h,k,l)$$ and $$\phi_{obs}(h,k,l)$$ | $$R_{cryst} = \frac{\sum_{h,k,l}F_{obs}-F_{calc}}{\sum_{h,k,l}F_{obs}}$$ |  $$\rho(x,y,z)$$ |
 
+|Diffraction Spot Intensities and Phases| | Electron density|
+|:---------------------------------------:|:--------:|:----------------:|
+| $F_{obs}(h,k,l)$ and $\phi_{obs}(h,k,l)$ | $$R_{cryst} = \frac{\sum_{h,k,l}F_{obs}-F_{calc}}{\sum_{h,k,l}F_{obs}}$$ |  $\rho(x,y,z)$ |
+
+
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/diffraction-pattern.png)<!-- width="45%" --> ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/electron-density.png)<!-- width="45%" -->
 
 ## The Protein Databank
 
@@ -126,12 +128,118 @@ When exposed  to an X-ray beam, this  arrangement gives rise to diffracted rays 
 
 ## PDB File Format
 
+                          {{0-1}}
+******************
+
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/pdb-file-format.png)<!-- height="600px" -->
+
+******************
+
+                 --{{0}}--
+The Protein Data Bank (PDB) format provides a standard representation for macromolecular structure data derived from X-ray diffraction and NMR studies. This representation was created in the 1970's and a large amount of software using it has been written.
+
+
+                 {{1-2}}
+************************************************
+
+Atomic descriptions in classical PDB format
+
+```
+ATOM     21  N  ALEU A 392      64.898 118.959  40.827  0.60 24.19           N  
+ATOM     22  N  BLEU A 392      64.981 118.958  40.769  0.45 24.73           N  
+ATOM     23  CA ALEU A 392      64.818 117.251  41.235  0.60 22.53           C  
+ATOM     24  CA BLEU A 392      64.908 117.527  41.044  0.45 23.55           C  
+ATOM     25  C  ALEU A 392      63.999 117.260  40.013  0.60 21.73           C  
+ATOM     26  C  BLEU A 392      64.972 116.794  39.706  0.45 22.95           C  
+ATOM     27  O  ALEU A 392      64.789 117.304  38.508  0.60 19.91           O  
+ATOM     28  O  BLEU A 392      64.270 117.164  38.760  0.45 21.80           O  
+ATOM     29  CB ALEU A 392      62.994 117.229  41.239  0.60 22.01           C  
+ATOM     30  CB BLEU A 392      63.588 117.170  41.739  0.45 23.26           C  
+ATOM     31  CG ALEU A 392      62.020 116.866  42.907  0.60 22.43           C  
+ATOM     32  CG BLEU A 392      63.411 117.414  43.240  0.45 24.38           C  
+ATOM     33  CD1ALEU A 392      63.906 117.128  42.987  0.60 22.36           C  
+ATOM     34  CD1BLEU A 392      62.004 117.019  43.655  0.45 24.55           C  
+ATOM     35  CD2ALEU A 392      62.660 117.298  44.405  0.60 22.73           C  
+ATOM     36  CD2BLEU A 392      64.432 116.611  44.023  0.45 24.44           C  
+ATOM     37  N  AASP A 393      65.422 116.659  39.809  0.60 21.96           N  
+ATOM     38  N  BASP A 393      65.827 115.776  39.625  0.45 22.93           N  
+ATOM     39  CA AASP A 393      65.972 115.093  38.433  0.60 22.44           C  
+ATOM     40  CA BASP A 393      65.967 114.977  38.409  0.45 23.84           C  
+ATOM     41  C  AASP A 393      64.830 113.969  38.617  0.60 21.62           C  
+ATOM     42  C  BASP A 393      64.900 113.889  38.543  0.45 22.45           C  
+ATOM     43  O  AASP A 393      64.810 113.091  39.785  0.60 21.11           O  
+ATOM     44  O  BASP A 393      64.962 113.054  39.456  0.45 21.89           O  
+ATOM     45  CB AASP A 393      66.589 114.675  39.315  0.60 24.09           C  
+ATOM     46  CB BASP A 393      67.374 114.360  38.335  0.45 26.75           C  
+ATOM     47  CG AASP A 393      66.965 114.032  38.106  0.60 25.18           C  
+ATOM     48  CG BASP A 393      67.888 114.196  36.899  0.45 29.40           C  
+ATOM     49  OD1AASP A 393      66.303 115.375  36.780  0.60 25.41           O  
+ATOM     50  OD1BASP A 393      67.190 114.588  35.938  0.45 31.28           O  
+ATOM     51  OD2AASP A 393      68.508 115.272  37.824  0.60 25.36           O  
+ATOM     52  OD2BASP A 393      69.014 113.671  36.724  0.45 32.22           O  
+```
+
+
+
+************************************************
+
+               --{{1}}--
+The original short term goal of the working group was to fulfill the mandate set by the IUCr: to define mmCIF data names that needed to be included in the CIF dictionary in order to adequately describe the macromolecular crystallographic experiment and its results. In January 1997, the mmCIF dictionary was completed and submitted to COMCIFS for review, and version 1.0 was released in June 1997.
+
+                 {{2}}
+************************************************
+
+TODO: add other descriptors
+mmCIF file looks like a paired collection of data item names and values.
+Atomic descriptions in mmCIF format [^1](http://mmcif.wwpdb.org/docs/pdb_to_pdbx_correspondences.html)
+
+```
+ATOM   21   N N   A LEU A 1 4   ? 64.898 118.959 40.827 0.60 24.19 ? 392  LEU A N   1
+ATOM   22   N N   B LEU A 1 4   ? 64.981 118.958 40.769 0.45 24.73 ? 392  LEU A N   1
+ATOM   23   C CA  A LEU A 1 4   ? 64.818 117.251 41.235 0.60 22.53 ? 392  LEU A CA  1
+ATOM   24   C CA  B LEU A 1 4   ? 64.908 117.527 41.044 0.45 23.55 ? 392  LEU A CA  1
+ATOM   25   C C   A LEU A 1 4   ? 63.999 117.260 40.013 0.60 21.73 ? 392  LEU A C   1
+ATOM   26   C C   B LEU A 1 4   ? 64.972 116.794 39.706 0.45 22.95 ? 392  LEU A C   1
+ATOM   27   O O   A LEU A 1 4   ? 64.789 117.304 38.508 0.60 19.91 ? 392  LEU A O   1
+ATOM   28   O O   B LEU A 1 4   ? 64.270 117.164 38.760 0.45 21.80 ? 392  LEU A O   1
+ATOM   29   C CB  A LEU A 1 4   ? 62.994 117.229 41.239 0.60 22.01 ? 392  LEU A CB  1
+ATOM   30   C CB  B LEU A 1 4   ? 63.588 117.170 41.739 0.45 23.26 ? 392  LEU A CB  1
+ATOM   31   C CG  A LEU A 1 4   ? 62.020 116.866 42.907 0.60 22.43 ? 392  LEU A CG  1
+ATOM   32   C CG  B LEU A 1 4   ? 63.411 117.414 43.240 0.45 24.38 ? 392  LEU A CG  1
+ATOM   33   C CD1 A LEU A 1 4   ? 63.906 117.128 42.987 0.60 22.36 ? 392  LEU A CD1 1
+ATOM   34   C CD1 B LEU A 1 4   ? 62.004 117.019 43.655 0.45 24.55 ? 392  LEU A CD1 1
+ATOM   35   C CD2 A LEU A 1 4   ? 62.660 117.298 44.405 0.60 22.73 ? 392  LEU A CD2 1
+ATOM   36   C CD2 B LEU A 1 4   ? 64.432 116.611 44.023 0.45 24.44 ? 392  LEU A CD2 1
+ATOM   37   N N   A ASP A 1 5   ? 65.422 116.659 39.809 0.60 21.96 ? 393  ASP A N   1
+ATOM   38   N N   B ASP A 1 5   ? 65.827 115.776 39.625 0.45 22.93 ? 393  ASP A N   1
+ATOM   39   C CA  A ASP A 1 5   ? 65.972 115.093 38.433 0.60 22.44 ? 393  ASP A CA  1
+ATOM   40   C CA  B ASP A 1 5   ? 65.967 114.977 38.409 0.45 23.84 ? 393  ASP A CA  1
+ATOM   41   C C   A ASP A 1 5   ? 64.830 113.969 38.617 0.60 21.62 ? 393  ASP A C   1
+ATOM   42   C C   B ASP A 1 5   ? 64.900 113.889 38.543 0.45 22.45 ? 393  ASP A C   1
+ATOM   43   O O   A ASP A 1 5   ? 64.810 113.091 39.785 0.60 21.11 ? 393  ASP A O   1
+ATOM   44   O O   B ASP A 1 5   ? 64.962 113.054 39.456 0.45 21.89 ? 393  ASP A O   1
+ATOM   45   C CB  A ASP A 1 5   ? 66.589 114.675 39.315 0.60 24.09 ? 393  ASP A CB  1
+ATOM   46   C CB  B ASP A 1 5   ? 67.374 114.360 38.335 0.45 26.75 ? 393  ASP A CB  1
+ATOM   47   C CG  A ASP A 1 5   ? 66.965 114.032 38.106 0.60 25.18 ? 393  ASP A CG  1
+ATOM   48   C CG  B ASP A 1 5   ? 67.888 114.196 36.899 0.45 29.40 ? 393  ASP A CG  1
+ATOM   49   O OD1 A ASP A 1 5   ? 66.303 115.375 36.780 0.60 25.41 ? 393  ASP A OD1 1
+ATOM   50   O OD1 B ASP A 1 5   ? 67.190 114.588 35.938 0.45 31.28 ? 393  ASP A OD1 1
+ATOM   51   O OD2 A ASP A 1 5   ? 68.508 115.272 37.824 0.60 25.36 ? 393  ASP A OD2 1
+```
+
+************************************************
 
 ## Occupancy
 
+                 {{0}}
+************************************************
+
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/occupancy.png)<!-- width="100%" -->
-TODO: add explanation
+
+************************************************
+
+                 --{{0}}--
+
 
 ## Related Web sites
 
@@ -239,7 +347,7 @@ An add-on module for NMR structures is  available.
 
 The program can be combined with the WHAT-  IF program for structure validation, and with  FoldX for energy calculations.
 
-## Exercise 2: show a structure
+## Exercise 2: Show a structure
 
 [Link to exercise 2](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/visualise-structures/tutorial.html)
 
@@ -432,3 +540,5 @@ Can help to find active sites
 - [Assessing model quality](http://spdbv.vital-it.ch/TheMolecularLevel/ModQual/)
 
 - [Lectures by Burkhard Rost on protein structure prediction](https://www.youtube.com/channel/UCU6j8BG4RbEtTgyIZJ6Vpow)
+
+- [PDB 101]()
