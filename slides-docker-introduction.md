@@ -347,3 +347,182 @@ BioContainers architecture from the container request by the user in GitHub to t
 - automate and monitor
 
 ![Devops Explained](https://hostadvice.com/wp-content/uploads/2018/03/devopsext.jpg)
+
+# singularity
+
+Containers for HPC
+
+![Containers Singularity](https://singularity.lbl.gov/images/logo/logo.svg)
+
+[^1](https://doi.org/10.1371/JOURNAL.PONE.0177459)
+[^2](https://sylabs.io/docs/)
+
+## Singularity vs Docker
+
+Summarising:
+
+* Docker -> Microservices
+* Singularity -> HPC
+
+## Singularity Architecture
+
+![VM Docker Singularity](https://tin6150.github.io/psg/fig/vm_vs_container.png)
+
+[^1](http://geekyap.blogspot.com/2016/11/docker-vs-singularity-vs-shifter-in-hpc.html)
+
+## Singularity - Strengths
+
+* No dependency of a daemon
+* Can be run as a simple user
+* Image/container is a file (or directory)
+  * More easily portable
+
+* Two type of images
+  * Read-only (production)
+  * Writable (development)
+## Singularity - Weaknesses
+
+* At the time of writing only good support in
+Linux
+  * Not a big deal in HPC environments, though
+* For some use cases, you might need root account (or sudo)
+
+## Singularity - build
+
+![overview build](http://singularity.lbl.gov/assets/img/diagram/build_input_output.svg)
+
+[^1](http://singularity.lbl.gov/docs-build-container)
+
+## Singularity - build
+
+Build read-only image from Docker
+
+```
+singularity build debian.sif docker://debian.stretch
+```
+
+Build writable directory from Docker
+
+```
+singularity build --sandbox debiandir docker://debian.stretch
+```
+
+## Singularity - run
+
+Execute a command
+
+```
+singularity exec debian.sif /bin/echo 'Hello world'
+singularity exec debian.sif env
+```
+
+Execute a command (with a clean environment)
+
+```
+singularity exec -e debian.sif /bin/echo 'Hello world';
+singularity exec -e debian.sif env
+```
+
+Execute a shell
+
+```
+singularity shell debian.sif
+```
+
+Execute a command (with a clean environment)
+
+```
+singularity run debian.sif
+```
+
+## Private Docker images
+
+[link](https://www.sylabs.io/guides/3.2/user-guide/singularity_and_docker.html)
+
+```
+sudo singularity build privateimg.sif docker-daemon://privateimg:latest
+```
+
+```
+sudo singularity build privateimg.sif docker-archive://privateimg.tar
+```
+
+## Singularity recipes
+
+```
+BootStrap: debootstrap
+OSVersion: stretch
+MirrorURL: http://ftp.fr.debian.org/debian/
+Include: curl
+
+%environment
+    BLAST_PROGRAM=blastp
+    BLASTDB=/blastdb
+    export BLAST_PROGRAM BLASTDB
+
+%post
+    BLAST_VERSION=2.7.1
+    cd /usr/local; curl --fail --silent --show-error --location --remote-name ftp://ftp.ncbi.nlm.nih.gov/blas
+    cd /usr/local; tar zxf ncbi-blast-${BLAST_VERSION}+-x64-linux.tar.gz; rm ncbi-blast-${BLAST_VERSION}+-x64
+    cd /usr/local/bin; ln -s /usr/local/ncbi-blast-${BLAST_VERSION}+/bin/* .
+
+%labels
+    Maintainer Biocorecrg
+    Version 0.1.0
+
+%runscript
+    echo "Blast application!"
+    exec $BLAST_PROGRAM "$@"
+```
+
+## Singularity recipes
+
+```
+BootStrap: docker
+From: continuumio/miniconda:4.5.4
+
+%environment
+    PATH=/opt/conda/envs/blast-conda/bin:$PATH
+    export PATH
+
+%post
+    PATH=/opt/conda/bin:$PATH
+    export PATH
+    conda env create -f /environment.yml && conda clean -a
+
+%files
+    environment.yml
+
+%labels
+    Maintainer Biocorecrg
+    Version 0.1.0
+```
+
+[^1](http://singularity.lbl.gov/docs-recipes)
+
+## Singularity - volumes
+
+```
+singularity run -B /db/test:/blastdb blastwww.sif
+```
+
+## Singularity - services/instances
+
+```
+sudo singularity build blastmysql.sifSingularity
+singularity run -B /db/test:/blastdb -B $(pwd)/config.json:/config/mysql.json blastmysql.sif
+sudo singularity build mysql.sif Singularity.mysql
+singularity exec -B /tmp/db:/var/lib/mysql mysql.sif mysql_install_db
+singularity instance.start -B /tmp/db:/var/lib/mysql -B /tmp/socket:/run/mysqld mysql.sif mysql
+singularity instance.list
+singularity exec instance://mysql mysql -uroot -h127.0.0.1 -e "CREATE DATABASE blast; GRANT ALL PRIVILEGES
+singularity instance.start -B /db/test:/blastdb -B $(pwd)/config.local.json:/config/mysql.json blastmysql.
+singularity instance.list
+singularity instance stop.blast
+singularity instance.stop mysql
+```
+
+## Further reading
+
+* [The impact of Docker containers on the performance of genomic pipelines](https://www.ncbi.nlm.nih.gov/pubmed/26421241)
+* [Performance evaluation of Conatiner-based Virtualisation for High performance computating Environments](https://arxiv.org/abs/1709.10140)
