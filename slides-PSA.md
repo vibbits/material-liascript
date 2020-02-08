@@ -45,7 +45,8 @@ debug: true
 
                            {{0-1}}
 *********************
-**Uniprot** approx. 1100,000 sequences
+
+[**Uniprot**](https://www.uniprot.org/) approx. 1100,000 sequences
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/uniprot-logo.png)<!-- width="50%" -->
 
@@ -57,7 +58,8 @@ debug: true
 
                             {{1}}
 *******************
-**Protein Data Bank** approx. 141,000 experimentally determined structures
+
+[**Protein Data Bank**](http://www.wwpdb.org) approx. 141,000 experimentally determined structures
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/pdb-logo.png)<!-- width="50%" -->
 
@@ -81,21 +83,22 @@ When exposed  to an X-ray beam, this  arrangement gives rise to diffracted rays 
 
                       {{1}}
 *******************
+
+
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/diffraction-pattern.png)<!-- width="50%" -->
 
 *******************
 
 ## X-Ray Crystallography
 
-
+TODO: Change setup
 
 |Diffraction Spot Intensities and Phases| | Electron density|
 |:---------------------------------------:|:--------:|:----------------:|
 | $F_{obs}(h,k,l)$ and $\phi_{obs}(h,k,l)$ | $$R_{cryst} = \frac{\sum_{h,k,l}F_{obs}-F_{calc}}{\sum_{h,k,l}F_{obs}}$$ |  $\rho(x,y,z)$ |
 
 
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/diffraction-pattern.png)<!-- width="45%" --> ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/electron-density.png)<!-- width="45%" -->
-
+![](img/X-ray-crystallography-1.png)<!-- width="100%" -->
 ## The Protein Databank
 
                                   {{0-1}}
@@ -186,11 +189,9 @@ ATOM     52  OD2BASP A 393      69.014 113.671  36.724  0.45 32.22           O
                --{{1}}--
 The original short term goal of the working group was to fulfill the mandate set by the IUCr: to define mmCIF data names that needed to be included in the CIF dictionary in order to adequately describe the macromolecular crystallographic experiment and its results. In January 1997, the mmCIF dictionary was completed and submitted to COMCIFS for review, and version 1.0 was released in June 1997.
 
-                 {{2}}
+                 {{2-3}}
 ************************************************
 
-TODO: add other descriptors
-mmCIF file looks like a paired collection of data item names and values.
 Atomic descriptions in mmCIF format [^1](http://mmcif.wwpdb.org/docs/pdb_to_pdbx_correspondences.html)
 
 ```
@@ -229,17 +230,79 @@ ATOM   51   O OD2 A ASP A 1 5   ? 68.508 115.272 37.824 0.60 25.36 ? 393  ASP A 
 
 ************************************************
 
+                 {{3}}
+************************************************
+
+mmCIF file looks like a paired collection of data item names and values.
+
+```
+data_1DKX
+#
+_entry.id   1DKX
+#
+_audit_conform.dict_name       mmcif_pdbx.dic
+_audit_conform.dict_version    5.279
+_audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic
+#
+loop_
+_database_2.database_id
+_database_2.database_code
+PDB   1DKX         
+WWPDB D_1000172826
+#
+_pdbx_database_status.status_code                     REL
+_pdbx_database_status.entry_id                        1DKX
+_pdbx_database_status.recvd_initial_deposition_date   1996-06-03
+_pdbx_database_status.deposit_site                    ?
+_pdbx_database_status.process_site                    ?
+_pdbx_database_status.SG_entry                        .
+_pdbx_database_status.pdb_format_compatible           Y
+_pdbx_database_status.status_code_mr                  ?
+_pdbx_database_status.status_code_sf                  ?
+_pdbx_database_status.status_code_cs                  ?
+#
+loop_
+_audit_author.name
+_audit_author.pdbx_ordinal
+'Zhu, X.'           1
+'Zhao, X.'          2
+'Burkholder, W.F.'  3
+'Gragerov, A.'      4
+'Ogata, C.M.'       5
+'Gottesman, M.E.'   6
+'Hendrickson, W.A.' 7
+#
+_citation.id                        primary
+_citation.title                     'Structural analysis of substrate binding by the molecular chaperone DnaK.'
+_citation.journal_abbrev            Science
+_citation.journal_volume            272
+_citation.page_first                1606
+_citation.page_last                 1614
+_citation.year                      1996
+_citation.journal_id_ASTM           SCIEAS
+_citation.country                   US
+_citation.journal_id_ISSN           0036-8075
+_citation.journal_id_CSD            0038
+_citation.book_publisher            ?
+_citation.pdbx_database_id_PubMed   8658133
+_citation.pdbx_database_id_DOI      ?
+#
+```
+
+************************************************
+
 ## Occupancy
 
                  {{0}}
 ************************************************
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/occupancy.png)<!-- width="100%" -->
+[^1](https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/dealing-with-coordinates)
 
 ************************************************
 
                  --{{0}}--
-
+Macromolecular crystals are composed of many individual molecules packed into a symmetrical arrangement. In some crystals, there are slight differences between each of these molecules. For instance, a sidechain on the surface may wag back and forth between several conformations, or a substrate may bind in two orientations in an active site, or a metal ion may be bound to only a few of the molecules. When researchers build the atomic model of these portions, they can use the occupancy to estimate the amount of each conformation that is observed in the crystal. For most atoms, the occupancy is given a value of 1, indicating that the atom is found in all of the molecules in the same place in the crystal. However, if a metal ion binds to only half of the molecules in the crystal, the researcher will see a weak image of the ion in the electron density map, and can assign an occupancy of 0.5 in the PDB structure file for this atom. Occupancies are also commonly used to identify side chains or ligands that are observed in multiple conformations. The occupancy value is used to indicate the fraction of molecules that have each of the conformations. Two (or more) atom records are included for each atom, with occupancies like 0.5 and 0.5, or 0.4 and 0.6, or other fractional occupancies that sum to a total of 1.
 
 ## Related Web sites
 
@@ -259,36 +322,50 @@ ATOM   51   O OD2 A ASP A 1 5   ? 68.508 115.272 37.824 0.60 25.36 ? 393  ASP A 
 
   [http://www.ebi.ac.uk/pdbe/litemol](http://www.ebi.ac.uk/pdbe/litemol)
 
-## High-Resolution NMR Spectrometry
+## High-Resolution NMR Spectrometry - Principles
 
-Many atomic nuclei, including the ubiquitous hydrogen nuclei,  resonate at specific radio frequencies when placed in a  strong, uniform magnetic field. The chemical environment of each individual atom slightly modulates its exact resonance  frequency.
 
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/nmr-peaks-to-structure.png)<!-- width="100%" -->
+                 {{0}}
+************************************************
 
-In macromolecules with thousands of atoms, many different  effects combine to generate an extremely complicated pattern of chemical shifts,
-which therefore more or less uniquely  identify each atom. Multidimensional spectra allow these  frequencies to be assigned to specific atoms.
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/nmr-peaks-to-structure.png)<!-- height="307px"-->
 
-## High-Resolution NMR Spectroscopy
+************************************************
 
-When two atoms are near each other in 3D space, they can exchange magnetization, giving rise to crosspeaks at the  intersection of their respective frequencies.]
+                              --{{0}}--
+Many atomic nuclei, including the ubiquitous hydrogen nuclei,  resonate at specific radio frequencies when placed in a  strong, uniform magnetic field. The chemical environment of each individual atom slightly modulates its exact resonance  frequency. In macromolecules with thousands of atoms, many different  effects combine to generate an extremely complicated pattern of chemical shifts, which therefore more or less uniquely  identify each atom. Multidimensional spectra allow these  frequencies to be assigned to specific atoms.
+
+
+## High-Resolution NMR Spectroscopy - Nuclear Overhauser Effect
+
+                 {{0}}
+************************************************
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/nmr-noe.jpg)<!-- height="600px" -->
 
-This nuclear Overhauser effect (NOE) is used to effectively measure the distances between pairs of atoms, at least qualitatively.
+************************************************
+
+                          --{{0}}--
+When two atoms are near each other in 3D space, they can exchange magnetization, giving rise to crosspeaks at the  intersection of their respective frequencies. This nuclear Overhauser effect (NOE) is used to effectively measure the distances between pairs of atoms, at least qualitatively.
 
 ## High-Resolution NMR Spectroscopy
 
-After identification of the atoms by means of their unique chemical shifts, distance restraints are derived from the Overhauser crosspeaks. An extended model of the protein is generated,  
-and then condensed into a shape that is consistent with as many of distance restraints as possible.
+                 {{0}}
+************************************************
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/nmr-model-example.png)<!-- height="600px" -->
+
+************************************************
+
+                --{{0}}--
+After identification of the atoms by means of their unique chemical shifts, distance restraints are derived from the Overhauser crosspeaks. An extended model of the protein is generated, and then condensed into a shape that is consistent with as many of distance restraints as possible.
 
 ## Other methods
 
 - Electron microscopy (and especially Cryo-electron microscopy): Electron crystallography and single particle reconstruction
 - Small-angle X-ray and neutron scattering (SAXS and SANS)
 
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/saxs.png)<!-- width="100%" -->
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/saxs.png)<!-- height="600px" -->
 
 ## Related Web sites
 
@@ -311,19 +388,18 @@ and then condensed into a shape that is consistent with as many of distance rest
 ## Assessing Structure Quality
 
 General geometric properties (bond lengths and angles, Ramachandran distribution, …):
-MolProbity [Link](http://molprobity.biochem.duke.edu/)
+[MolProbity](http://molprobity.biochem.duke.edu/)
 
 **Crystal Structures**
 
 - Diffraction data resolution and completeness (PDB)
 - Final $ R_{cryst} $ and $ R_{free} $ factors (PDB)
-- Local correspondence to electron density (EDS)
+- Local correspondence to electron density [EDS](https://www.ebi.ac.uk/pdbe/eds)
 
 **NMR Structures**
 
-- Number of distance restraints and additional experimental data sources (BMRB)
-- Local restraint density (on-line NMR constraint analyser)
-  [link](http://molsim.sci.univr.it/bioinfo/tools/constraint/index.html)
+- Number of distance restraints and additional experimental data sources [BMRB](http://www.bmrb.wisc.edu/)
+- Local restraint density [on-line NMR constraint analyser](http://molsim.sci.univr.it/bioinfo/tools/constraint/index.html)
 
 **Other techniques**
 
@@ -339,13 +415,13 @@ MolProbity [Link](http://molprobity.biochem.duke.edu/)
 
 ## YASARA
 
-Yasara View is freely available and provides  basic visualisation functions.
+- Yasara View is freely available and provides  basic visualisation functions.
 
-Yasara Model, Dynamics and Structure provide  additional functionality.
+- Yasara Model, Dynamics and Structure provide additional functionality.
 
-An add-on module for NMR structures is  available.
+- An add-on module for NMR structures is available.
 
-The program can be combined with the WHAT-  IF program for structure validation, and with  FoldX for energy calculations.
+- The program can be combined with the WHAT-IF program for structure validation, and with FoldX for energy calculations.
 
 ## Exercise 2: Show a structure
 
@@ -363,11 +439,11 @@ The program can be combined with the WHAT-  IF program for structure validation,
 
 ## Protein folds are the structures of domains
 
-Similarities in assembly of secondary structure elements
+- Similarities in assembly of secondary structure elements
 
-So not based on sequence like motifs but on 3D structure
+- So not based on sequence like motifs but on 3D structure
 
-Folds represent the shapes of protein domains!
+- Folds represent the shapes of protein domains!
 
 Examples: TODO (add images e.g. alpha solenoid, DNA clamp, thioredoxin fold)
 
@@ -380,15 +456,15 @@ Examples: TODO (add images e.g. alpha solenoid, DNA clamp, thioredoxin fold)
 
 see also (http://www.ii.uib.no/~slars/bioinfocourse/PDFs/structpred_tutorial.pdf)
 
-## Structure Superposition
+## Structure Alignment
 
-.left[
 Structures can be superimposed to achieve the best  possible match between corresponding atoms. It is  possible to consider all atoms, or only a subset  (such as the Cα atoms).
 
-When the structures are very similar, determining  which atoms should be matched to each other is  trivial. When there are larger differences, it takes  more preparation.
+When the structures are very similar, determining  which atoms should be matched to each other is trivial. When there are larger differences, it takes more preparation.
 
-Different algorithms use different combinations of  sequence- and secondary of tertiary structure-based information.
-]
+Different algorithms use different combinations of sequence- and secondary of tertiary structure-based information.
+
+TODO: MMLigner
 
 ## Exercise 3: Compare Structures
 
@@ -409,30 +485,36 @@ $$ rmsd = \sqrt{\frac{1}{N}\sum_{i=1}^{N}R_{i}^{2}} $$
 - Missing atoms, residues and loops  
 - Multiple molecules in the asymmetric unit
 - Incomplete oligomers due to coincident crystal and  oligomer symmetry
-- Cα-only models  lternate conformations
-- Multiple models, especially for NMR ensembles
-- Use of B factors to represent other properties  ther non-standard extensions (PDBQT, ...)
+- Cα-only models
+- alternate conformations
+- multiple models, especially for NMR ensembles
+- use of B factors to represent other properties  
+- other non-standard extensions (PDBQT, ...)
 
 ## Force Fields
 
 - Energy terms representing physical interactions
 
- - Covalent bond lengths and angles
- - Dihedral angles and van der Waals forces (steric effects)
- - Electrostatic interactions and hydrogen bonds
-…
+  - Covalent bond lengths and angles
+  - Dihedral angles and van der Waals forces (steric effects)
+  - Electrostatic interactions and hydrogen bonds
+  - …
 
 - Energy can be minimized, and forces can literally be derived from the potential function.
 
-- Consistency and careful consideration of the  properties to be simulated are essential.
+- Consistency and careful consideration of the properties to be simulated are essential.
 
 ## Force Field Terms
 
 Each energy term has a functional form, which includes one or more parameters:
 
 - Covalent bond energy term
- To do: add formula
+
+  $ E_{bond} = k(r-r_{0})^{2} $ with $r_0$ being the equilibrium length
+
 - Van der Waals contact energy term
+
+  $ E_{VdW} = C_6r^{-6} + C_{12}r^{-12} $ with $C_6$ attractive, $C_{12}$ repulsive term
 
 The parameters are collectively optimized to  reproduce a chosen set of experimentally observed parameters.
 
@@ -445,6 +527,8 @@ Is designed for quantitative modelling of the contribution of structural interac
 The force field describes the different interactions in a  protein structure or complex in analytical terms. It has  been calibrated using a set of experimentally determined  stabilities.
 
 Applications include the optimisation of structures, the calculation of the stability of complexes, and predicting  the effect of amino-acid or base-pair mutations on these  properties.
+
+TODO: Add force field
 
 ## The FoldX Plugin for YASARA
 
@@ -500,9 +584,12 @@ This exports the object as a temporary PDB file,  starts FoldX with the appropri
 - DescFold (http://202.112.170.199/DescFold/)
 
 Works because:
+
 - Number of different folds in nature is fairly small (approximately 1300)
 - 90% of new submissions in PDB have similar folds to those already in PDB
-- Not always accurate
+- Not always accurate [^1](https://onlinelibrary.wiley.com/doi/full/10.1002/prot.25823)
+
+[^2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3003448/#!po=87.5000)
 
 ## Guidelines to improve fold recognition results
 
@@ -517,6 +604,7 @@ Works because:
 Similarity on structural level: aligning 3D structures
 
 Structure of query protein is known and aligned to PDB structures
+
 - VAST+ (https://www.ncbi.nlm.nih.gov/Structure/vastplus/vastplus.cgi)
 - DALI (http://ekhidna.biocenter.helsinki.fi/dali_server/)
 
