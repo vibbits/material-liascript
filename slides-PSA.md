@@ -68,7 +68,7 @@ debug: true
 
 *******************
 
-## X-Ray Crystallography
+## X-Ray Crystallography - Technical setup
 
 
                      {{0-1}}
@@ -89,16 +89,14 @@ When exposed  to an X-ray beam, this  arrangement gives rise to diffracted rays 
 
 *******************
 
-## X-Ray Crystallography
+## X-Ray Crystallography - from diffraction pattern to atomic model
 
-TODO: Change setup
+![](img/X-ray-crystallography-1.png)<!-- width="100%" -->
 
 |Diffraction Spot Intensities and Phases| | Electron density|
 |:---------------------------------------:|:--------:|:----------------:|
 | $F_{obs}(h,k,l)$ and $\phi_{obs}(h,k,l)$ | $$R_{cryst} = \frac{\sum_{h,k,l}F_{obs}-F_{calc}}{\sum_{h,k,l}F_{obs}}$$ |  $\rho(x,y,z)$ |
 
-
-![](img/X-ray-crystallography-1.png)<!-- width="100%" -->
 ## The Protein Databank
 
                                   {{0-1}}
@@ -447,14 +445,51 @@ General geometric properties (bond lengths and angles, Ramachandran distribution
 
 Examples: TODO (add images e.g. alpha solenoid, DNA clamp, thioredoxin fold)
 
-## Databases of protein folds
-
 - SCOP (http://scop.mrc-lmb.cam.ac.uk/scop/)
 - CATH (http://www.cathdb.info/)
 
-## check on slides from course Wim Vranken
+## Predict protein structures by fold recognition
 
-see also (http://www.ii.uib.no/~slars/bioinfocourse/PDFs/structpred_tutorial.pdf)
+1. Search SCOP/CATH for protein with same fold and known 3D structure
+2. Align each amino acid of query sequence to a position in the template structure
+3. Evaluate how well the sequence fits the fold and select best-fit fold
+4. Build structural model of query based on alignment with selected fold
+
+- Phyre (http://www.sbg.bio.ic.ac.uk/phyre2/html/page.cgi?id=index)
+- HHpred (http://toolkit.lmb.uni-muenchen.de/hhpred)
+- DescFold (http://202.112.170.199/DescFold/)
+
+Works because:
+
+- Number of different folds in nature is fairly small (approximately 1300)
+- 90% of new submissions in PDB have similar folds to those already in PDB
+- Not always accurate [^1](https://onlinelibrary.wiley.com/doi/full/10.1002/prot.25823)
+
+[^2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3003448/#!po=87.5000)
+
+## Guidelines to improve fold recognition results
+
+- Run as many methods as you can
+- Run each method on many sequences from your homologous protein family
+- After all of these runs, build up a consensus picture of the likely fold
+- Compare function of your protein to function of the proteins with the likely fold
+- Compare secondary structure of your protein to that of the likely fold
+
+## Similarity searches based on 3D structure
+
+Similarity on structural level: aligning 3D structures
+
+Structure of query protein is known and aligned to PDB structures
+
+- VAST+ (https://www.ncbi.nlm.nih.gov/Structure/vastplus/vastplus.cgi)
+- DALI (http://ekhidna.biocenter.helsinki.fi/dali_server/)
+
+Compare proteins with low sequence similarity:
+similar structure implies homology -> same function
+
+Can help to find active sites
+
+see also (https://web.stanford.edu/class/cs279/lectures/lecture5.pdf)
 
 ## Structure Alignment
 
@@ -572,46 +607,6 @@ This exports the object as a temporary PDB file,  starts FoldX with the appropri
 
 [Link to exercise 5](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/homology-modeling/tutorial.html)
 
-## Predict protein structures by fold recognition
-
-1. Search SCOP/CATH for protein with same fold and known 3D structure
-2. Align each amino acid of query sequence to a position in the template structure
-3. Evaluate how well the sequence fits the fold and select best-fit fold
-4. Build structural model of query based on alignment with selected fold
-
-- Phyre (http://www.sbg.bio.ic.ac.uk/phyre2/html/page.cgi?id=index)
-- HHpred (http://toolkit.lmb.uni-muenchen.de/hhpred)
-- DescFold (http://202.112.170.199/DescFold/)
-
-Works because:
-
-- Number of different folds in nature is fairly small (approximately 1300)
-- 90% of new submissions in PDB have similar folds to those already in PDB
-- Not always accurate [^1](https://onlinelibrary.wiley.com/doi/full/10.1002/prot.25823)
-
-[^2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3003448/#!po=87.5000)
-
-## Guidelines to improve fold recognition results
-
-- Run as many methods as you can
-- Run each method on many sequences from your homologous protein family
-- After all of these runs, build up a consensus picture of the likely fold
-- Compare function of your protein to function of the proteins with the likely fold
-- Compare secondary structure of your protein to that of the likely fold
-
-## Similarity searches based on 3D structure
-
-Similarity on structural level: aligning 3D structures
-
-Structure of query protein is known and aligned to PDB structures
-
-- VAST+ (https://www.ncbi.nlm.nih.gov/Structure/vastplus/vastplus.cgi)
-- DALI (http://ekhidna.biocenter.helsinki.fi/dali_server/)
-
-Compare proteins with low sequence similarity:
-similar structure implies homology -> same function
-
-Can help to find active sites
 
 ## Exercise 6: Study Protein-Ligand Interactions
 
