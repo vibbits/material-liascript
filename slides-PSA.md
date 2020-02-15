@@ -441,12 +441,17 @@ General geometric properties (bond lengths and angles, Ramachandran distribution
 
 - So not based on sequence like motifs but on 3D structure
 
-- Folds represent the shapes of protein domains!
+- Folds represent the shapes of protein domains
 
-Examples: TODO (add images e.g. alpha solenoid, DNA clamp, thioredoxin fold)
+* SCOP (http://scop.mrc-lmb.cam.ac.uk/scop/)
+  * Class, Fold, Superfamily, Family
+  The human hemoglobin protein (1HHO-A), is a domain classfied by SCOP as the following.
+  * Class: all helical proteins; fold: globin-like; superfamily: globin-like; and family: globins.
 
-- SCOP (http://scop.mrc-lmb.cam.ac.uk/scop/)
-- CATH (http://www.cathdb.info/)
+* CATH (http://www.cathdb.info/)
+  * class (equivalent to SCOP class), architecture, topology (equivalent to SCOP fold), and homologous superfamily (equivalent to SCOP superfamily).
+  1HHO-A is a domain classied by CATH as the following.
+  * Class: mainly helical; architecture: orthogonal bundle; topology: globin-like; and superfamily: globins.
 
 ## Predict protein structures by fold recognition
 
@@ -481,25 +486,31 @@ Similarity on structural level: aligning 3D structures
 
 Structure of query protein is known and aligned to PDB structures
 
-- VAST+ (https://www.ncbi.nlm.nih.gov/Structure/vastplus/vastplus.cgi)
-- DALI (http://ekhidna.biocenter.helsinki.fi/dali_server/)
+- DALI(http://ekhidna.biocenter.helsinki.fi/dali_server/)
+- VAST+(https://www.ncbi.nlm.nih.gov/Structure/vastplus/vastplus.cgi)
 
-Compare proteins with low sequence similarity:
-similar structure implies homology -> same function
+Compare proteins with low sequence similarity: similar structure implies homology -> same function
 
 Can help to find active sites
 
-see also (https://web.stanford.edu/class/cs279/lectures/lecture5.pdf)
+[Additional information](https://web.stanford.edu/class/cs279/lectures/lecture5.pdf)
 
 ## Structure Alignment
 
-Structures can be superimposed to achieve the best  possible match between corresponding atoms. It is  possible to consider all atoms, or only a subset  (such as the Cα atoms).
+Structures can be structurally aligned to achieve the best possible match between corresponding atoms. It is  possible to consider all atoms, or only a subset  (such as the Cα atoms).
 
 When the structures are very similar, determining  which atoms should be matched to each other is trivial. When there are larger differences, it takes more preparation.
 
 Different algorithms use different combinations of sequence- and secondary of tertiary structure-based information.
 
-TODO: MMLigner
+- [DALI](http://ekhidna.biocenter.helsinki.fi/dali_server/) [^1](Holm and Sander, 1993 and Holm 2019 https://doi.org/10.1093/bioinformatics/btz536)
+- [TM-Align](https://zhanglab.ccmb.med.umich.edu/TM-align/)
+- [DeepAlign](https://www.nature.com/articles/srep01448)
+- [LGA](https://dx.doi.org/10.1093%2Fnar%2Fgkg571)
+- [CE](https://doi.org/10.1093/protein/11.9.739)
+- [FatCat](https://doi.org/10.1093/bioinformatics/btg1086)
+- [MUSTANG](http://lcb.infotech.monash.edu.au/mustang/mustang_psfb-final.pdf)
+- [MMLigner](https://doi.org/10.1093/bioinformatics/btw757)
 
 ## Exercise 3: Compare Structures
 
@@ -507,7 +518,7 @@ TODO: MMLigner
 
 - Download the five provided PDB files and open  them in Yasara.
 
-- Use the `Analyze|Align|Objects` with MUSTANG  function to align the four last objects with the first one.
+- Use the `Analyze|Align|Objects` with MUSTANG function to align the four last objects with the first one.
 
 - Use the space bar to open the text console and  see the reported root mean square deviations as well as the number of residues matched.
 
@@ -559,11 +570,13 @@ A given force field should be used as a  consistent system, and can only be used
 
 Is designed for quantitative modelling of the contribution of structural interactions to the stability of proteins and protein complexes. It also supports  protein/DNA complexes.
 
-The force field describes the different interactions in a  protein structure or complex in analytical terms. It has  been calibrated using a set of experimentally determined  stabilities.
+The force field describes the different interactions in a protein structure or complex in analytical terms. It has  been calibrated using a set of experimentally determined  stabilities.
 
 Applications include the optimisation of structures, the calculation of the stability of complexes, and predicting  the effect of amino-acid or base-pair mutations on these  properties.
 
-TODO: Add force field
+![FoldX Force Field](img/foldx-formula.PNG)
+
+[FoldX](https://dx.doi.org/10.1093%2Fnar%2Fgki387)
 
 ## The FoldX Plugin for YASARA
 
@@ -623,5 +636,3 @@ This exports the object as a temporary PDB file,  starts FoldX with the appropri
 - [Assessing model quality](http://spdbv.vital-it.ch/TheMolecularLevel/ModQual/)
 
 - [Lectures by Burkhard Rost on protein structure prediction](https://www.youtube.com/channel/UCU6j8BG4RbEtTgyIZJ6Vpow)
-
-- [PDB 101]()
