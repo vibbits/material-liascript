@@ -294,7 +294,7 @@ _citation.pdbx_database_id_DOI      ?
                  {{0}}
 ************************************************
 
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/occupancy.png)<!-- width="100%" -->
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/occupancy.png)<!-- width="80%" -->
 [^1](https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/dealing-with-coordinates)
 
 ************************************************
