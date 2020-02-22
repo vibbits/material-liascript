@@ -336,10 +336,7 @@ BioContainers architecture from the container request by the user in GitHub to t
 - recommendations on [containers](https://f1000research.com/articles/7-742/v1)
 - [practical computational reproducibility in life sciences](https://www.biorxiv.org/content/early/2017/10/11/200683)
 
-# Thanks
 
-- Bioinfo Core at CRG  [slides](https://github.com/biocorecrg/C4LWG-2018/tree/master/slides)
-- based on recommendation from [F1000](https://f1000research.com/articles/7-742/v1)
 
 ## devops
 
@@ -380,31 +377,56 @@ Summarising:
 * Two type of images
   * Read-only (production)
   * Writable (development)
+
 ## Singularity - Weaknesses
 
 * At the time of writing only good support in
 Linux
   * Not a big deal in HPC environments, though
+  * will change soon with WSL 2 [^1](https://zillowtech.com/install-wsl2-windows-10.html/amp)
 * For some use cases, you might need root account (or sudo)
+
+## Finding and downloading a Singularity Container
+
+There are two main places that you can find containers that will work with singularity.
+
+- https://singularity-hub.org/
+- https://hub.docker.com
+
+The first time you use singularity it will by default put a `.singularity` folder in your home directory which on HPC systems commonly has limited storage space. Therefore it is important that you move that folder to a different location and then create a softlink from your home directory to the new location
+
+## Singularity - pull
+
+```
+singularity pull docker://sjackman/maker
+singularity exec --bind $PWD ./maker.img maker --help
+```
 
 ## Singularity - build
 
-![overview build](http://singularity.lbl.gov/assets/img/diagram/build_input_output.svg)
+![overview build](../img/diagram/build_input_output.svg)
 
 [^1](http://singularity.lbl.gov/docs-build-container)
 
 ## Singularity - build
 
+                  --{{0}}--
+************************************
+
+First off, it is important that modifying existing containers should only be done to avoid having to rebuild a container from scratch while optimizing the recipe file. The ultimate goal is for the container to be fully reproducible from the recipe file. However, there are some containers that can take 2 hours to build and if you forgot to add a folder to the PATH directory or other similarly simple mistakes, 2 hours is a long time to wait to verify the container is working properly.
+
+***************************************
+
 Build read-only image from Docker
 
 ```
-singularity build debian.sif docker://debian.stretch
+singularity build debian.sif docker://debian
 ```
 
 Build writable directory from Docker
 
 ```
-singularity build --sandbox debiandir docker://debian.stretch
+singularity build --sandbox debiandir docker://debian
 ```
 
 ## Singularity - run
@@ -433,6 +455,20 @@ Execute a command (with a clean environment)
 
 ```
 singularity run debian.sif
+
+./lolcow_latest.cif
+
+singularity run library://sylabsed/examples/lolcow
+```
+
+**creating wrappers for the singularity commands**
+
+```
+new_assemblathon
+---
+#!/bin/bash
+
+singularity exec ISUGIFsingularity-utilities-master.simg new_Assemblathon.pl
 ```
 
 ## Private Docker images
@@ -447,7 +483,18 @@ sudo singularity build privateimg.sif docker-daemon://privateimg:latest
 sudo singularity build privateimg.sif docker-archive://privateimg.tar
 ```
 
-## Singularity recipes
+## Singularity recipes - sections
+
+Singularity Recipes have five main sections
+
+* Header information
+  * %labels :information about the container
+  * %environment : environmental variables and modules to load.
+  * %post : commands to run during the creation of the container
+  * %runscript : program to run if the image is executed
+
+
+## Singularity recipes - example with debootstrap
 
 ```
 BootStrap: debootstrap
@@ -462,12 +509,12 @@ Include: curl
 
 %post
     BLAST_VERSION=2.7.1
-    cd /usr/local; curl --fail --silent --show-error --location --remote-name ftp://ftp.ncbi.nlm.nih.gov/blas
-    cd /usr/local; tar zxf ncbi-blast-${BLAST_VERSION}+-x64-linux.tar.gz; rm ncbi-blast-${BLAST_VERSION}+-x64
+    cd /usr/local; curl --fail --silent --show-error --location --remote-name ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.7.1/ncbi-blast-${BLAST_VERSION}+-x64-linux.tar.gz
+    cd /usr/local; tar zxf ncbi-blast-${BLAST_VERSION}+-x64-linux.tar.gz; rm ncbi-blast-${BLAST_VERSION}+-x64-linux.tar.gz
     cd /usr/local/bin; ln -s /usr/local/ncbi-blast-${BLAST_VERSION}+/bin/* .
 
 %labels
-    Maintainer Biocorecrg
+    Maintainer vibbioinfocore
     Version 0.1.0
 
 %runscript
@@ -475,7 +522,9 @@ Include: curl
     exec $BLAST_PROGRAM "$@"
 ```
 
-## Singularity recipes
+Note: In order to use the `debootstrap` build module, you must have `debootstrap` installed on your system.
+
+## Singularity recipes - example with docker
 
 ```
 BootStrap: docker
@@ -500,6 +549,82 @@ From: continuumio/miniconda:4.5.4
 
 [^1](http://singularity.lbl.gov/docs-recipes)
 
+# Singularity recipes - example from Singularity hub
+
+```
+BootStrap: shub
+From:ResearchIT/spack-singularity:openmpi
+
+%labels
+MAINTAINER severin@iastate.edu
+APPLICATION genomeModules
+
+%help
+This container contains all the necessary programs to create genome modules.
+See https://github.com/ISUGIFsingularity/genomeModules.git for more information
+
+%environment
+source /etc/profile.d/modules.sh
+SPACK_ROOT=/opt/spack
+export SPACK_ROOT
+export PATH=$SPACK_ROOT/bin:$PATH
+source /etc/profile.d/modules.sh
+source $SPACK_ROOT/share/spack/setup-env.sh
+export PATH=$SPACK_ROOT/isugif/utilities/bin:$SPACK_ROOT/utilities/wrappers:$PATH
+#for d in /opt/spack/opt/spack/linux-centos7-x86_64/gcc-4.8.5/*/bin; do export PATH="$PATH:$d"; done
+
+module load gmap-gsnap
+module load bowtie2
+module load bwa
+module load gatk
+module load bedtools2
+module load samtools
+module load picard
+module load jdk
+export _JAVA_OPTIONS="-Xmx100G"
+module load parallel
+
+%post
+export SPACK_ROOT=/opt/spack
+export SPACK_ROOT
+export PATH=$SPACK_ROOT/bin:$PATH
+
+yum -y install bc paste
+yum clean all
+
+export FORCE_UNSAFE_CONFIGURE=1
+
+source $SPACK_ROOT/share/spack/setup-env.sh
+spack install picard
+spack install gmap-gsnap
+spack install bowtie2
+spack install bwa
+spack install gatk
+spack install bedtools2
+spack install samtools
+spack install parallel
+
+#for d in /opt/spack/opt/spack/linux-centos7-x86_64/gcc-4.8.5/*/bin; do export PATH="$PATH:$d"; done
+
+
+cd $SPACK_ROOT
+
+%runscript
+echo "This container contains a environment and all prequisite programs to run prepare_genome_modules.sh"
+```
+
+[^1](http://singularity.lbl.gov/docs-recipes)
+
+## Naming Schema
+
+- Singularity suggests that you have a recipe named as Singularity.XXX Where XXX is usually the version number.
+- These Recipe files are contained in individual github Repos with more descriptive names.
+- On Singularityhub it will be OrganizationName/RepoName/recipeFilename
+- On Github you will create a descriptive named repo for every singularity container you want to make and create a recipe file contained in that Repo starting with Singularity.
+
+MIT license Copyright (c) 2018 Genome Informatics Facility
+https://github.com/ISUgenomics/bioinformatics-workbook
+
 ## Singularity - volumes
 
 ```
@@ -509,7 +634,7 @@ singularity run -B /db/test:/blastdb blastwww.sif
 ## Singularity - services/instances
 
 ```
-sudo singularity build blastmysql.sifSingularity
+sudo singularity build blastmysql.sif Singularity
 singularity run -B /db/test:/blastdb -B $(pwd)/config.json:/config/mysql.json blastmysql.sif
 sudo singularity build mysql.sif Singularity.mysql
 singularity exec -B /tmp/db:/var/lib/mysql mysql.sif mysql_install_db
@@ -524,5 +649,13 @@ singularity instance.stop mysql
 
 ## Further reading
 
+* - Documentation of VSC [containers on HPC](https://vlaams-supercomputing-centrum-vscdocumentation.readthedocs-hosted.com/en/latest/software/singularity.html#)
 * [The impact of Docker containers on the performance of genomic pipelines](https://www.ncbi.nlm.nih.gov/pubmed/26421241)
 * [Performance evaluation of Conatiner-based Virtualisation for High performance computating Environments](https://arxiv.org/abs/1709.10140)
+
+# Thanks
+
+- Bioinfo Core at CRG  [slides](https://github.com/biocorecrg/C4LWG-2018/tree/master/slides)
+- based on recommendation from [F1000](https://f1000research.com/articles/7-742/v1)
+- https://github.com/ISUgenomics/bioinformatics-workbook
+  Copyright (c) 2018 Genome Informatics Facility
