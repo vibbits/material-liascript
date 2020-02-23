@@ -548,7 +548,7 @@ singularity exec --bind $PWD ./maker.img maker --help
 
 ## Singularity - build
 
-![overview build](img/build_input_output.svg)<!-- width="100%"" -->
+![overview build](http://singularity.lbl.gov/assets/img/diagram/build_input_output.svg)<!-- width="100%"" -->
 
 [^1](http://singularity.lbl.gov/docs-build-container)
 
