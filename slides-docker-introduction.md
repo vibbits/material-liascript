@@ -65,6 +65,8 @@ In conclusion, we are reaching the point where not performing data analyses repr
 
 ## So why does everyone love containers and Docker?
 
+                 {{0-1}}
+************************************************
 
 ![Docker](https://msdnshared.blob.core.windows.net/media/2017/10/docker.png)
 
@@ -73,12 +75,25 @@ In conclusion, we are reaching the point where not performing data analyses repr
 - small, neat capsule containing your application
 - infrastructure as application/code
 - enables Continuous Integration, Continuous Development
+
+************************************************
+
+                 {{1}}
+************************************************
+
+![biocontainers-reuse](https://elixir-europe.org/sites/default/files/styles/centre-huge/public/images/biocontainers_fig1.png?itok=pN58oEvT)
+
 - containers gives you instant application portability and easy to deploy in a cloud
 - make applications and workloads more portable in an effective, standardized, and repeatable way
 - Open Container Initiative
 - Docker community edition
 
 [^1](https://www.zdnet.com/article/what-is-docker-and-why-is-it-so-darn-popular/)
+[^2](https://bigbionotes.blogspot.com/2019/11/elixir-support-development-of.html)
+[^3](https://www.opencontainers.org/)
+
+************************************************
+
 
 
 ## Docker basics
