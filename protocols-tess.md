@@ -28,7 +28,7 @@ Hello and welcome, this is our interactive hands-on course about efficient use o
 > To see this document as an interactive LiaScript rendered version, click on the
 > following link/badge:
 >
-> [![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent)
+> [![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/vibbits/material-liascript/master/protocols-tess.md)
 
 
 The original publication of the protocols can be found [here](https://doi.org/10.1002/cpz1.682). We have reused the content to prepare this training material.
