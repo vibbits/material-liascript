@@ -7,7 +7,7 @@ version:  0.1
 
 language: en
 
-icon: elixir-tess-b37789ea9aced77e795a3c2dc3a2fa583d9dc0e0eb392d589a8cd8d534be8067.svg
+icon: img/elixir-tess-b37789ea9aced77e795a3c2dc3a2fa583d9dc0e0eb392d589a8cd8d534be8067.svg
 
 narrator: US English Female
 
@@ -28,17 +28,21 @@ Hello and welcome, this is our interactive hands-on course about efficient use o
 > To see this document as an interactive LiaScript rendered version, click on the
 > following link/badge:
 >
-> [![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent)
+> [![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/vibbits/material-liascript/master/protocols-tess.md)
 
+![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)
 
-The original publication of the protocols can be found [here](https://doi.org/10.1002/cpz1.682). We have reused the content to prepare this training material.
-
+To prepare this training material, we have reused the content of the publication 'Making Bioinformatics Training Events and Material More Discoverable Using TeSS, the ELIXIR Training Portal' published in Current Protocols in Bioinformatics. The original publication of the protocols can be found [here](https://doi.org/10.1002/cpz1.682). 
 
 --------------------------------------------
 
 *About ELIXIR Training Platform*
 
-...
+The ELIXIR Training Platform was established to develop a training community that spans all ELIXIR member states (see the list of Training Coordinators). It aims to strengthen national training programmes, grow bioinformatics training capacity and competence across Europe, and empower researchers to use ELIXIR's services and tools. 
+
+One service offered by the Training Platform is TeSS, the training registry for the ELIXIR community. Together with ELIXIR France and ELIXIR Slovenia, VIB as lead node for ELIXIR Belgium is engaged in consolidating quality and impact of the TeSS training resources (2022-23) (https://elixir-europe.org/internal-projects/commissioned-services/2022-trp3).
+
+The Training eSupport System was developed to help trainees, trainers and their institutions to have a one-stop shop where they can share and find information about training and events, including training material. This way we can create a catalogue that can be shared within the community. How it works is what we are going to find out in this course.
 
 *About VIB and VIB Technologies*
 
@@ -46,13 +50,15 @@ VIB is an entrepreneurial non-profit research institute, with a clear focus on g
 
 As part of the VIB Technologies, the 12 VIB Core Facilities, provide support in a wide array of research fields and housing specialized scientific equipment for each discipline. Science and technology go hand in hand. New technologies advance science and often accelerate breakthroughs in scientific research. VIB has a visionary approach to science and technology, founded on its ability to identify and foster new innovations in life sciences.
 
-The goal of VIB Technology Training is to up-skill life scientists in various topics like ...
+The goal of VIB Technology Training is to up-skill life scientists to excel in the domains of VIB Technologies, Bioinformatics & AI, Software Development, and Research Data Management.
 
 --------------------------------------------
 
 *Editorial team for this course*
 
-Authors: Alexander Botzki 
+Authors: Alexander Botzki
+
+Contributors: Finn Bacall, Aitor Apaolaza, Munazah Andrabi, Chris Child, Carole Goble, Olivier Sand
 
 Technical Editors: Alexander Botzki
 
@@ -65,11 +71,15 @@ License: [![images](img/picture003.jpg)](http://creativecommons.org/licenses/by/
 
 Many trainers and their organisations are passionate about sharing their training material. Sharing training material has several benefits like providing a record of recognition as an author, offering inspiration to other trainers, enabling researchers to discover training resources for their personal learning path, and facilitating to complement the training resource landscape by data-driven gap analysis from the bioinformatics community (see [PLOS Computational Biology, 16(5), e1007854](https://doi.org/10.1371/journal.pcbi.1007854)).
 
+![advantages of TeSS](img/XgXcCp3.png)
+
 In this tutorial, we elaborate a series of protocols leading the TeSS users through the process of searching and filtering TeSS content (Protocol 1 to 3). Protocols 4 to 7 show how to register manually and automatically training events and material in the [Training eSupport System (TeSS), ELIXIR’s training portal](https://tess.elixir-europe.org). More information about TeSS can be found in [this publication](https://doi.org/10.1093/bioinformatics/btaa047). 
 
 TeSS provides a one-stop shop for trainers and trainees to discover online information and content, including training materials, events and interactive tutorials. Following these protocols, you will contribute to promote your training events and add to a growing catalog of materials. This will concomitantly increase the FAIRness of training materials and events.
 
 Training registries like TeSS use a scraping mechanism to aggregate training resources from many providers when they have been annotated using training specific [BioSchemas specifications](https://doi.org/10.1101/2022.11.24.516513). Protocol 8 will teach you how to enrich your training resources to allow for more efficient sharing of the structured metadata like prerequisites, target audience, and learning outcomes using Bioschemas specification. Once more and more training events and material are aggregated in TeSS, searching the registry for specific events and material becomes crucial.
+
+![overview annotations](img/KbCIsol.jpg)
 
 In the next section, you will find links where you can follow all protocols.
 
@@ -78,21 +88,21 @@ In the next section, you will find links where you can follow all protocols.
                      {{1}}
 ***********
 
-[Protocol 1](#3): Searching for training events in TeSS
+[Protocol 1](#4): Searching for training events in TeSS
 
-[Protocol 2](#4): Integrating TeSS widgets on your web site
+[Protocol 2](#5): Integrating TeSS widgets on your web site
 
-[Protocol 3](#5): Searching for e-learning materials in TeSS
+[Protocol 3](#6): Searching for e-learning materials in TeSS
 
-[Protocol 4](#6): Log into TeSS using an institutional account
+[Protocol 4](#7): Log into TeSS using an institutional account
 
-[Protocol 5](#7): Manual registration of a training event in TeSS
+[Protocol 5](#8): Manual registration of a training event in TeSS
 
-[Protocol 6](#8): Manual registration of training material in TeSS
+[Protocol 6](#9): Manual registration of training material in TeSS
 
-[Protocol 7](#9): Registration of a content provider in TeSS
+[Protocol 7](#10): Registration of a content provider in TeSS
 
-[Protocol 8](#10): Automated harvesting of a training event in TeSS
+[Protocol 8](#11): Automated harvesting of a training event in TeSS
 
 ***********
 
@@ -100,7 +110,18 @@ In the next section, you will find links where you can follow all protocols.
 
 During the ELIXIR-EXCELERATE project, the TeSS platform has been established as the key application for bioinformatics training events and material aggregation. During a period of further adoption of the TeSS platform as such on the international level e.g. in Australia and in the Netherlands, it became obvious that the implementation of individual automatic content scrapers for more than 30 content providers lead to an enormous diversity of the code base and finally to a maintenance challenge. Therefore, during the last two to three years, a strategic reorientation of the automated harvesting procedure has been proposed and implemented in TeSS using the Bioschemas profiles for Course, CourseInstance and TrainingMaterial. This approach will put the content providers in a more prominent position since they are in turn responsible for a more structured delivery of more comprehensive metadata of their training events and material to TeSS as the aggregation platform. In the longer run, this will increase the quality level of the aggregated resources and its usefulness to TeSS user base.
 
+> Would be insteresting to add a  box explaining the specificity of each?
+> Course: text text text
+> Course Instance: text text text
+> Trainig Material: text text text
+> ToDo: link slide from Patricia
+
 Content providers looking to promote use of particular tools and databases via their course offering or the specific training material can find information about them in other ELIXIR registries, such as [bio.tools](https://bio.tools) for tools and web services  and [FAIRsharing.org](https://fairsharing.org) for databases, standards and policies . Lately, such registries started to track training relating to the resources they list. Therefore, it is mutually beneficial that TeSS provides the relevant links, allowing users to search for resource-specific training; and the resource pages in bio.tools and FAIRsharing that contain reciprocal links for users to discover relevant training in TeSS.
+
+> Are TeSS, BioTools and FAIRsharing connected? In content? 
+> Is there are example of some tool with training material ou course linked in tess? 
+> I tried to find with a fast search, but couldn't find. Maybe I just need to dig a little more.
+> If so, I'll try to make an image to ilustrate it with one or two example.
 
 Related to the provisioning of persistent identifiers, TeSS provides the Digital Object Identifier (DOI) as a unique means to identify training material. Given that minting services by e.g. university libraries are not yet broadly available for teaching and learning material in contrast to research datasets and collections, associated workflows, software and models, we recommend to use services like OSF or zenodo to get own unique, persistent URLs and DOIs.
 
@@ -112,7 +133,9 @@ Given the engagement of the ELIXIR Train the Trainer instructor's community to c
             {{0}}
 *********************
 
-Training resources (both events and materials) may be searched in TeSS in several ways. If you are on the main page of TeSS, a general search can be performed based on keywords, which will return separate lists of events and materials. Alternatively, events or materials can be searched for independently of each other. This second approach allows more precise filtering on several parameters (e.g., event type, country, and target audience) alone or in combination. 
+Training resources (both events and materials) may be searched in TeSS in several ways. If you are on the main page of TeSS, a general search can be performed based on keywords, which will return separate lists of events and materials. Alternatively, events or materials can be searched for independently of each other. This second approach allows more precise filtering on several parameters (e.g., event type, country, and target audience) alone or in combination.
+
+![screenshot for TeSS page with search box](img/GxGphHo.png)
 
 In this protocol, we provide examples of searches for specific events or materials. Be aware that by searching for events, the standard search returns only future events. If you want to include past events, you need to click the **Show past event** button. 
 
@@ -125,7 +148,7 @@ Please navigate to [TeSS](https://tess.elixir-europe.org) and follow the steps s
 
 1. Select Events in the top menu.
 2. Click on the **Show past events** button.
-3. Enter ‘Single-cell’ as the keyword in the search text box on the right side of the page and click on the magnifier icon.
+3. **Search for** ‘Single-cell’ as the keyword in the search text box on the right side of the page. **You can click on the magnifier icon or press Enter**.
 4. On the side menu, scroll down to the Country facet. We will select the United Kingdom.
 5. On the side menu, scroll to the facet Target audience. Select ‘Graduate students’.
 6. As a result, you get the list of training events about single-cell data analysis available in the United Kingdom for Graduate students.
@@ -140,7 +163,15 @@ At the time of writing this protocol, you should find at least
 
 ## Protocol 2: Integrating TeSS widgets on your web site
 
+            {{0}}
+*********************
+
 Widgets are chunks of JavaScript code that can be copied into website source code to display TeSS content. There are several different styles and functionalities available from our configurable widget suite. Widgets can be used to enhance your site and offer your community lists of relevant events or training resources. There are examples of code on [this page](https://elixirtess.github.io/TeSS_widgets/).
+
+********************
+
+            {{1}}
+*********************
 
 1. For a tabular layout of events with filtering options, choose the specific widget type Events table with a sidebar. A working example is shown on the github pages from the ELIXIR TeSS team at https://elixirtess.github.io/TeSS_widgets. For training material, investigate the example for training materials on the same website.
 
@@ -177,12 +208,27 @@ function initTeSSWidgets() {
 
 5.	Remove the term ‘Python’ from the general search. Now, the table underneath should be updated with all the up-coming courses from Belgium and the United Kingdom. By adapting the other facets ‘Scientific Topics’ and ‘Target audience’, other filtering schemes can be established. At any time you may remove any of the filters you applied to reduce stringency of your search. If you would like to include past events in your search, click on the Show past events button.
 
+*****************
+
+            {{2}}
+*********************
+
 TODO: show our implementation of the TeSS widget
+
+*********************
 
 ## Protocol 3: Searching for e-learning materials in TeSS
 
+            {{0}}
+*********************
+
 E-learning resources are a specific type of training materials in TeSS which are displayed on the dedicated section **E-learning** on the main TeSS page. 
 But you can also perform a specific search on the Materials page filtering on 'Resource type' and retrieve e-learning material by specifying the value 'e-learning'.
+
+*********************
+
+            {{1}}
+*********************
 
 Please navigate to [TeSS](https://tess.elixir-europe.org).
 
@@ -196,9 +242,19 @@ Please navigate to [TeSS](https://tess.elixir-europe.org).
 
 5.	You get the list of training materials about data retrieval intended for a beginner level audience whereby the resource has been tagged as e-learning material. At any time you may remove any of the filters you applied to reduce stringency of your search.
 
+********************
+
 ## Protocol 4: Log into TeSS using an institutional account
 
+            {{0}}
+*********************
+
 In order to be able to register resources in TeSS you need to log in the registry. The following steps are specific for the login procedure with the Life Sciences Account. Alternatively, you can use another existing account like Google, Apple or an ORCID. In this case you will be redirected to the respective login portal.
+
+*********************
+
+            {{1}}
+*********************
 
 1.	Open your browser and go to [TeSS](https://tess.elixir-europe.org/). 
 
@@ -213,9 +269,19 @@ There are also options to log in using Google, Apple, ORCID, etc. accounts, but 
 5.	Check all the fields in your user profile are correct and click the “Update Profile” button.
 You will also see a button to log out of TeSS.
 
+*********************
+
 ## Protocol 5: Manual registration of a training event in TeSS
 
+            {{0}}
+*********************
+
 An event in TeSS is a link to a single training event sourced by a provider along with description and related meta information (e.g. date, location, audience, ontological categorization, keywords, etc.). Training events can be added manually or automatically harvested from a provider's website. Here is the procedure to register for training events manually.
+
+*********************
+
+            {{1}}
+*********************
 
 1. Login to TeSS at https://tess.elixir-europe.org following [Protocol 3](#6).
 
@@ -235,6 +301,12 @@ If your event is online, choosing the option Online will modify the form to fit 
 
 8. In the subsequent field Description, provide general information and relevant context about the training event in the form of short text, like in our example: “The course consists of introductory online material on producing count matrices and two face-to-face sessions on differential expression analysis in R and all the questions that arise when trying the analysis on your own data.”
 This field supports markdown syntax.
+
+********************
+
+            {{2}}
+*********************
+
 
 9. Specify the start date and door time of the event in the field Start via the pop-up Date and Time Picker. In our example, the event starts on the 29th of September 2022.
 
@@ -270,6 +342,12 @@ In our example, these are
 ○	Belgium
 ○	3000
 
+*******************
+
+            {{3}}
+*********************
+
+
 16. For the Eligibility field, there are three options you can choose from: First come first served, Registration of interest, By invitation. You could provide more than one eligibility type, if applicable. In our example, we enter First come, first serve.
 
 17. Enter for example ELIXIR-Belgium in the Organiser field.
@@ -293,6 +371,11 @@ You can enter the appropriate scientific topics according to the EDAM ontology. 
 23. Enter ‘Differential gene expression profiling’ in the Operations field.
 you can enter the appropriate operations according to the EDAM ontology. In case you do not have a matching entry, you could use the keywords field.
 
+*******************
+
+            {{4}}
+*********************
+
 24. Add e.g. 20 as maximum number of attendants to the event in the field Capacity. 
 
 25. Enter ‘Workshops and courses’ as Event type.
@@ -312,6 +395,11 @@ There are three choices: Free to all, Cost to non-members, Cost incurred by all.
 29. Select ‘VIB Training’ as Content Provider. 
 In case you do not find your organisation, please register it first as a Provider in TeSS. 
 
+**************
+
+            {{5}}
+*********************
+
 30. Search for ‘transcriptomics data analysis made easy’ in the Materials search box and select suggested training materials to associate with this course. Start typing keywords and a list of existing training materials will be listed to select from (click on the “+” sign).
 
 31. Select ‘ELIXIR Belgium’ as a node from the downtown list. Select the node the organiser(s) belong(s) to.
@@ -321,6 +409,8 @@ In case you do not find your organisation, please register it first as a Provide
 33. Click on the Add event button to finalize the manual registration.
 
 34. The resulting course can be visited [here](TODO).
+
+*******************
 
 ## Protocol 6: Manual registration of training material in TeSS
 
@@ -414,17 +504,36 @@ Images:
 
 ## Protocol 7: Registration of a content provider in TeSS
 
+            {{0}}
+*********************
+
 Training resources (events and materials) may be added to TeSS to reach bigger audiences, increase impact and bolster event attendance. Registering events and training materials makes them more findable in a variety of ways to various user bases. TeSS features content providers which are entities (such as academic institutions, non-profit organisations, portals etc.) that provide training materials of relevance to life sciences and ELIXIR. In order to have a training event automatically harvested in TeSS, as described in Protocol 7, a content provider has to be registered first. It also adds visibility to content providers. Here is the procedure to register a new content provider in TeSS.
 
+*********************
+
+            {{1}}
+*********************
+
 1. Login to TeSS at https://tess.elixir-europe.org following [Protocol 4](#4).
+
 2. To register a content provider, click on the Providers menu. 
-3. Click on “+ Register content provider”. 
-You will be directed to a form type of page. 
+
+3. Click on “+ Register content provider”. You will be directed to a form type of page.
+
 4.  As an example, we will create the content provider NanoCommons. Enter “NanoCommons“ in the Title field.
+
 5. In the URL field, enter the URL of the content provider, which is “https://www.nanocommons.eu/” in our example.
+
 6. Enter “Jean Dupont” as a contact person in the Contact field.
-7. In the subsequent field Description, provide general information and relevant context about the content provider in the form of short text, like in our example: “NanoCommons will deliver a sustainable and openly accessible nanoinformatics framework (knowledgebase and integrated computational tools, supported by expert advice, data interpretation and training), for assessment of the risks of NMs, their products and their formulations. NanoCommons combines Joint Research Activities to implement the nanoinformatics Knowledge Commons, Networking Activities to facilitate engagement with the research community, industry and regulators, and provision of funded Access to the nanoinformatics tools via funded calls for Transnational Access.”
-This field supports markdown syntax.
+
+7. In the subsequent field Description, provide general information and relevant context about the content provider in the form of short text, like in our example: “NanoCommons will deliver a sustainable and openly accessible nanoinformatics framework (knowledgebase and integrated computational tools, supported by expert advice, data interpretation and training), for assessment of the risks of NMs, their products and their formulations. NanoCommons combines Joint Research Activities to implement the nanoinformatics Knowledge Commons, Networking Activities to facilitate engagement with the research community, industry and regulators, and provision of funded Access to the nanoinformatics tools via funded calls for Transnational Access.” 
+
+    This field supports markdown syntax.
+
+***************
+
+            {{2}}
+*********************
 
 8. Enter the URL of the image location in the field under “or enter the URL”: https://www.nanocommons.eu/wp-content/uploads/2018/04/NanoCommons-Logo-Sphere-Trans-White-circle-512px.png  Upload an image if you cannot provide a URL where the image file is located.
 
@@ -438,10 +547,20 @@ This field supports markdown syntax.
 
 13. Confirm the creation of the content provider by clicking on ‘Register content provider’.
 
+******************
+
 ## Protocol 8: Automated harvesting of a training event in TeSS
+
+            {{0}}
+*********************
 
 Registering events and training materials makes them more findable in a variety ways to various user bases. TeSS features several options for automatically "harvesting" resources from external sources. This can be helpful if you are maintaining a large collection of events and materials that changes frequently. To register resources in TeSS automatically, we need to be able to extract data from target sources reliably. To this end, it is helpful if the data is structured according to a globally used standardized format. The following are examples of the kinds of structured data that TeSS can work with.
 If your website currently includes no structured data, and you’d like your resources added to TeSS, we recommend using Bioschemas to structure your site. Schema.org is a project running by a consortium of search engines. Schema.org has created an extensive library of schemas that web-masters can use to explicitly mark-up their websites content in order to improve search engine visibility and interoperability. Bioschemas is an initiative to supplement the work of schema.org to help improve the findability of online resources in the life sciences. TeSS supports the following Bioschemas profiles: for events that are courses CourseInstance and Course, for other events Event, for training materials TrainingMaterial. Fig. 3 displays a schematic overview of the protocol steps.
+
+*********************
+
+            {{1}}
+*********************
 
 1.	Select the profile Learning resource https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE for the automated harvesting of a specific training material from the NanoCommons initiative (https://nanocommons.github.io/user-handbook/) located at https://nanocommons.github.io/tutorials/enteringData/index.html.
 For training events, select Course/CourseInstance for training by using the profile described at https://bioschemas.org/profiles/CourseInstance.
@@ -506,16 +625,17 @@ More complex mechanisms for sitemap creation are available by using content mana
 8.	Commit your change, click the button to open a pull request, which will then be reviewed. After review, the new training material will appear in TeSS. 
 Your content should appear in TeSS the following day. Each source will be scraped once per day at ~3AM UTC.
 
+*****************
+
 ## Curation of manual content for automatically harvested event or training materials 
 
-In protocols 4 or 5 about manual provisioning of the information, it is important to note that much of the content in TeSS is retrieved and kept up-to-date via automated scrapers (see [protocol 8 Registering events/materials automatically](TODO)) that pull information from public web pages and APIs in regular intervals. To prevent TeSS from overwriting a field you have just changed, click the “locker” icon to lock the field. Fields marked as locked will not be overwritten by an automatic procedure.
+In protocols [5](#protocol-5-manual-registration-of-a-training-event-in-tess) or [6](#protocol-6-manual-registration-of-training-material-in-tess) about manual provisioning of the information, it is important to note that much of the content in TeSS is retrieved and kept up-to-date via automated scrapers (see [protocol 8 Registering events/materials automatically](#protocol-8-automated-harvesting-of-a-training-event-in-tess)) that pull information from public web pages and APIs in regular intervals. To prevent TeSS from overwriting a field you have just changed, click the “locker” icon to lock the field. Fields marked as locked will not be overwritten by an automatic procedure.
 
-For the training event, several mandatory fields have to be filled in, marked with the “*” symbol. There are also a number of optional fields. 
-For training material, several mandatory fields have to be filled in, marked with the “*” symbol. There are also a number of optional fields. 
+For the training event and material, several mandatory fields have to be filled in, marked with the “*” symbol. There are also a number of optional fields. 
 
 ## Recommendations for automated harvesting of a training event in TeSS
 
-In step 2 of Protocol 8, we recommend to follow the guidelines from the BioSchemas community on strategies on how to markup your internet sites by using this tutorial https://bioschemas.org/tutorials/howto/howto_add_markup. If your website is hosted on github, you can follow https://bioschemas.org/tutorials/howto/howto_add_github instead.
+In step 2 of [Protocol 8](#protocol-8-automated-harvesting-of-a-training-event-in-tess), we recommend to follow the guidelines from the BioSchemas community on strategies on how to markup your internet sites by using this tutorial https://bioschemas.org/tutorials/howto/howto_add_markup. If your website is hosted on github, you can follow https://bioschemas.org/tutorials/howto/howto_add_github instead.
 
 In step 3, in the case that you get an error during the validation procedure by the validator from schema.org, consult the properties definitions in the respective profile on schema.org and bioschemas.org. 
 In step 7, you need to have an account on github.com to edit the sources.yml file. It is important to make sure the title and url exactly match the Content Provider's title and URL on TeSS. You will make changes in the github project ElixirTeSS/bioschemas_sources, for which you don’t have write access to. Submitting a change will write it to a new branch in your fork <your github user name>/bioschemas_sources, so that you can send a pull request afterwards.
@@ -523,23 +643,17 @@ If you have implemented Bioschemas markup on your website and would like your co
 
 ## Troubleshooting
 
-In case, you experience issues with missing concepts in the EDAM ontology, potentially new properties in the form on the TeSS website, a missing hosting institution or synchronizations issues with the automated procedure, please refer to entries in the Table 1 for troubleshooting.
+In case, you experience issues with missing concepts in the EDAM ontology, potentially new properties in the form on the TeSS website, a missing hosting institution or synchronizations issues with the automated procedure, please refer to entries in the table below for troubleshooting.
 
+Sources and Solutions to Potential Errors
 
-| Header 1   | Header 2   |
-| :--------- | :--------- |
-| Item 1     | Item 2     |
-
-
-Table 1. Sources and Solutions to Potential Errors
-Problem	Possible Cause	Solution
-Missing concept in the EDAM ontology.	The EDAM ontology does not cover all scientific topics.	Select a term which is closely related or submit a request to add new concepts in the EDAM ontology if appropriate.
-There are new properties in the TeSS interface for events or material.	Sometimes new properties are added to the interface in TeSS.	Browse to the documentation on the TeSS web site.
-Your host institution is missing when you are registering an event or a material.	The dropdown of the host institutions is a fixed list.	Enter a new host organisation in the field.
-By using the automated harvesting protocol, your training material does not appear in TeSS on the next day.	The title and url don’t exactly match the Content Provider's title and URL on TeSS.
-	Double check that the title and url exactly match the Content Provider's title and URL on TeSS.
-By using the automated harvesting protocol, your training material does not appear in TeSS on the next day.	You might have provided a validated Bioschemas markup but the harvesting procedure in TeSS did not recognise all the properties correctly.	Submit an issue on the ELIXIRTeSS/Bioschemas_sources github repository.
-
+| Problem                                                                           | Possible Cause                                               | Solution                                                                                                            |
+| :-------------------------------------------------------------------------------- | :----------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------ |
+| Missing concept in the EDAM ontology.                                             | The EDAM ontology does not cover all scientific topics.      | Select a term which is closely related or submit a request to add new concepts in the EDAM ontology if appropriate. |
+| There are new properties in the TeSS interface for events or material.            | Sometimes new properties are added to the interface in TeSS. | Browse to the documentation on the TeSS web site.                                                                   |
+| Your host institution is missing when you are registering an event or a material. | The dropdown of the host institutions is a fixed list.       | Enter a new host organisation in the field.                                                                         |                                 
+| By using the automated harvesting protocol, your training material does not appear in TeSS on the next day. | The title and/or URL did not exactly match the Content Provider's title and URL on TeSS  | Double check that the title and url exactly match the Content Provider's title and URL on TeSS.| 
+| After using the automated harvesting protocol, your training material does not appear in TeSS the following day | You might have provided a validated Bioschemas markup but the harvesting procedure in TeSS did not recognise all the properties correctly.| Submit an issue on the ELIXIRTeSS/Bioschemas_sources github repository.                                                                                                     |
 
 
 ## Relevant internet resources
@@ -547,11 +661,15 @@ By using the automated harvesting protocol, your training material does not appe
 http://edamontology.org/: This is the main information site about the EDAM ontology, the ontology of bioscientific data analysis and data management. It is a comprehensive ontology of well-established, familiar concepts that are prevalent within bioscientific data analysis and data management (including computational biology, bioinformatics, and bioimage informatics). 
 
 https://schema.org/: Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond. On this web site, you can find 
+
 https://bioschemas.org/: The homepage of the Bioschemas community. Bioschemas aims to improve the Findability on the Web of life sciences resources such as datasets, software, and training materials. Here you can find all the information about the three Bioschemas Profiles implemented in this protocol at https://bioschemas.org/profiles as well as various tutorials at https://bioschemas.org/tutorials.
+
 https://validator.schema.org: This is the site where you can easily validate web sites which have been marked up with structured data as e.g. a JSON-LD object.
 
 https://github.com/ElixirTeSS/bioschemas_sources#readme: This is the README file of the github repository bioschemas_sources for the TeSS portal hosted in the ELIXIR TeSS github organisation. 
+
 https://github.com/TrainTheTrainer/ELIXIR-EXCELERATE-TtT:  This is the github repository ELIXIR-EXCELERATE-TtT hosted in the TrainTheTrainer github organisation. 
+
 https://elixirtess.github.io/TeSS_widgets. This is the github repository for TeSS widgets where several implementation scenarios are documented.
 
 
