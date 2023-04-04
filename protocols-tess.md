@@ -147,7 +147,7 @@ In this protocol, we provide examples of searches for specific events or materia
 Please navigate to [TeSS](https://tess.elixir-europe.org) and follow the steps shown below.
 
 1. Select Events in the top menu.
-2. Click on the **Show past events** button.
+2. Click on the **Show past events** button **at the bottom of the side menu**.
 3. **Search for** ‘Single-cell’ as the keyword in the search text box on the right side of the page. **You can click on the magnifier icon or press Enter**.
 4. On the side menu, scroll down to the Country facet. We will select the United Kingdom.
 5. On the side menu, scroll to the facet Target audience. Select ‘Graduate students’.
@@ -173,7 +173,11 @@ Widgets are chunks of JavaScript code that can be copied into website source cod
             {{1}}
 *********************
 
-1. For a tabular layout of events with filtering options, choose the specific widget type Events table with a sidebar. A working example is shown on the github pages from the ELIXIR TeSS team at https://elixirtess.github.io/TeSS_widgets. For training material, investigate the example for training materials on the same website.
+You can use these widgets to enhance your site and offer your community lists of relevant events or training resources! Check the examples of code on the [widget examples page](https://elixirtess.github.io/TeSS_widgets/). We will provide one example below.
+
+**How to implement a tabular layout:**
+
+1. Choose the specific widget type **Events table with a sidebar**. A working example is shown on the github pages from the ELIXIR TeSS team at https://elixirtess.github.io/TeSS_widgets. 
 
 2.	Manually annotate the HTML web site e.g. index.html with the code snippet for the TeSS widget. More specifically, enter the code snippet as shown below as a sibling of a div element.
 
@@ -203,10 +207,17 @@ function initTeSSWidgets() {
 ```
 
 3.	Save the HTML page and serve the HTML page for visual inspection.
+TODO: explain how to do this
 
 4.	Validate visually that the rendered HTML page includes a table with the Events extracted from TeSS. It will show a filtered list according to the values in the params section (see snippet from step 2). In this case, all future courses aggregated in TeSS will be live filtered on the general search term ‘Python’ and display only the courses from ‘Belgium’ and ‘United Kingdom’.
 
-5.	Remove the term ‘Python’ from the general search. Now, the table underneath should be updated with all the up-coming courses from Belgium and the United Kingdom. By adapting the other facets ‘Scientific Topics’ and ‘Target audience’, other filtering schemes can be established. At any time you may remove any of the filters you applied to reduce stringency of your search. If you would like to include past events in your search, click on the Show past events button.
+5. You can adapt the code:
+- Remove the term ‘Python’ from the general search. Now, the table underneath should be updated with all the up-coming courses from Belgium and the United Kingdom. 
+- By adapting other facets like ‘Scientific Topics’ and ‘Target audience’, other filtering schemes can be established. 
+
+At any time you may remove any of the filters you applied to reduce stringency of your search. If you would like to include past events in your search, click on the Show past events button.
+
+If you'd like to use these widgets for training materials, investigate the example for training materials on the [same website](https://elixirtess.github.io/TeSS_widgets/).
 
 *****************
 
@@ -223,6 +234,9 @@ TODO: show our implementation of the TeSS widget
 *********************
 
 E-learning resources are a specific type of training materials in TeSS which are displayed on the dedicated section **E-learning** on the main TeSS page. 
+
+![screenshot for TeSS page with search box](img/CXt2MEE.jpg)
+
 But you can also perform a specific search on the Materials page filtering on 'Resource type' and retrieve e-learning material by specifying the value 'e-learning'.
 
 *********************
@@ -251,6 +265,8 @@ Please navigate to [TeSS](https://tess.elixir-europe.org).
 
 In order to be able to register resources in TeSS you need to log in the registry. The following steps are specific for the login procedure with the Life Sciences Account. Alternatively, you can use another existing account like Google, Apple or an ORCID. In this case you will be redirected to the respective login portal.
 
+**We will not be able to provide a detail procedure for all the federated authentication mechanisms here. Try the example below.**
+
 *********************
 
             {{1}}
@@ -263,10 +279,17 @@ In order to be able to register resources in TeSS you need to log in the registr
 3.	To log in using your institutional account, choose Log in with LS Login from the dropdown menu
 You will be redirected to the LifeScience RI authentication page (TODO Fig. 1).
 
-4.	Start typing the name of your own institution, for instance ‘CNRS’, into the text box then choose the appropriate option that appears and proceed with your usual institutional login procedure (Fig. 2). You should now be logged into TeSS. Once successful, you should be taken to the TeSS Welcome page with a message stating “Logged in successfully.”  You should also see your username in the top bar of the page, which you can click to view and edit your TeSS profile.
-There are also options to log in using Google, Apple, ORCID, etc. accounts, but we will not be able to provide a detail procedure for all the federated authentication mechanisms here.
+![screenshot for login page](img/6dXdfgu.jpg)
 
-5.	Check all the fields in your user profile are correct and click the “Update Profile” button.
+4.	Start typing the name of your own institution, for instance ‘VIB’, into the text box then choose the appropriate option that appears and proceed with your usual institutional login procedure (Fig. 2). 
+
+![screenshot for login page](img/l5mQUND.png)
+
+5. You should now be logged into TeSS. Once successful, you should be taken to the TeSS Welcome page with a message stating “Logged in successfully.”  You should also see your username in the top bar of the page, which you can click to view and edit your TeSS profile.
+
+![screenshot for login page](img/meCcJjO.png)
+
+6.	Check all the fields in your user profile are correct and click the “Update Profile” button.
 You will also see a button to log out of TeSS.
 
 *********************
@@ -276,7 +299,15 @@ You will also see a button to log out of TeSS.
             {{0}}
 *********************
 
-An event in TeSS is a link to a single training event sourced by a provider along with description and related meta information (e.g. date, location, audience, ontological categorization, keywords, etc.). Training events can be added manually or automatically harvested from a provider's website. Here is the procedure to register for training events manually.
+A training event is, in Bioschemas, a course instance, while an event is something different. So, let’s start this session pointing a few differences of each profile:
+
+A unique event such a congress, symposium, webinar will be classified using the Event profile in Schemas.org, while a the Course profile is attached to a unit of teaching that typically lasts one or more academic terms, is led by one or more instructors (teachers or professors), and has a fixed roster of students. A course usually covers an individual subject. Such a course will be linked to several course instances that happen at different moments, locations and might be also subjected to updates and small differences in the material. A course and/or course instance should be linked to a course material, that represents the content of this course/course instance. In TeSS, though, courses and courses instance are in called Event in the interface, while this is not the same as the profile in Bioschemas. It works to filter among all courses, webinars, symposia, congresses etc.
+
+Such an event in TeSS is a link to a single training event sourced by a provider along with description and related meta information (e.g. date, location, audience, ontological categorization, keywords, etc.). 
+
+Training events in TeSS can be added manually or automatically harvested from a provider's website. Here is the procedure to register for training events manually.
+
+![screenshot for login page](img/rhh0rv5.png)
 
 *********************
 
