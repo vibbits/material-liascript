@@ -1,0 +1,48 @@
+@media screen and (min-width: 700px) {
+    
+  .main-info {
+      float:left;
+      width: calc(100% - 260px);
+  }
+
+  .sub-info {
+      float: right;
+      width: 240px;
+      height: 70vh !important;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+  }
+
+}
+
+details {
+  border: 2px black solid;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+summary {
+  font-size: large;
+  border-bottom: 1px black solid;
+}
+
+.orcid-logo-for-author-list {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-right: 2.2rem;
+}
+
+.orcid-logo-for-author-list ::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    transform: translateY(-50%);
+    background: transparent url(https://f1000research.com/img/icon/orcid_icon.png) center center no-repeat;
+    background-image: url("https://f1000research.com/img/icon/orcid_icon.png");
+    background-size: auto;
+    width: 1.8rem;
+    height: 1.8rem;
+}
