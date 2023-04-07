@@ -17,6 +17,10 @@ link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
 script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 
+link: style.css
+
+@orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
+
 -->
 
 # Protocols for efficient use of TeSS
@@ -29,8 +33,6 @@ Hello and welcome, this is our interactive hands-on course about efficient use o
 > following link/badge:
 >
 > [![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/vibbits/material-liascript/master/protocols-tess.md)
-
-![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)
 
 To prepare this training material, we have reused the content of the publication 'Making Bioinformatics Training Events and Material More Discoverable Using TeSS, the ELIXIR Training Portal' published in Current Protocols in Bioinformatics. The original publication of the protocols can be found [here](https://doi.org/10.1002/cpz1.682). 
 
@@ -56,13 +58,13 @@ The goal of VIB Technology Training is to up-skill life scientists to excel in t
 
 *Editorial team for this course*
 
-Authors: Alexander Botzki [![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/1024px-ORCID_iD.svg.png?20190308043226)](https://orcid.org/0000-0001-6691-4233)
+Authors: @[orcid(Alexander Botzki)](https://orcid.org/0000-0001-6691-4233)
 
-Contributors: Finn Bacall, Aitor Apaolaza, Munazah Andrabi, Chris Child, Carole Goble, Olivier Sand, Bruna Piereck [![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/1024px-ORCID_iD.svg.png?20190308043226)](https://orcid.org/0000-0001-5958-0669)
+Contributors: Finn Bacall, Aitor Apaolaza, Munazah Andrabi, Chris Child, Carole Goble, Olivier Sand, @[orcid(Bruna Piereck)](https://orcid.org/0000-0001-5958-0669)
 
 Technical Editors: Alexander Botzki
 
-License: [![images](img/picture003.jpg)](http://creativecommons.org/licenses/by/4.0/)
+License: [![CC BY](img/picture003.jpg)](http://creativecommons.org/licenses/by/4.0/)
 
 ## Introduction
 
