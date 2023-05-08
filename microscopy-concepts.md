@@ -352,7 +352,7 @@ source: https://www.oocities.org/rjwarren_stm/Physics_Notes/Unit1_Light.html (ce
 
 #### Magnification and measurement
 
-                --{{0}}--
+                --{{0}}
 *************************
 
 Magnification is the amount that the dimensions of an image are, or appear to be, enlarged compared to the same dimensions in the actual sample. How much you can see either through the eyepiece or on the screen is called the field of view (FOV).
