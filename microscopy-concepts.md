@@ -364,7 +364,7 @@ The magnification is determined by the power of the eyepiece (or camera factor) 
 
 Describing an image as showing a given magnification only applies to a fixed display size. If an image is enlarged, then so is its magnification. When images were captured onto a fixed-sized photographic film negative, it was clear that the negative showed a certain magnification such as 200x or 50,000x and that any increase in size when an image was printed could easily be calculated and used to increase the magnification factor. Magnification for digital images is usually calibrated in the microscope software. If it hasn’t been, or to check the calibration, capture an image of a stage micrometer. You can then determine the pixel size by looking at how many pixels in the image cover a measured distance on the micrometer. In a light microscope, you can also use a haemacytometer for this if you don’t have a stage micrometer.
 
-![screenshot for TeSS page with search box](img/GxGphHo.png)
+![calibration](img/)
 
 Other more effective ways to represent the extent of magnification, and therefore the size of features in the image, regardless of display size include:
 
@@ -384,17 +384,31 @@ Divide the size of the feature by the measured length of the scale bar and multi
 
 Resolution is the ability to see small, close together objects as distinctly separate.
 
-As an example, in a light microscope, more light can be captured by an objective lens that has a larger numerical aperture. This in turn will give higher resolution. The theoretical limit of resolution on a light microscope is about 200 nanometres (half the wavelength of violet light).
-
-![Pluto magnified image](https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/7-8-15_pluto_color_new_nasa-jhuapl-swri-tn.jpg "This image of Pluto from New Horizons’ Long Range Reconnaissance Imager (LORRI) was received on July 8, 2015 and has been combined with lower-resolution color information from the Ralph instrument. Image Credit: NASA-JHUAPL-SWRI")
+![Pluto magnified image](https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/7-8-15_pluto_color_new_nasa-jhuapl-swri-tn.jpg "This magnified image of Pluto from New Horizons’ Long Range Reconnaissance Imager (LORRI) was received on July 8, 2015 and has been combined with lower-resolution color information from the Ralph instrument. Image Credit: NASA-JHUAPL-SWRI")
 ![image pluto](https://cdn.mos.cms.futurecdn.net/gkoMMm5DE4BioZDQnBKQMK-1920-80.jpg.webp  "This optical image of the June 23, 2011 Pluto occultation star field was taken from American Astronomical Society press officer Rick Fienberg from his home observatory in New Hampshire. (Image credit: Rick Feinberg via Sofia Observatory Science Center)" )
 ![Pluto high resolution](https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0FGIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fa3ee29d4094fd4a72b211b24a013a0697ef6c65/pluto_lorri_ralph_20150713_2017.jpg?disposition=attachment "Color Pluto, July 13, 2015. Source: NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute ")
 
-Resolution is determined by the numerical aperture of the objective lens.
+As an example, in a light microscope, more light can be captured by an objective lens that has a larger numerical aperture. This in turn will give higher resolution. The theoretical limit of resolution on a light microscope is about 200 nanometres (half the wavelength of violet light).
 
 TODO: add images and explanation with airy disc size
-
 from olympus 
+
+#### Diffraction and resolution are closely related
+
+The closer two points are, the more oblique angle an angle of light it produces as compared to points that are further apart; specimens with more closely spaced points (fine detail) require an objective lens that can collect light from a wider angle.
+
+TODO: add two image miniute 31 video
+
+An objective with a large angular aperture can collect light from more oblique angles (the diffraction pattern produced by two closely spaced points). This lens will have a greater resolution than a lens with a lower numerical aperture.
+
+TODO: add schema 31:18
+
+#### Abbe criterion
+
+Abbe's criterion describes how we define how much we can resolve with a given numerical aperture and wavelength.
+
+![Pluto magnified image](https://de.wikipedia.org/wiki/Ernst-Abbe-Denkmal#/media/Datei:Abbe_F%C3%BCrstengraben23_2014.jpg "Ernst Abbe memorial in Jena - Am Fürstengraben 23, own Ulrike Boehm")
+![Pluto high resolution](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Ernst-Abbe-Denkmal_Jena_F%C3%BCrstengraben_-_20140802_125709.jpg/320px-Ernst-Abbe-Denkmal_Jena_F%C3%BCrstengraben_-_20140802_125709.jpg "Ernst-Abbe memorial in Jena, Am Fürstengraben 23, own work Daniel Mietchen")
 
 ### Lens design and nomenclature
 
