@@ -388,7 +388,9 @@ Resolution is the ability to see small, close together objects as distinctly sep
 ![image pluto](https://cdn.mos.cms.futurecdn.net/gkoMMm5DE4BioZDQnBKQMK-1920-80.jpg.webp  "This optical image of the June 23, 2011 Pluto occultation star field was taken from American Astronomical Society press officer Rick Fienberg from his home observatory in New Hampshire. (Image credit: Rick Feinberg via Sofia Observatory Science Center)" )
 ![Pluto high resolution](https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0FGIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fa3ee29d4094fd4a72b211b24a013a0697ef6c65/pluto_lorri_ralph_20150713_2017.jpg?disposition=attachment "Color Pluto, July 13, 2015. Source: NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute ")
 
-As an example, in a light microscope, more light can be captured by an objective lens that has a larger numerical aperture. This in turn will give higher resolution. The theoretical limit of resolution on a light microscope is about 200 nanometres (half the wavelength of violet light).
+Different lenses can allow the passage of the illuminating beam to different extents. The more illumination that passes through a lens, the greater the resolution of the system. In different microscopy techniques this is controlled in different ways. In lenses for visible light microscopy, lenses are manufactured so they can gather more or less light. The relative amount of light gathered by a lens is known as its numerical aperture (NA). The greater the NA number, the more light it gathers and the greater the resolution it gives. Higher NA lenses are also more expensive, and their effectiveness is limited by inherent aberrations. This has been described before.
+
+![lenses and numerical aperture](img/lens-NA.jpg) 
 
 TODO: add images and explanation with airy disc size
 from olympus 
@@ -405,22 +407,35 @@ TODO: add schema 31:18
 
 #### Abbe criterion
 
-Abbe's criterion describes how we define how much we can resolve with a given numerical aperture and wavelength.
+Abbe's criterion describes how we define how much we can resolve with a given numerical aperture and wavelength. The theoretical limit of resolution on a light microscope is about 200 nanometres (half the wavelength of violet light).
 
-![Pluto magnified image](https://de.wikipedia.org/wiki/Ernst-Abbe-Denkmal#/media/Datei:Abbe_F%C3%BCrstengraben23_2014.jpg "Ernst Abbe memorial in Jena - Am Fürstengraben 23, own Ulrike Boehm")
+TODO: add short explanation on 2n*sin(alpha)
+
+![Pluto magnified image](img/abbe-equation-statue.jpg "Ernst Abbe memorial in Jena - Am Fürstengraben 23, own Ulrike Boehm, https://de.wikipedia.org/wiki/Ernst-Abbe-Denkmal#/media/Datei:Abbe_F%C3%BCrstengraben23_2014.jpg")
 ![Pluto high resolution](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Ernst-Abbe-Denkmal_Jena_F%C3%BCrstengraben_-_20140802_125709.jpg/320px-Ernst-Abbe-Denkmal_Jena_F%C3%BCrstengraben_-_20140802_125709.jpg "Ernst-Abbe memorial in Jena, Am Fürstengraben 23, own work Daniel Mietchen")
 
 ### Lens design and nomenclature
 
-Different lenses can allow the passage of the illuminating beam to different extents. The more illumination that passes through a lens, the greater the resolution of the system. In different microscopy techniques this is controlled in different ways. In lenses for visible light microscopy, lenses are manufactured so they can gather more or less light. The relative amount of light gathered by a lens is known as its numerical aperture (NA). The greater the NA number, the more light it gathers and the greater the resolution it gives. Higher NA lenses are also more expensive, and their effectiveness is limited by inherent aberrations. This is described below.
+Cross-section of an Zeiss microscope objective / compound lens
+TODO: add more description here
 
-![lenses and numerical aperture](img/lens-NA.jpg)
+![Pluto magnified image](img/abbe-equation-statue.jpg "Ernst Abbe memorial in Jena - Am Fürstengraben 23, own Ulrike Boehm, https://de.wikipedia.org/wiki/Ernst-Abbe-Denkmal#/media/Datei:Abbe_F%C3%BCrstengraben23_2014.jpg")
 
-TODO: add diagrams
+Achromatic Objective Lenses- Achromatic objectives are are standard objectives found on microscopes entry level educational microscopes. Achromatic lenses have a 60-70% flat field which means the outer 40-30% of your field of view will be out of focus.
+
+Semi-Plan Objective Lenses- Semi-Plan microscope objective lenses provide an 80% flat field of view.
+
+Plan Achromat Objective Lenses- Plan Achromat objectives provide just about 100% flat field of view.
+
+TODO: add diagrams (Zeis)
 
 ### Color coding of objectives
 
-TODO: add illustrations
+TODO: add illustrations from presentation
+
+Zeiss illustration
+
+![explanation objective Zeiss catalogue](img/catalogue-objectives-zeiss.png "from Zeiss catalogue")
 
 ## Calibrations
 
@@ -428,17 +443,52 @@ Any measurements made during imaging are only as accurate as the instrument cali
 
 ## Köhler illumination
 
+![August Köhler (March 4, 1866 – March 12, 1948)](https://upload.wikimedia.org/wikipedia/commons/f/f7/August_K%C3%B6hler_%281866-1948%29_%288527804902%29.jpg "August Köhler (March 4, 1866 – March 12, 1948) was a German professor and early staff member of Carl Zeiss in Jena, Germany. He is best known for his development of the microscopy technique of Köhler illumination, an important principle in optimizing microscopic resolution power by evenly illuminating the field of view., photo from GLAM collaboration with Carl Zeiss Microscopy")
+
+TODO: add schema with the basic nomenclature
+
+Step 1: Switch on the microscope and put a sample in the sample holder.
+
+Step 2: Use the focus knob to focus the sample.
+
+TODO: add video fragment (0:08 - 0:17)
+
+Step 3: Open the condenser diaphragm. Close the field diaphragm.
+
+TODO: add video fragment (0:20 - 0:25)
+
+Step 4: Focus the field diaphragm. Do not touch the focus knob, but move the condenser up and down.
+
+TODO: add video fragment (0:31 - 0:36) 
+
+Step 5: Center the field diaphragm. Use the metal screws that stick out of the front of the condenser.
+
+TODO: add video fragment (0:42 - 0:46) 
+
+Step 6: Open the field diaphragm, until the entire field of view is illuminated. Do not open the field diaphragm further than this.
+
+TODO: add video fragment (0:53 - 0:57)
+
+Step 7: Take out an eyepiece and look down the tube.
+
+TODO: add video fragment (1:00 - 1:06)
+
+Step 8: Close the condenser diaphragm until 1/3 of the field is closed and 2/3 is open.
+
+TODO: add sketch
+
+Step 9: Put back the eyepiece and you are ready to examine your sample.
+
+TODO: add end of clip
+
+To evenly illuminate the field of view and reduce optical glare from the light source.
+
+TODO: add images
+
+### Conjugate plane
 
 
-## Nyquist sampling
 
-When capturing images with a digital camera, the pixel size you choose relates to resolution of your final image. If you do not choose enough pixels you will not be able to capture enough of the data to accurately see the features you are interested in and artifacts such as aliasing can distort your image.
-
-To work out the pixel size you need to achieve a given degree of resolution, Harry Nyquist calculated that you need at least 2.3 pixels for each unit of resolution that you need. For example, if you need to see a resolution of 1µm, then you need 2.3 pixels/µm to optimally capture an image of your sample.
-
-![screenshot for TeSS page with search box](img/GxGphHo.png)
-
-Microscopy can be extremely useful for object tracking over time and observing dynamic processes. When capturing a time course, it is important to select the number of time points that provide experimentally meaningful information, but not so many that you risk damaging your sample through beam–sample interactions or end up collecting vast quantities of unnecessary data that requires processing and storage.
 
 ## Detectors and Cameras
 
@@ -591,3 +641,13 @@ Technique examples: bright-field transmitted light microscopy, bright-field TEM,
     Staining is often used to generate contrast in transmission techniques. With very thin and transparent samples such as cells and tissue sections, some kind of staining or labelling is often necessary to enhance sample interactions with the beam to increase contrast and make features more visible. Stains tend to bind either generally or differentially to chemicals such as proteins, lipids or nucleic acids within the sample to absorb certain wavelengths, or to fluoresce, emitting at distinctive wavelengths. Examples are dyes, heavy metals and fluorescently labelled antibodies.
 
     Technique examples: histological stains such as haematoxylin and eosin, or toluidine blue for bright-field light microscopy, heavy metal staining such as osmium, or gold-labelled antibodies for TEM, fluorescent labelling for many fluorescence techniques.
+
+## Nyquist sampling
+
+When capturing images with a digital camera, the pixel size you choose relates to resolution of your final image. If you do not choose enough pixels you will not be able to capture enough of the data to accurately see the features you are interested in and artifacts such as aliasing can distort your image.
+
+To work out the pixel size you need to achieve a given degree of resolution, Harry Nyquist calculated that you need at least 2.3 pixels for each unit of resolution that you need. For example, if you need to see a resolution of 1µm, then you need 2.3 pixels/µm to optimally capture an image of your sample.
+
+![screenshot for TeSS page with search box](img/GxGphHo.png)
+
+Microscopy can be extremely useful for object tracking over time and observing dynamic processes. When capturing a time course, it is important to select the number of time points that provide experimentally meaningful information, but not so many that you risk damaging your sample through beam–sample interactions or end up collecting vast quantities of unnecessary data that requires processing and storage.
