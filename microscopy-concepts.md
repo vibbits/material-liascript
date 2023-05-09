@@ -443,7 +443,10 @@ Any measurements made during imaging are only as accurate as the instrument cali
 
 ## Köhler illumination
 
-![August Köhler (March 4, 1866 – March 12, 1948)](https://upload.wikimedia.org/wikipedia/commons/f/f7/August_K%C3%B6hler_%281866-1948%29_%288527804902%29.jpg "August Köhler (March 4, 1866 – March 12, 1948) was a German professor and early staff member of Carl Zeiss in Jena, Germany. He is best known for his development of the microscopy technique of Köhler illumination, an important principle in optimizing microscopic resolution power by evenly illuminating the field of view., photo from GLAM collaboration with Carl Zeiss Microscopy")
+![August Köhler (March 4, 1866 – March 12, 1948)](https://upload.wikimedia.org/wikipedia/commons/f/f7/August_K%C3%B6hler_%281866-1948%29_%288527804902%29.jpg "August Köhler (March 4, 1866 – March 12, 1948) was a German professor and early staff member of Carl Zeiss in Jena, Germany. He is best known for his development of the microscopy technique of Köhler illumination, an important principle in optimizing microscopic resolution power by evenly illuminating the field of view., photo from GLAM collaboration with Carl Zeiss Microscopy")<!--
+style = "height: 100px;
+         border: 10px solid;"
+-->
 
 TODO: add schema with the basic nomenclature
 
