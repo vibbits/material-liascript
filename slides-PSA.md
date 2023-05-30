@@ -33,7 +33,7 @@ debug: true
 ## Amino acids and peptide structure
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/amino-acids.png)<!-- width="100%" -->
-
+https://www.youtube.com/watch?v=iBV67yamqlA&list=PLuIpgNT2hMwRQKFy4okoNQKiJwM8li3Sz&index=20
 ## The Structure-Function Connection
 
 - Folded proteins provide a well-defined 3D arrangement of functional groups, creating microenvironments and active sites.
