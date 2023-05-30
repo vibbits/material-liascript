@@ -41,6 +41,8 @@ debug: true
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/hemoglobin.png)<!-- height="600px" -->
 
+![](https://www.youtube.com/watch?v=E6LHoKe-zRU&list=PLuIpgNT2hMwRQKFy4okoNQKiJwM8li3Sz&index=13)
+
 ## Databases
 
                            {{0-1}}
@@ -75,6 +77,7 @@ debug: true
 *********************
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/xray-tech-setup.png)<!-- width="100%" -->
 
+![](https://www.youtube.com/watch?v=4HZoDjJ4A2k Lecture 01, concept 18: Protein structure determination - X-ray crystallography & Cryo-EM)
 *******************
 
                        --{{0}}--
