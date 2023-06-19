@@ -58,12 +58,14 @@ License: [![images](https://raw.githubusercontent.com/vibbits/material-liascript
 
 --------------------------------------------------------------------
 
-                   {{0}}
-*************************
+## Introduction
 
-## Introduction: What is TeSS ?
+In the following sessions a summary of what is the TeSS portal and what are the benefits to use it.
 
-<img src="https://raw.githubusercontent.com/vibbits/material-liascript/cd66568cd2f043fc2297222261e7f7423dfd4f72/img/TeSS_img/portal.svg" title="" alt="porta lady" width="433"> 
+### What is TeSS ?
+
+<img src="https://raw.githubusercontent.com/vibbits/material-liascript/cd66568cd2f043fc2297222261e7f7423dfd4f72/img/TeSS_img/portal.svg" title="" alt="portal lady" width="433"> 
+.
 
 TeSS is a portal for **Trainers**  and **Trainees**.
 
@@ -96,14 +98,10 @@ Check more in this links:
 [Training eSupport System (TeSS), ELIXIR’s training portal]([https://tess.elixir-europe.org](https://tess.elixir-europe.org)). 
 More information about TeSS can be found in [this publication](https://doi.org/10.1093/bioinformatics/btaa047).
 
-*************************
+### Why TeSS ?
 
-                 {{1}}
-*************************
-
-## Introduction: Why TeSS ?
-
-<img title="" src="https://raw.githubusercontent.com/vibbits/material-liascript/cd66568cd2f043fc2297222261e7f7423dfd4f72/img/TeSS_img/portal.svg" alt="porta lady" width="433"> 
+<img title="" src="https://raw.githubusercontent.com/vibbits/material-liascript/cd66568cd2f043fc2297222261e7f7423dfd4f72/img/TeSS_img/portal.svg" alt="portal lady" width="433"> 
+.
 
 - Sharing training material in TeSS has **several benefits**
   
@@ -125,7 +123,7 @@ More information about TeSS can be found in [this publication](https://doi.org/1
   
   - increase the FAIRness of training materials and events.
 
-### To be part of this portal you can
+**To be part of this portal you can**
 
 - Manually insert content
 
@@ -133,66 +131,64 @@ More information about TeSS can be found in [this publication](https://doi.org/1
   
   - TeSS use a scraping mechanism to aggregate training resources from many providers when they have been annotated using training specific [BioSchemas specifications](https://doi.org/10.1101/2022.11.24.516513). 
 
-***************
+### Curent limitations
 
-                     {{2}}
+(Work in progress...)
+
+### More background information about TeSS
+
+
+                     {{0}}
 **************************
 
-## More background information about TeSS
+- 1st implementation
 
 During the ELIXIR-EXCELERATE project, the TeSS platform has been established as the **key application** for bioinformatics **training events and material aggregation**. During a period of further adoption of the TeSS platform as such on the international level e.g. in Australia and in the Netherlands, it became obvious that the implementation of individual automatic content scrapers for more than 30 content providers lead to an **enormous diversity** of the code base and finally to a **maintenance challenge**. 
 
 Therefore, since ~2020 , a strategic **reorientation of the automated harvesting** procedure has been proposed and implemented in TeSS **using the Bioschemas profiles** for Course, CourseInstance and TrainingMaterial. 
 
+**************************
+
+                     {{1}}
+**************************
+
+- Structure
+
 This approach will put the content providers in a more prominent position since they are in turn responsible for a more **structured delivery** of more **comprehensive metadata** of their training events and material to TeSS as the aggregation platform. In the longer run, this will **increase the quality** level of the aggregated resources and its **usefulness** to TeSS user base.
+
 
 Related to the provisioning of persistent identifiers, TeSS provides the Digital Object Identifier (DOI) as a unique means to identify training material. Given that minting services by e.g. university libraries are not yet broadly available for teaching and learning material in contrast to research datasets and collections, associated workflows, software and models, **we recommend to use services like OSF or zenodo to get own unique, persistent URLs and DOIs**.
 
+**************************
+
+                     {{2}}
+**************************
+
+- Egagement and Good practice
+
 Given the engagement of the ELIXIR Train the Trainer instructor's community to create a vibrant environment for reciprocal support and exchange of experiences via the ELIXIR Train the Trainer programme, the TeSS content providers are **encouraged to  follow best-practice** guidance on course and training material development (Via et al., 2020). Therefore, we recommend applying the **Bloom hierarchy** of cognitive skills to formulate the **Learning objectives** for the courses as well as for training material. For more detailed information about our pedagogical model, please browse to the course material of the [ELIXIR Train the Trainer course](https://github.com/TrainTheTrainer/ELIXIR-EXCELERATE-TtT). 
 
-## Aditionally
+**************************
+
+                     {{3}}
+**************************
+
+
+- Aditionally (other content)
 
 Content providers looking to promote use of **particular tools and databases** via their course offering or the specific training material can find information about them in other ELIXIR registries, such as [**bio.tools**](https://bio.tools) for tools and web services and [**FAIRsharing.org**](https://fairsharing.org) for databases, standards and policies . Lately, such registries started to track training relating to the resources they list. Therefore, it is mutually beneficial that TeSS provides the relevant links, allowing users to search for resource-specific training; and the resource pages in bio.tools and FAIRsharing that contain reciprocal links for users to discover relevant training in TeSS.
 
-
-
-[Protocol 1](#3): Searching for training events in TeSS
-
-[Protocol 2](#4): Integrating TeSS widgets on your web site
-
-[Protocol 3](#5): Searching for e-learning materials in TeSS
-
-[Protocol 4](#6): Log into TeSS using an institutional account
-
-[Protocol 5](#7): Manual registration of a training event in TeSS
-
-[Protocol 6](#8): Manual registration of training material in TeSS
-
-[Protocol 7](#9): Registration of a content provider in TeSS
-
-[Protocol 8](#10): Automated harvesting of a training event in TeSS
-
 *****************
 
-```
-                 {{3}}
-```
-
-*****************
-
-             {{0}}
-*********************
-
-## Protocol 1: Searching for training events in TeSS
+## Searching for training events in TeSS
 
 Training resources (both events and materials) may be searched in TeSS in several ways. If you are on the main page of TeSS, a general search can be performed based on keywords, which will return separate lists of events and materials. Alternatively, events or materials can be searched for independently of each other. This second approach allows more precise filtering on several parameters (e.g., event type, country, and target audience) alone or in combination. 
 
 In this protocol, we provide examples of searches for specific events or materials. Be aware that by searching for events, the standard search returns only future events. If you want to include past events, you need to click the **Show past event** button. 
 
-*****************
+--------------------------------------------------------------------
 
-              {{1}}
-
+              {{0}}
 **********************
 
 Please navigate to [TeSS](https://tess.elixir-europe.org) and follow the steps shown below.
@@ -210,7 +206,7 @@ TODO: enter summary/solution
 check on the solution via using API
 At the time of writing this protocol, you should find at least 
 
-*********
+**********************
 
 ## Protocol 2: Integrating TeSS widgets on your web site
 
