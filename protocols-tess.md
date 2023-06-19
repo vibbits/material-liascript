@@ -32,7 +32,7 @@ Hello and welcome, this is our interactive hands-on course about efficient use o
 
 The original publication of the protocols can be found [here](https://doi.org/10.1002/cpz1.682). We have reused the content to prepare this training material.
 
---------------------------------------------
+--------------------------------------------------------------------
 
 **_About ELIXIR Training Platform_**
 
@@ -46,7 +46,7 @@ As part of the VIB Technologies, the 12 VIB Core Facilities, provide support in 
 
 The goal of VIB Technology Training is to up-skill life scientists in various topics like ...
 
---------------------------------------------
+--------------------------------------------------------------------
 
 *Editorial team for this course*
 
@@ -54,17 +54,16 @@ Authors: Alexander Botzki and Bruna Piereck
 
 Technical Editors: Alexander Botzki
 
-License: [![images](img/picture003.jpg)](http://creativecommons.org/licenses/by/4.0/)
+License: [![images](https://raw.githubusercontent.com/vibbits/material-liascript/cd66568cd2f043fc2297222261e7f7423dfd4f72/img/CCby.svg)](http://creativecommons.org/licenses/by/4.0/)
 
-## Introduction
+--------------------------------------------------------------------
 
-                {{0}}
-
+                   {{0}}
 *************************
 
-## What is TeSS
+## Introduction: What is TeSS ?
 
-<img title="" src="file:///C:/Users/piere/OneDrive/Documentos/Courses/FAIR-Material/material-liascript/img/TeSS_img/portal.svg" alt="portal" width="438">
+<img src="https://raw.githubusercontent.com/vibbits/material-liascript/cd66568cd2f043fc2297222261e7f7423dfd4f72/img/TeSS_img/portal.svg" title="" alt="porta lady" width="433"> 
 
 TeSS is a portal for **Trainers**  and **Trainees**.
 
@@ -97,17 +96,14 @@ Check more in this links:
 [Training eSupport System (TeSS), ELIXIR’s training portal]([https://tess.elixir-europe.org](https://tess.elixir-europe.org)). 
 More information about TeSS can be found in [this publication](https://doi.org/10.1093/bioinformatics/btaa047).
 
----
+*************************
 
-```
                  {{1}}
-```
+*************************
 
----
+## Introduction: Why TeSS ?
 
-## Why TeSS
-
-<img title="" src="file:///C:/Users/piere/OneDrive/Documentos/Courses/FAIR-Material/material-liascript/img/TeSS_img/portal.svg" alt="portal" width="448">
+<img title="" src="https://raw.githubusercontent.com/vibbits/material-liascript/cd66568cd2f043fc2297222261e7f7423dfd4f72/img/TeSS_img/portal.svg" alt="porta lady" width="433"> 
 
 - Sharing training material in TeSS has **several benefits**
   
@@ -129,9 +125,7 @@ More information about TeSS can be found in [this publication](https://doi.org/1
   
   - increase the FAIRness of training materials and events.
 
-
-
-## To be part of this portal you can
+### To be part of this portal you can
 
 - Manually insert content
 
@@ -139,13 +133,10 @@ More information about TeSS can be found in [this publication](https://doi.org/1
   
   - TeSS use a scraping mechanism to aggregate training resources from many providers when they have been annotated using training specific [BioSchemas specifications](https://doi.org/10.1101/2022.11.24.516513). 
 
-**************************
+***************
 
                      {{2}}
-
-***********
-
-
+**************************
 
 ## More background information about TeSS
 
@@ -159,13 +150,11 @@ Related to the provisioning of persistent identifiers, TeSS provides the Digital
 
 Given the engagement of the ELIXIR Train the Trainer instructor's community to create a vibrant environment for reciprocal support and exchange of experiences via the ELIXIR Train the Trainer programme, the TeSS content providers are **encouraged to  follow best-practice** guidance on course and training material development (Via et al., 2020). Therefore, we recommend applying the **Bloom hierarchy** of cognitive skills to formulate the **Learning objectives** for the courses as well as for training material. For more detailed information about our pedagogical model, please browse to the course material of the [ELIXIR Train the Trainer course](https://github.com/TrainTheTrainer/ELIXIR-EXCELERATE-TtT). 
 
-
-
 ## Aditionally
 
 Content providers looking to promote use of **particular tools and databases** via their course offering or the specific training material can find information about them in other ELIXIR registries, such as [**bio.tools**](https://bio.tools) for tools and web services and [**FAIRsharing.org**](https://fairsharing.org) for databases, standards and policies . Lately, such registries started to track training relating to the resources they list. Therefore, it is mutually beneficial that TeSS provides the relevant links, allowing users to search for resource-specific training; and the resource pages in bio.tools and FAIRsharing that contain reciprocal links for users to discover relevant training in TeSS.
 
----
+
 
 [Protocol 1](#3): Searching for training events in TeSS
 
@@ -183,25 +172,24 @@ Content providers looking to promote use of **particular tools and databases** v
 
 [Protocol 8](#10): Automated harvesting of a training event in TeSS
 
----
+*****************
 
 ```
                  {{3}}
 ```
 
----
+*****************
 
-## Searching for training events in TeSS
-
-            {{0}}
-
+             {{0}}
 *********************
+
+## Protocol 1: Searching for training events in TeSS
 
 Training resources (both events and materials) may be searched in TeSS in several ways. If you are on the main page of TeSS, a general search can be performed based on keywords, which will return separate lists of events and materials. Alternatively, events or materials can be searched for independently of each other. This second approach allows more precise filtering on several parameters (e.g., event type, country, and target audience) alone or in combination. 
 
 In this protocol, we provide examples of searches for specific events or materials. Be aware that by searching for events, the standard search returns only future events. If you want to include past events, you need to click the **Show past event** button. 
 
-**********************
+*****************
 
               {{1}}
 
@@ -621,7 +609,7 @@ If you have implemented Bioschemas markup on your website and would like your co
 In case, you experience issues with missing concepts in the EDAM ontology, potentially new properties in the form on the TeSS website, a missing hosting institution or synchronizations issues with the automated procedure, please refer to entries in the Table 1 for troubleshooting.
 
 | Header 1 | Header 2 |
-|:-------- |:-------- |
+|:**********************************-- |:**********************************-- |
 | Item 1   | Item 2   |
 
 Table 1. Sources and Solutions to Potential Errors
