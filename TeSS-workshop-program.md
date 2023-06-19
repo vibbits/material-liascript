@@ -1,10 +1,6 @@
 # TeSS workshop program
 
-
-
 >  (This is the 1st draft of the program)
-
-
 
 - Introduction to TeSS
   
@@ -14,7 +10,7 @@
   
   - What are the advantages 
   
-  - Is There any liitations at the moment
+  - Is There any limitations at the moment
   
   - Background information
 
