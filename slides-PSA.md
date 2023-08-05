@@ -28,12 +28,15 @@ debug: true
 ## Sequences and Structures
 
 !?[What is a protein](https://youtu.be/wvTv8TqWC48)<!-- width="890px" height="488px" -->
+
 [^1](https://pdb101.rcsb.org/learn/videos/what-is-a-protein-video)
 
 ## Amino acids and peptide structure
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/amino-acids.png)<!-- width="100%" -->
-https://www.youtube.com/watch?v=iBV67yamqlA&list=PLuIpgNT2hMwRQKFy4okoNQKiJwM8li3Sz&index=20
+
+!?[Proteins are polypeptides of aminoacids](https://www.youtube.com/watch?v=iBV67yamqlA&list=PLuIpgNT2hMwRQKFy4okoNQKiJwM8li3Sz&index=20)
+
 ## The Structure-Function Connection
 
 - Folded proteins provide a well-defined 3D arrangement of functional groups, creating microenvironments and active sites.
@@ -49,7 +52,7 @@ https://www.youtube.com/watch?v=iBV67yamqlA&list=PLuIpgNT2hMwRQKFy4okoNQKiJwM8li
                            {{0-1}}
 *********************
 
-[**Uniprot**](https://www.uniprot.org/) approx. 1100,000 sequences
+[**Uniprot**](https://www.uniprot.org/) approx. 570,000 curated sequences (SwissProt)
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/uniprot-logo.png)<!-- width="50%" -->
 
@@ -62,11 +65,11 @@ https://www.youtube.com/watch?v=iBV67yamqlA&list=PLuIpgNT2hMwRQKFy4okoNQKiJwM8li
                             {{1}}
 *******************
 
-[**Protein Data Bank**](http://www.wwpdb.org) approx. 141,000 experimentally determined structures
+[**Protein Data Bank**](http://www.wwpdb.org) approx. 208,000 experimentally determined structures
 
 ![](https://material.bits.vib.be/topics/protein-structure-analysis/images/pdb-logo.png)<!-- width="50%" -->
 
-- Mainly determined by X-ray crystallography and high-resolution NMR spectroscopy
+- Mainly determined by X-ray crystallography, electron microscopy and recently lesser high-resolution NMR spectroscopy
 - Automation is increasing, but there are still significant limitations in the rate of solving new structures
 
 *******************
