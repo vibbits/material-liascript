@@ -418,15 +418,15 @@ General geometric properties (bond lengths and angles, Ramachandran distribution
 - [Yasara](http://www.yasara.org)  
 - [SwissPDBViewer](http://spdbv.vital-it.ch/)
 
-## YASARA
+## ChimeraX
 
-- Yasara View is freely available and provides  basic visualisation functions.
+- ChimeraX is the next-generation molecular visualization program from the [UCSF RBVI](https://www.rbvi.ucsf.edu/). 
 
-- Yasara Model, Dynamics and Structure provide additional functionality.
+- Provides high-performance rendering of large structures and data
 
-- An add-on module for NMR structures is available.
+- Calulate fast and robust solvent-excluded surfaces
 
-- The program can be combined with the WHAT-IF program for structure validation, and with FoldX for energy calculations.
+- Integration with AlphaFold and ESMFold AI-predicted protein structures (fetch existing or calculate new) 
 
 ## Exercise 2: Show a structure
 
