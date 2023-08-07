@@ -413,8 +413,8 @@ General geometric properties (bond lengths and angles, Ramachandran distribution
 ## Molecular Graphics Software
 
 - [PyMOL](http://www.pymol.org/): high-quality output,  good examples on [Wiki](http://www.pymolwiki.org/)
-- [Chimera](http://www.cgl.ucsf.edu/chimera/): good  documentation on website
-- [VMD](http://www.ks.uiuc.edu/Research/vmd/):  excellent for the analysis of MD trajectories
+- [ChimeraX](https://www.cgl.ucsf.edu/chimerax/): good  documentation on website
+- [VMD](https://www.ks.uiuc.edu/Research/vmd/):  excellent for the analysis of MD trajectories
 - [Yasara](http://www.yasara.org)  
 - [SwissPDBViewer](http://spdbv.vital-it.ch/)
 
