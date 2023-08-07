@@ -434,13 +434,39 @@ General geometric properties (bond lengths and angles, Ramachandran distribution
 
 - Load PDB entry 1TRZ using the File menu.
 
-- Compare the default representations (F1-F8)  and use the various controls to change the view  of the protein.
+- Compare the default representations and use the various controls to change the view  of the protein.
 
 - Explore the Edit and View menus to change  various aspects of the graphical representation  of the structure.
 
-- Examine the hydrogen bonding patterns.  Display a molecular surface.
+- Examine the hydrogen bonding patterns. Display a molecular surface.
 
-- Create an interesting view of the molecule and  save it as a high-resolution image.
+- Create an interesting view of the molecule and save it as a high-resolution image.
+
+### Working with ChimeraX
+
+There are great videos on working with ChimeraX that you can access via [a playlist from Brown Lab](https://www.youtube.com/playlist?list=PL4eF1KHNgDfIYSKCS3_S0PTRYtYTV9Myi).
+
+We suggest to start with the first and the second video of this playlist.
+
+### Scene styles
+
+Open the PDB with code 1TRZ in ChimeraX via pasting `open 1TRZ` into the command field at the bottom. This will fetch the structure from the RCSB Protein Data Bank and load it into ChimeraX. Please have a look at the log window where more information about the structure is shown next to the full command `open 1TRZ format mmcif fromDatabase pdb`.
+
+The default view is a quite nice one highlighting the interactions of the side chains of three residues with zinc and sodium atoms as well as selected water molecules.
+
+### Showing and hiding residues
+
+The function keys F1-F3 show all atoms and residues by default. The keys F4-F7 do not explicitly show atoms and residues but are merely a impressionistic representation of the structure. The F8 keys does, to a certain extent, show atoms, but only of side chains, not main chain atoms. Mostly to do structure analysis, we want to show only the most interesting residues, the ones we want to analyze, and hide all the others.
+
+The structure of insulin was crystallized together with some water molecules. In many cases, it is no problem to permanently delete those waters via Edit > Delete > Waters. To visualize the waters, select an atom view such as F1, F2 or F3. See the red water (oxygen) atoms floating around the surface? Check the video in the molecular graphics exercise at 1.13.
+
+Then select the base scene style without any explicit atoms, e.g. tube style (F5). Press F5. This is our representation of the backbone.
+
+There are several ways to show the residues of interest:
+
+    From the menu: View > Show atoms in > Residue. Select Cys7 from Molecule A and press OK.
+
+    From the sequence selector. Hover the mouse on the bottom of the screen, you will see the sequence selector opening. Open it permanently by pressing the blue nailpin on the left side of it. Search for Cys7 from Molecule B, right-click and select Show > Residue.
 
 ## Protein folds are the structures of domains
 
