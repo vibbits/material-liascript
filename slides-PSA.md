@@ -414,7 +414,7 @@ General geometric properties (bond lengths and angles, Ramachandran distribution
 
 - [PyMOL](http://www.pymol.org/): high-quality output,  good examples on [Wiki](http://www.pymolwiki.org/)
 - [ChimeraX](https://www.cgl.ucsf.edu/chimerax/): good  documentation on website
-- [VMD](https://www.ks.uiuc.edu/Research/vmd/):  excellent for the analysis of MD trajectories
+- [VMD](https://www.ks.uiuc.edu/Research/vmd/): excellent for the analysis of MD trajectories
 - [Yasara](http://www.yasara.org)  
 - [SwissPDBViewer](http://spdbv.vital-it.ch/)
 
@@ -454,13 +454,13 @@ Open the PDB with code 1TRZ in ChimeraX via pasting `open 1TRZ` into the command
 
 The default view is a quite nice one highlighting the interactions of the side chains of three residues with zinc and sodium atoms as well as selected water molecules.
 
+Changing the molecule display can be easily achieved by toggling the icons *Show* and *Hide* from the sections **Atoms**, **Cartoons** and **Styles** in the `Home` menu.
+
 ### Showing and hiding residues
 
-The function keys F1-F3 show all atoms and residues by default. The keys F4-F7 do not explicitly show atoms and residues but are merely a impressionistic representation of the structure. The F8 keys does, to a certain extent, show atoms, but only of side chains, not main chain atoms. Mostly to do structure analysis, we want to show only the most interesting residues, the ones we want to analyze, and hide all the others.
+If you click the *Hide* icon followed by the *Show* icon of the **Atoms** section, all atoms and residues are shown by default. Toggling the Cartoons to state *Show* doen not explicitly show atoms and residues but are merely a impressionistic representation of the structure. The menu command **Actions** --> **Atoms/Bonds** --> **Show Sidechain/Base**, to a certain extent, shows atoms, but only of side chains, not main chain atoms. Mostly to do structure analysis, we want to show only the most interesting residues, the ones we want to analyze, and hide all the others.
 
-The structure of insulin was crystallized together with some water molecules. In many cases, it is no problem to permanently delete those waters via Edit > Delete > Waters. To visualize the waters, select an atom view such as F1, F2 or F3. See the red water (oxygen) atoms floating around the surface? Check the video in the molecular graphics exercise at 1.13.
-
-Then select the base scene style without any explicit atoms, e.g. tube style (F5). Press F5. This is our representation of the backbone.
+The structure of insulin was crystallized together with some water molecules. In many cases, it is no problem to permanently delete those waters via `Select > Residues > HOH` followed by `Actions > Delete`. To visualize the water molecules, got to `Select > Residues > HOH` followed by `Atoms/Bonds > Show`. Do you see the red water (oxygen) atoms floating around the surface?
 
 There are several ways to show the residues of interest:
 
