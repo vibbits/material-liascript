@@ -464,9 +464,122 @@ The structure of insulin was crystallized together with some water molecules. In
 
 There are several ways to show the residues of interest:
 
-    From the menu: View > Show atoms in > Residue. Select Cys7 from Molecule A and press OK.
+  From the menu: View > Show atoms in > Residue. Select Cys7 from Molecule A and press OK.
 
-    From the sequence selector. Hover the mouse on the bottom of the screen, you will see the sequence selector opening. Open it permanently by pressing the blue nailpin on the left side of it. Search for Cys7 from Molecule B, right-click and select Show > Residue.
+  From the sequence selector. Hover the mouse on the bottom of the screen, you will see the sequence selector opening. Open it permanently by pressing the blue nailpin on the left side of it. Search for Cys7 from Molecule B, right-click and select Show > Residue.
+
+Now show the atoms of His5 in Molecule B using a method of choice.
+
+And now that we’re on it, what is special about the two cysteines we just visualized?
+
+Hiding individual atoms or residues works in the same way as showing them, only now you should go to Hide atoms in the menu.
+
+### Showing and Hiding Secondary Structure
+
+Most published molecular images show a detailed active site and all the rest is hidden for clarity. From the previous exercise we show the atoms of 3 residues (let’s assume this is our active site). Now secondary structure of the rest of the molecule is also still visible. To hide all that, we do not have to hide atoms, but hide the secondary structure (the F5 tube view) from the rest of the structure. Atoms and residues in YASARA are not the same as the term ‘secondary structure’. Atoms and residues are balls and sticks, ‘secondary structure’ is an artistic impression of the structure (beta sheet arrows, helix ribbons, …). If you get this concept, you are a YASARA master.
+
+So let’s hide many of the secondary structure, but keep just a few stretches around our active site. Our active site is Cys7 (A), Cys7 (B) and His 5 (B). This can be done in several ways. Since we would have to hide almost everything, I propose to hide first everything and then show again those stretches that we want. But if you have a better idea, I would like to hear it.
+
+Hide all secondary structure via View > Hide secondary structure of > All.
+
+Then show stretches of residues 2-10 in Mol B and residues 4-10 in Mol A in tube view via View > Show secondary structure > Tube through > Residue.
+
+Then select the correct stretches of residues by keeping the CTRL key pressed to select multiple residues.
+
+There are still some metal-bound histidines flying around that weren’t hidden because they are metal bound (a YASARA specific thing). Hide those histidines by clicking on one of the sidechain atoms, then
+right-click and select Hide atoms > Residue.
+
+The nasty dative bonds and metals can be removed simply by deleting all of them via Edit > Delete > Residue > Name.
+
+In the name column select all the metals and ions you can find.
+
+Et voilà, a publication ready image!
+
+### Labels
+
+You can put labels on the residues you want to highlight by going to the main menu or selecting an atom from a residue and right-click. In the latter case you select Label > Residue.
+
+Note that residue name and residue number is automatically selected. Change the height to 0.5 or so and select a nice color for the label. Presto!
+
+### Colors
+
+You can color on all levels: atoms, residues, molecules and objects. So be careful, if you color a residue, all of its atoms will get that color. If you color a molecule, all atoms in that molecule will get that color.
+
+Let’s color the secondary structure (the backbone in our case) of our active site in orange. But the sidechains should keep their Element colors. So we shouldn’t color entire residues, but only a selected atom set. Therefore our selection will be at the atom level, not the residue level. Go to View > Color > Atom > Belongs to or has > Backbone.
+
+Then select the orange color (color code 150) and select Apply unique color. Hopefully, it is a satisfying result.
+
+### Saving the work 
+
+It would be a pitty that you spent hours creating fancy molecular graphics for that next paper while you can’t continue on the work the next day. That’s why ChimeraX can save the entire Scene including orientations, colors, views, everything. To save the current scene, go to File > Save as > YASARA Scene.
+
+Choose a filename such as MyInsulin.sce. To load the work again in YASARA go to File > Load > YASARA Scene.
+
+### Save as high-quality image
+
+To save the current view to a high quality publication ready image file, go to File > Save as > Ray-traced hires screenshot.
+
+### Distances
+
+Distances between atoms are calculated as follows:
+
+    Select the first atom
+    Keep CTRL pressed and select the second atom.
+    Left of the screen indicates the Marked Distance in Angstrom.
+
+### Hydrogen bonds
+
+To show hydrogen bonds, YASARA needs the actual hydrogens to be present. In NMR structures these are normally there. But in X-Ray structures hydrogens are missing. Luckily YASARA can add the hydrogens for you.
+
+    Select tube view (F5) and toggle on the sidechains with F8.
+    Add hydrogens with Edit > Add > Hydrogens to all. Then show the hydrogen-bonds via View > Show interactions > Hydrogen bonds of > All > OK.
+    To remove the hydrogen bonds, you have multiple choices: View > Hide hydrogen bonds of > All. Or you can just delete all hydrogens (this will also delete all hydrogen bonds): Edit > Delete > Hydrogens.
+
+If the view is too chaotic for you, toggle off the sidechains with F8 (press untill the sidechains are hidden).
+
+### Surfaces
+
+It can be very useful and informative to show the molecular surface of a protein. you can visualize cavities, ligand binding sites, etc … To show the molecular surface of one monomer of dimeric insulin, go to View > Show surface of > Molecule.
+
+Select in the Name column A and B (these are the two chains in 1 subunit). Press Continue with surface color and make sure Alpha is 100. Any number lower than 100 will create transparency in the surface (could be nice as well).
+
+### Another exercise
+
+represenation of the insulin structure – pdb code: 1TRZ
+
+Hints:
+
+    Choose the proper secondary structure scene style (F6 was used here);
+    Find the correct orientation first;
+    Color all backbone atoms in gray;
+    Find the residue numbers of the 2 colored helices;
+    Color those residues magenta;
+    Show the sidechain atoms and the CA of the two histidines and the
+    glutamate;
+    Color the sidechain atoms of all residues in the Element color;
+    Label the histidines and the glutamate;
+    If you need some help how to change the parameters for the label,
+    please have a look at Help > Show user manual and search in
+    Commands / Index.
+
+### More coloring
+
+Download GroEL via PDB code 1WE3 in YASARA.
+
+Try to reproduce (approximately) the following image (hints below):
+
+Hints:
+
+    Load the PDB as File > Load > PDB file from internet
+    Zoom out and find the correct orientation
+    Delete the ADP, DMS and Mg molecules (are treated as residues in YASARA). So Edit > Delete > Residue > Adp …
+    Color by molecule (every molecule will get another color) and color by gradient (now you need to specify 2 colors, the begin and end color).
+    Choose a first color (eg. color with code 0)
+    Choose a second color (eg. color with code 300, so you go over the entire color wheel spectrum)
+
+### Conclusion
+
+Now, you have explored the ChimeraX interface and acquainted with basic visualisations. You have identified how you can visualise secondary structure elements, surfaces, and hydrogen bonds. And most importantly, you can create publication-ready figures using ChimeraX.
 
 ## Protein folds are the structures of domains
 
