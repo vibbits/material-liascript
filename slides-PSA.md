@@ -535,9 +535,9 @@ To hide or remove the hydrogen bonds, you have multiple choices: use `Molecule D
 
 ### Surfaces
 
-It can be very useful and informative to show the molecular surface of a protein. you can visualize cavities, ligand binding sites, etc … To show the molecular surface of one monomer of dimeric insulin, go to View > Show surface of > Molecule.
+It can be very useful and informative to show the molecular surface of a protein. you can visualize cavities, ligand binding sites, etc … To show the molecular surface of one monomer of dimeric insulin, go to `Molecule Display > Surfaces > Show`.
 
-Select in the Name column A and B (these are the two chains in 1 subunit). Press Continue with surface color and make sure Alpha is 100. Any number lower than 100 will create transparency in the surface (could be nice as well).
+In our case, 4 surfaces will be calculated which display status and color can be individually changed using the toggles in the Models window.
 
 ### Another exercise
 
@@ -555,8 +555,7 @@ Hints:
     Color the sidechain atoms of all residues in the Element color;
     Label the histidines and the glutamate;
     If you need some help how to change the parameters for the label,
-    please have a look at Help > Show user manual and search in
-    Commands / Index.
+    please have a look at Help > User guide and search for the label command.
 
 ### More coloring
 
@@ -566,12 +565,12 @@ Try to reproduce (approximately) the following image (hints below):
 
 Hints:
 
-    Load the PDB as File > Load > PDB file from internet
-    Zoom out and find the correct orientation
-    Delete the ADP, DMS and Mg molecules (are treated as residues in YASARA). So Edit > Delete > Residue > Adp …
-    Color by molecule (every molecule will get another color) and color by gradient (now you need to specify 2 colors, the begin and end color).
-    Choose a first color (eg. color with code 0)
-    Choose a second color (eg. color with code 300, so you go over the entire color wheel spectrum)
+> Load the PDB via `open 1we3` 
+> Zoom out and find the correct orientation
+> Delete the ADP, DMS and Mg molecules (are treated as residues in YASARA). So Edit > Delete > Residue > Adp …
+> Color by molecule (every molecule will get another color) and color by gradient (now you need to specify 2 colors, the begin and end color).
+> Choose a first color (eg. color with code 0)
+> Choose a second color (eg. color with code 300, so you go over the entire color wheel spectrum)
 
 ### Conclusion
 
