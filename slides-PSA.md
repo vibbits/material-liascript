@@ -517,7 +517,7 @@ Choose a filename such as `MyInsulin.cxs`. To load the work again in ChimeraX go
 
 ### Save as high-quality image
 
-To save the current view to a high quality publication ready image file, go to File > Save as > Ray-traced hires screenshot.
+To save the current view to a high quality publication ready image file, click on the Snapshot icon which will save a PNG file at the default location. 
 
 ### Distances
 
@@ -529,13 +529,9 @@ Distances between atoms are calculated as follows:
 
 ### Hydrogen bonds
 
-To show hydrogen bonds, YASARA needs the actual hydrogens to be present. In NMR structures these are normally there. But in X-Ray structures hydrogens are missing. Luckily YASARA can add the hydrogens for you.
-
-    Select tube view (F5) and toggle on the sidechains with F8.
-    Add hydrogens with Edit > Add > Hydrogens to all. Then show the hydrogen-bonds via View > Show interactions > Hydrogen bonds of > All > OK.
-    To remove the hydrogen bonds, you have multiple choices: View > Hide hydrogen bonds of > All. Or you can just delete all hydrogens (this will also delete all hydrogen bonds): Edit > Delete > Hydrogens.
-
-If the view is too chaotic for you, toggle off the sidechains with F8 (press untill the sidechains are hidden).
+To show hydrogen bonds, you can go to Analysis section in the Molecule Display tab. Before you click on the `H-bonds` icon, it is recommended to define a search space by selecting residues or molecules between which you would like to calculate hydrogen bonds. 
+    
+To hide or remove the hydrogen bonds, you have multiple choices: use `Molecule Display > Hide H-bonds` or select the hydrogen bonds object in the Models overview on the right side of the ChimeraX window and click on *Close*. 
 
 ### Surfaces
 
