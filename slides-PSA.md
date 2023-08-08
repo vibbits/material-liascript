@@ -584,7 +584,7 @@ Now, you have explored the ChimeraX interface and acquainted with basic visualis
 
 - Folds represent the shapes of protein domains
 
-[https://youtu.be/nJVkwdNm_HY](https://youtu.be/nJVkwdNm_HY) [https://youtu.be/1ljeUscKE9Y](https://youtu.be/1ljeUscKE9Y) [https://youtu.be/wWHtcbAnOmQ](https://youtu.be/wWHtcbAnOmQ)
+?![https://youtu.be/nJVkwdNm_HY](https://youtu.be/nJVkwdNm_HY) ?![https://youtu.be/1ljeUscKE9Y](https://youtu.be/1ljeUscKE9Y) ?![https://youtu.be/wWHtcbAnOmQ](https://youtu.be/wWHtcbAnOmQ)
 
 
 * SCOP (http://scop.mrc-lmb.cam.ac.uk/scop/)
