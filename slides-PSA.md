@@ -600,7 +600,7 @@ Now, you have explored the ChimeraX interface and acquainted with basic visualis
   1HHO-A is a domain classied by CATH as the following.
   Class: mainly helical; architecture: orthogonal bundle; topology: globin-like; and superfamily: globins.
 
-!?[https://youtu.be/mb898MT3eLc](https://youtu.be/mb898MT3eLc)
+!?[https://youtu.be/mb898MT3eLc](https://www.youtube.com/embed/mb898MT3eLc))
 
 ## Predict protein structures by fold recognition
 
