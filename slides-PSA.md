@@ -584,15 +584,25 @@ Now, you have explored the ChimeraX interface and acquainted with basic visualis
 
 - Folds represent the shapes of protein domains
 
+[https://youtu.be/nJVkwdNm_HY](https://youtu.be/nJVkwdNm_HY)
+[https://youtu.be/1ljeUscKE9Y](https://youtu.be/1ljeUscKE9Y)
+[https://youtu.be/wWHtcbAnOmQ](https://youtu.be/wWHtcbAnOmQ)
+
+
 * SCOP (http://scop.mrc-lmb.cam.ac.uk/scop/)
-  * Class, Fold, Superfamily, Family
+
+  Class, Fold, Superfamily, Family
   The human hemoglobin protein (1HHO-A), is a domain classfied by SCOP as the following.
-  * Class: all helical proteins; fold: globin-like; superfamily: globin-like; and family: globins.
+  Class: all helical proteins; fold: globin-like; superfamily: globin-like; and family: globins.
+  
+[https://youtu.be/Wz6Ugn7BZjg](https://youtu.be/Wz6Ugn7BZjg)
 
 * CATH (http://www.cathdb.info/)
-  * class (equivalent to SCOP class), architecture, topology (equivalent to SCOP fold), and homologous superfamily (equivalent to SCOP superfamily).
+  class (equivalent to SCOP class), architecture, topology (equivalent to SCOP fold), and homologous superfamily (equivalent to SCOP superfamily).
   1HHO-A is a domain classied by CATH as the following.
-  * Class: mainly helical; architecture: orthogonal bundle; topology: globin-like; and superfamily: globins.
+  Class: mainly helical; architecture: orthogonal bundle; topology: globin-like; and superfamily: globins.
+
+[https://youtu.be/mb898MT3eLc](https://youtu.be/mb898MT3eLc)
 
 ## Predict protein structures by fold recognition
 
