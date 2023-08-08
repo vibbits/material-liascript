@@ -497,23 +497,23 @@ Et voilà, a publication ready image!
 
 ### Labels
 
-You can put labels on the residues you want to highlight by going to the main menu or selecting an atom from a residue and right-click. In the latter case you select Label > Residue.
+You can put labels on the residues you want to highlight by selecting an atom from a residue (right-click). Subsequently, you select `Label > Residue` and choose the formatting of the label.
 
-Note that residue name and residue number is automatically selected. Change the height to 0.5 or so and select a nice color for the label. Presto!
+Via the same menu, you can change the height to 0.7 A or e.g. 20 pixels.
 
 ### Colors
 
 You can color on all levels: atoms, residues, molecules and objects. So be careful, if you color a residue, all of its atoms will get that color. If you color a molecule, all atoms in that molecule will get that color.
 
-Let’s color the secondary structure (the backbone in our case) of our active site in orange. But the sidechains should keep their Element colors. So we shouldn’t color entire residues, but only a selected atom set. Therefore our selection will be at the atom level, not the residue level. Go to View > Color > Atom > Belongs to or has > Backbone.
+Let’s color the secondary structure (the backbone in our case) of our active site in orange. But the sidechains should keep their Element colors. So we shouldn’t color entire residues, but only a selected atom set. Therefore our selection will be at the atom level, not the residue level. Go to `Actions > Color > All Options` and unselect the objects to which coloring applies.
 
-Then select the orange color (color code 150) and select Apply unique color. Hopefully, it is a satisfying result.
+Then select the orange color and select `Apply`. Hopefully, it is a satisfying result.
 
 ### Saving the work 
 
-It would be a pitty that you spent hours creating fancy molecular graphics for that next paper while you can’t continue on the work the next day. That’s why ChimeraX can save the entire Scene including orientations, colors, views, everything. To save the current scene, go to File > Save as > YASARA Scene.
+It would be a pitty that you spent hours creating fancy molecular graphics for that next paper while you can’t continue on the work the next day. That’s why ChimeraX can save the entire session including orientations, colors, views, everything. To save the current session, go to File > Save and select `ChimeraX session` as File type.
 
-Choose a filename such as MyInsulin.sce. To load the work again in YASARA go to File > Load > YASARA Scene.
+Choose a filename such as `MyInsulin.cxs`. To load the work again in ChimeraX go to `File > Open`.
 
 ### Save as high-quality image
 
