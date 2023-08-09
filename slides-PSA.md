@@ -602,41 +602,15 @@ Now, you have explored the ChimeraX interface and acquainted with basic visualis
 
 !?[https://youtu.be/mb898MT3eLc](https://youtu.be/mb898MT3eLc)
 
-## Predict protein structures by fold recognition
-
-1. Search SCOP/CATH for protein with same fold and known 3D structure
-2. Align each amino acid of query sequence to a position in the template structure
-3. Evaluate how well the sequence fits the fold and select best-fit fold
-4. Build structural model of query based on alignment with selected fold
-
-- Phyre (http://www.sbg.bio.ic.ac.uk/phyre2/html/page.cgi?id=index)
-- HHpred (http://toolkit.lmb.uni-muenchen.de/hhpred)
-- DescFold (http://202.112.170.199/DescFold/)
-
-Works because:
-
-- Number of different folds in nature is fairly small (approximately 1300)
-- 90% of new submissions in PDB have similar folds to those already in PDB
-- Not always accurate [^1](https://onlinelibrary.wiley.com/doi/full/10.1002/prot.25823)
-
-[^2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3003448/#!po=87.5000)
-
-## Guidelines to improve fold recognition results
-
-- Run as many methods as you can
-- Run each method on many sequences from your homologous protein family
-- After all of these runs, build up a consensus picture of the likely fold
-- Compare function of your protein to function of the proteins with the likely fold
-- Compare secondary structure of your protein to that of the likely fold
-
 ## Similarity searches based on 3D structure
 
 Similarity on structural level: aligning 3D structures
 
 Structure of query protein is known and aligned to PDB structures
 
-- DALI(http://ekhidna.biocenter.helsinki.fi/dali_server/)
-- VAST+(https://www.ncbi.nlm.nih.gov/Structure/vastplus/vastplus.cgi)
+- [Foldseek](https://search.foldseek.com/search) - preferred method
+- [DALI](http://ekhidna.biocenter.helsinki.fi/dali_server/)
+- [VAST+](https://www.ncbi.nlm.nih.gov/Structure/vastplus/vastplus.cgi)
 
 Compare proteins with low sequence similarity: similar structure implies homology -> same function
 
@@ -686,68 +660,6 @@ $$ rmsd = \sqrt{\frac{1}{N}\sum_{i=1}^{N}R_{i}^{2}} $$
 - use of B factors to represent other properties  
 - other non-standard extensions (PDBQT, ...)
 
-## Force Fields
-
-- Energy terms representing physical interactions
-
-  - Covalent bond lengths and angles
-  - Dihedral angles and van der Waals forces (steric effects)
-  - Electrostatic interactions and hydrogen bonds
-  - …
-
-- Energy can be minimized, and forces can literally be derived from the potential function.
-
-- Consistency and careful consideration of the properties to be simulated are essential.
-
-## Force Field Terms
-
-Each energy term has a functional form, which includes one or more parameters:
-
-- Covalent bond energy term
-
-  $ E_{bond} = k(r-r_{0})^{2} $ with $r_0$ being the equilibrium length
-
-- Van der Waals contact energy term
-
-  $ E_{VdW} = C_6r^{-6} + C_{12}r^{-12} $ with $C_6$ attractive, $C_{12}$ repulsive term
-
-The parameters are collectively optimized to  reproduce a chosen set of experimentally observed parameters.
-
-A given force field should be used as a  consistent system, and can only be used to predict properties that are covered by the  training set.
-
-## FoldX
-
-Is designed for quantitative modelling of the contribution of structural interactions to the stability of proteins and protein complexes. It also supports  protein/DNA complexes.
-
-The force field describes the different interactions in a protein structure or complex in analytical terms. It has  been calibrated using a set of experimentally determined  stabilities.
-
-Applications include the optimisation of structures, the calculation of the stability of complexes, and predicting  the effect of amino-acid or base-pair mutations on these  properties.
-
-![FoldX Force Field](img/foldx-formula.PNG)
-
-[FoldX](https://dx.doi.org/10.1093%2Fnar%2Fgki387)
-
-## The FoldX Plugin for YASARA
-
-In order to make FoldX more accessible and  integrate its functions into Yasara, dr. Joost van  Durme (SWITCH laboratory) made a Yasara plugin  module that can apply FoldX functions to structures  that are loaded as Yasara objects.
-
-This greatly simplifies the use of FoldX, and allows  for a quick visual analysis of the resulting changes  in the structures.
-
-More information can be found at [wiki](http://foldxyasara.switchlab.org/index.php/) [FoldX](http://foldxsuite.crg.eu/)
-
-## Exercise 4a: Repair a PDB File
-
-[Link to exercise 4](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/mutate-structure/tutorial.html)
-
-- Load the 1CRN PDB file.
-- Use the “Repair object” option in the `Analysis|FoldX` menu to activate the corresponding FoldX function.
-- Select the object to repair.
-
-This exports the object as a temporary PDB file,  starts FoldX with the appropriate options, and loads the repaired PDB file as a new object in Yasara.
-
-- Compare the original and repaired objects.  
-- Describe the changes that were introduced.
-
 ## Exercise 4b: Model a Mutation
 
 [Link to exercise 4](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/mutate-structure/tutorial.html)
@@ -757,18 +669,6 @@ This exports the object as a temporary PDB file,  starts FoldX with the appropri
 - Locate residue Ala159 using the sequence view, and right-click to access the `FoldX|Mutate` residue function. Change it to a Trp residue.
 - Look at the effect of the substitution on the structure, and use the space bar to open the text  console and read the output of the FoldX calculation.
 - Mutate Arg273 to an alanine side chain. Discuss  the effects of this substitution.
-
-## Homology Modelling
-
-- When a structure is available for a protein with a  similar sequences, it is possible to predict the  structure of a new sequence with varying degrees of  confidence.
-- Use PSI-BLAST/DELTA-BLAST to detect sequences with similar structures.
-- All homology modelling procedures start from an  alignment of the template and target sequences.  The quality of this alignment will have a major  impact on the resulting model.
-- Available applications include stand-alone programs  (Modeller, FoldX, …) and web-based services (such as SwissModel).
-
-## Exercise 5: Make a Homology Model using Swiss Model
-
-[Link to exercise 5](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/homology-modeling/tutorial.html)
-
 
 ## Exercise 6: Study Protein-Ligand Interactions
 
@@ -785,3 +685,105 @@ This exports the object as a temporary PDB file,  starts FoldX with the appropri
 - [Assessing model quality](http://spdbv.vital-it.ch/TheMolecularLevel/ModQual/)
 
 - [Lectures by Burkhard Rost on protein structure prediction](https://www.youtube.com/channel/UCU6j8BG4RbEtTgyIZJ6Vpow)
+
+## Annex 
+
+### Older methods before we had AlphaFold to predict protein structures by fold recognition
+
+1. Search SCOP/CATH for protein with same fold and known 3D structure
+2. Align each amino acid of query sequence to a position in the template structure
+3. Evaluate how well the sequence fits the fold and select best-fit fold
+4. Build structural model of query based on alignment with selected fold
+
+- HHpred (http://toolkit.lmb.uni-muenchen.de/hhpred)
+- Phyre (http://www.sbg.bio.ic.ac.uk/phyre2/html/page.cgi?id=index)
+- DescFold (http://202.112.170.199/DescFold/)
+
+Works because:
+
+- Number of different folds in nature is fairly small (approximately 2000-3000)
+- 90% of new submissions in PDB have similar folds to those already in PDB
+- Not always accurate [^1](https://onlinelibrary.wiley.com/doi/full/10.1002/prot.25823)
+
+[^2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3003448/#!po=87.5000)
+
+### Guidelines to improve fold recognition results
+
+- Run as many methods as you can
+- Run each method on many sequences from your homologous protein family
+- After all of these runs, build up a consensus picture of the likely fold
+- Compare function of your protein to function of the proteins with the likely fold
+- Compare secondary structure of your protein to that of the likely fold
+
+### Homology Modelling
+
+- When a structure is available for a protein with a  similar sequences, it is possible to predict the  structure of a new sequence with varying degrees of  confidence.
+- Use PSI-BLAST/DELTA-BLAST to detect sequences with similar structures.
+- All homology modelling procedures start from an  alignment of the template and target sequences.  The quality of this alignment will have a major  impact on the resulting model.
+- Available applications include stand-alone programs  (Modeller, FoldX, …) and web-based services (such as SwissModel).
+
+### Exercise: Make a Homology Model using Swiss Model
+
+[Link to exercise 5](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/homology-modeling/tutorial.html)
+
+### Force Fields
+
+- Energy terms representing physical interactions
+
+  - Covalent bond lengths and angles
+  - Dihedral angles and van der Waals forces (steric effects)
+  - Electrostatic interactions and hydrogen bonds
+  - …
+
+- Energy can be minimized, and forces can literally be derived from the potential function.
+
+- Consistency and careful consideration of the properties to be simulated are essential.
+
+### Force Field Terms
+
+Each energy term has a functional form, which includes one or more parameters:
+
+- Covalent bond energy term
+
+  $ E_{bond} = k(r-r_{0})^{2} $ with $r_0$ being the equilibrium length
+
+- Van der Waals contact energy term
+
+  $ E_{VdW} = C_6r^{-6} + C_{12}r^{-12} $ with $C_6$ attractive, $C_{12}$ repulsive term
+
+The parameters are collectively optimized to  reproduce a chosen set of experimentally observed parameters.
+
+A given force field should be used as a  consistent system, and can only be used to predict properties that are covered by the  training set.
+
+### FoldX
+
+Is designed for quantitative modelling of the contribution of structural interactions to the stability of proteins and protein complexes. It also supports  protein/DNA complexes.
+
+The force field describes the different interactions in a protein structure or complex in analytical terms. It has  been calibrated using a set of experimentally determined  stabilities.
+
+Applications include the optimisation of structures, the calculation of the stability of complexes, and predicting  the effect of amino-acid or base-pair mutations on these  properties.
+
+![FoldX Force Field](img/foldx-formula.PNG)
+
+[FoldX](https://dx.doi.org/10.1093%2Fnar%2Fgki387)
+
+### The FoldX Plugin for YASARA
+
+In order to make FoldX more accessible and integrate its functions into Yasara, dr. Joost van  Durme (SWITCH laboratory) made a Yasara plugin  module that can apply FoldX functions to structures  that are loaded as Yasara objects.
+
+This greatly simplifies the use of FoldX, and allows  for a quick visual analysis of the resulting changes  in the structures.
+
+More information can be found at [wiki](http://foldxyasara.switchlab.org/index.php/) [FoldX](http://foldxsuite.crg.eu/)
+
+### Exercise 4a: Repair a PDB File
+
+[Link to exercise 4](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/mutate-structure/tutorial.html)
+
+- Load the 1CRN PDB file.
+- Use the “Repair object” option in the `Analysis|FoldX` menu to activate the corresponding FoldX function.
+- Select the object to repair.
+
+This exports the object as a temporary PDB file,  starts FoldX with the appropriate options, and loads the repaired PDB file as a new object in Yasara.
+
+- Compare the original and repaired objects.  
+- Describe the changes that were introduced.
