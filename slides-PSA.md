@@ -799,3 +799,7 @@ https://ringo.ams.stonybrook.edu/index.php/2023_DOCK_tutorial_2_with_PDBID_3WZE#
 https://static-bcrf.biochem.wisc.edu/tutorials/chimerax/Chimera_X_overview_document.html#12_biological_assembly
 
 https://pubmed.ncbi.nlm.nih.gov/35001912/
+
+**Foldseek**
+
+https://academic.oup.com/bioinformaticsadvances/article/2/1/vbac072/6749558
