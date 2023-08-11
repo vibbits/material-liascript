@@ -612,12 +612,27 @@ Structure of query protein is known and aligned to PDB structures
 - [DALI](http://ekhidna.biocenter.helsinki.fi/dali_server/)
 - [VAST+](https://www.ncbi.nlm.nih.gov/Structure/vastplus/vastplus.cgi)
 
+!?[Presentation by Martin Steinegger about FoldSeek](https://www.youtube.com/watch?v=k5Rbi22TtOA)
+
 Compare proteins with low sequence similarity: similar structure implies homology -> same function
 
-Can help to find active sites
+## Exercise 3: Use FoldSeek to find similar structures from distinct organisms
+
+[Link to exercise 3](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/compare-structures/tutorial.html)
+
+- Compare directed search via BlastP of protein A
+
+- Download the five provided PDB files and open them in Yasara.
+
+- Use the `Analyze|Align|Objects` with MUSTANG function to align the four last objects with the first one.
+
+- Use the space bar to open the text console and  see the reported root mean square deviations as well as the number of residues matched.
+
+$$ rmsd = \sqrt{\frac{1}{N}\sum_{i=1}^{N}R_{i}^{2}} $$
+
+- Color all structures by B factor and compare the  distribution to the local variability of the structures.
 
 [Additional information](https://web.stanford.edu/class/cs279/lectures/lecture5.pdf)
-!?[Presentation by Martin Steinegger about FoldSeek](https://www.youtube.com/watch?v=k5Rbi22TtOA)
 
 ## Structure Alignment
 
@@ -636,9 +651,9 @@ Different algorithms use different combinations of sequence- and secondary of te
 - [MUSTANG](http://lcb.infotech.monash.edu.au/mustang/mustang_psfb-final.pdf)
 - [MMLigner](https://doi.org/10.1093/bioinformatics/btw757)
 
-## Exercise 3: Compare Structures
+## Exercise 4: Compare Structures
 
-[Link to exercise 3](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/compare-structures/tutorial.html)
+[Link to exercise 4](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/compare-structures/tutorial.html)
 
 - Download the five provided PDB files and open  them in Yasara.
 
