@@ -617,6 +617,7 @@ Compare proteins with low sequence similarity: similar structure implies homolog
 Can help to find active sites
 
 [Additional information](https://web.stanford.edu/class/cs279/lectures/lecture5.pdf)
+!?[Presentation by Martin Steinegger about FoldSeek](https://www.youtube.com/watch?v=k5Rbi22TtOA)
 
 ## Structure Alignment
 
