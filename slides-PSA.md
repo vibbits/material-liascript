@@ -139,6 +139,8 @@ The way of searching for a specific protein structure depends on the data you al
 
 ![uniprotsearchbox.png](../../images/uniprotsearchbox.png "Search box")
 
+<i class="fa fa-question-circle" aria-hidden="true"></i>
+
 > #### {% icon hands_on %} Explore a PDB structure on the Uniprot web site
 >
 > 1. Go to the UniProt website and search for the DnaK protein
@@ -146,7 +148,7 @@ The way of searching for a specific protein structure depends on the data you al
 > 2. Click on the *accession code* (column Entry) to view the protein page of this DnaK from the model organism *Escherichia coli*.
 > 3. Click on *Structure* in the left-side menu and then look at the *3D structure databases* table.
 
-#### {% icon question %} Guidelines which PDB structures to select
+####  Guidelines which PDB structures to select
 
 Which structures (give the 4-character PDB ID) of the C-terminal domain of DnaK should preferentially be use for analysis and why?
 > <details markdown="1">
