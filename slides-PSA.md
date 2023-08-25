@@ -676,7 +676,7 @@ $$ rmsd = \sqrt{\frac{1}{N}\sum_{i=1}^{N}R_{i}^{2}} $$
 - use of B factors to represent other properties  
 - other non-standard extensions (PDBQT, ...)
 
-## Exercise 4b: Model a Mutation
+## Exercise 5: Model a Mutation
 
 [Link to exercise 4](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/mutate-structure/tutorial.html)
 
