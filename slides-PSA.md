@@ -144,6 +144,8 @@ The way of searching for a specific protein structure depends on the data you al
 
 <i class="fa fa-question-circle" aria-hidden="true"></i>
 
+<i class="fas fa-cat"></i>
+
 > #### {% icon hands_on %} Explore a PDB structure on the Uniprot web site
 >
 > 1. Go to the UniProt website and search for the DnaK protein
