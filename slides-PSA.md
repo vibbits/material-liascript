@@ -1,4 +1,4 @@
-1G<!--
+<!--
 author:   Alexander Botzki
 email:    Alexander.Botzki@vib.be
 version:  0.1.1
