@@ -13,7 +13,7 @@ link:     https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.c
 link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/img/org.css
 link:     https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css
 
-script: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js
+script:   https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js
 
 debug: true
 
