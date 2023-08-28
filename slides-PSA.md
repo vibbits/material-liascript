@@ -152,7 +152,7 @@ The way of searching for a specific protein structure depends on the data you al
 
 Which structures (give the 4-character PDB ID) of the C-terminal domain of DnaK should preferentially be use for analysis and why?
 
-> <details markdown="1">
+> <details>
 >  
 > <summary>Solution</summary>
 >
