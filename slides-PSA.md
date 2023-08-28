@@ -153,6 +153,7 @@ The way of searching for a specific protein structure depends on the data you al
 Which structures (give the 4-character PDB ID) of the C-terminal domain of DnaK should preferentially be use for analysis and why?
 
 <details markdown="1"><summary>Solution</summary>
+
 >   
 >>
 >>  Usually, the recommended selection criteria are using an X-ray structure with low resolution and low $R_{free}$ factor. Furthermore, the PDB database has pre-calculated a validation report for all of the structures.
@@ -164,6 +165,7 @@ Which structures (give the 4-character PDB ID) of the C-terminal domain of DnaK 
 >>  This is a difficult example since there are so many high resolution structures available. So, it is recommended to study the articles and compare the available structures to find your favorite structure for further analysis.
 >> 
 >
+
 </details>
 
 ### Via the Protein Data Bank by PDB ID
