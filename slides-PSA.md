@@ -11,6 +11,7 @@ logo: img/Logo.png
 
 link:     https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
 link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/img/org.css
+link:     https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css
 
 debug: true
 
@@ -29,6 +30,8 @@ debug: true
 
 !?[What is a protein](https://youtu.be/wvTv8TqWC48)<!-- width="890px" height="488px" -->
 
+<i class="fa fa-cat"></i>
+
 [^1](https://pdb101.rcsb.org/learn/videos/what-is-a-protein-video)
 
 ## Amino acids and peptide structure
@@ -42,7 +45,7 @@ debug: true
 - Folded proteins provide a well-defined 3D arrangement of functional groups, creating microenvironments and active sites.
 - Structural changes are often involved in functional  mechanisms  (motor proteins, ...)
 
-!?[](https://material.bits.vib.be/topics/protein-structure-analysis/images/hemoglobin.png)<!-- height="600px" -->
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/hemoglobin.png)<!-- height="600px" -->
 
 !?[](https://www.youtube.com/watch?v=E6LHoKe-zRU&list=PLuIpgNT2hMwRQKFy4okoNQKiJwM8li3Sz&index=13)
 !?[](https://www.youtube.com/watch?v=CViLhxiPq1k&list=PLuIpgNT2hMwRQKFy4okoNQKiJwM8li3Sz&index=18)
@@ -62,7 +65,15 @@ debug: true
 
 *******************
 
-                            {{1}}
+                                  {{1-2}}
+*********************
+[http://www.wwpdb.org](http://www.wwpdb.org)
+
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/wwpdb-welcome-page.png)<!-- width="70%" -->
+
+*******************
+
+                            {{2}}
 *******************
 
 [**Protein Data Bank**](http://www.wwpdb.org) approx. 208,000 experimentally determined structures
@@ -74,51 +85,11 @@ debug: true
 
 *******************
 
-## X-Ray Crystallography - Technical setup
-
-
-                     {{0-1}}
-*********************
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/xray-tech-setup.png)<!-- width="100%" -->
-
-![](https://www.youtube.com/watch?v=4HZoDjJ4A2k Lecture 01, concept 18: Protein structure determination - X-ray crystallography & Cryo-EM)
-*******************
-
-                       --{{0}}--
-In a crystal, a large number  of macromolecules are packed together in a regular grid, with consistent  orientations and relative distances.
-When exposed  to an X-ray beam, this  arrangement gives rise to diffracted rays in specific directions, resulting in discrete spots on the planar detector. By rotating the crystal, a series  of images is obtained. From these, the intensities of all the diffracted rays of the crystal can be derived.
-
-                      {{1}}
-*******************
-
-
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/diffraction-pattern.png)<!-- width="50%" -->
-
-*******************
-
-## X-Ray Crystallography - from diffraction pattern to atomic model
-
-![](img/X-ray-crystallography-1.png)<!-- width="100%" -->
-
-|Diffraction Spot Intensities and Phases| | Electron density|
-|:---------------------------------------:|:--------:|:----------------:|
-| $F_{obs}(h,k,l)$ and $\phi_{obs}(h,k,l)$ | $$R_{cryst} = \frac{\sum_{h,k,l}F_{obs}-F_{calc}}{\sum_{h,k,l}F_{obs}}$$ |  $\rho(x,y,z)$ |
-
-## The Protein Databank
-
-                                  {{0-1}}
-*********************
-[http://www.wwpdb.org](http://www.wwpdb.org)
-
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/wwpdb-welcome-page.png)
-
-*******************
-
- {{1}}
-*******************
-- contains structures of  proteins, nucleic acids  and complexes,  determined by X-ray  crystallography, NMR  spectroscopy
-- No purely theoretical  or ab initio models  (since 2006)
-- Also stores supporting  experimental data
+                                {{3}}
+**********************************
+- contains structures of  proteins, nucleic acids  and complexes
+- No purely theoretical or ab initio models  (since 2006)
+- Also stores supporting experimental data
 - Full deposition now  required by all peer-reviewed journals
 
 *******************
@@ -134,21 +105,22 @@ When exposed  to an X-ray beam, this  arrangement gives rise to diffracted rays 
 
 ### Search for a structure
 
-#### Via [UniProt](http://www.uniprot.org/)
-The way of searching for a specific protein structure depends on the data you already have. You might already have the PDB ID (a unique identifier), that's an easy one. But mostly you have the protein name or you just have a sequence. In the last cases I recommend to start from the UniProt website at <http://www.uniprot.org>, which is the best annotated protein database in the world. Our first model protein will be the molecular chaperone DnaK from *E. coli*. Below is an image of the UniProt search box where you can start your search for proteins.
+            {{0}}
+*************************
+**Via [UniProt](http://www.uniprot.org/)**
 
-![uniprotsearchbox.png](../../images/uniprotsearchbox.png "Search box")
+The way of searching for a specific protein structure depends on the data you already have. You might already have the PDB ID (a unique identifier), that's an easy one. But mostly you have the protein name or you just have a sequence. In the last cases I recommend to start from the UniProt website at [http://www.uniprot.org](http://www.uniprot.org), which is the best annotated protein database in the world. Our first model protein will be the molecular chaperone DnaK from *E. coli*.
 
-<i class="fa fa-question-circle" aria-hidden="true"></i>
-
-> #### {% icon hands_on %} Explore a PDB structure on the Uniprot web site
+> <i class="fa fa-pencil-alt"></i> **Explore a PDB structure on the Uniprot web site**
 >
 > 1. Go to the UniProt website and search for the DnaK protein
-> - The UniProt search engine returns a list of DnaK protein sequences from a variety of organisms. An entry with accession code **P0A6Y8** and entry name **DNAK_ECOLI** should be near the top of this list.
+>
+>    * The UniProt search engine returns a list of DnaK protein sequences from a variety of organisms. 
+>      An entry with accession code **P0A6Y8** and entry name **DNAK_ECOLI** should be near the top of this list.
 > 2. Click on the *accession code* (column Entry) to view the protein page of this DnaK from the model organism *Escherichia coli*.
 > 3. Click on *Structure* in the left-side menu and then look at the *3D structure databases* table.
 
-####  Guidelines which PDB structures to select
+Guidelines which PDB structures to select
 
 Which structures (give the 4-character PDB ID) of the C-terminal domain of DnaK should preferentially be use for analysis and why?
 
@@ -169,42 +141,45 @@ Which structures (give the 4-character PDB ID) of the C-terminal domain of DnaK 
 >
 > </details>
 
-### Via the Protein Data Bank by PDB ID
+****************
 
-You can find structural information directly at the PDB database. The web site of the PDB consortium is located at <http://www.wwpdb.org>. This web site provides links to all members of the PDB (left side). It is a question of taste which resource you start off with. For X-ray structures, it is currently PDBe, RCSB PDB, PDBj. For NMR structres, you find the BMRB. In today's course, we focus on the PDB resources only.
+           {{1}}
+*********************
+**Via the Protein Data Bank by PDB ID**
 
-Below is an image of the RCSB search box <http://www.rcsb.org/pdb/home/home.do> where you can start your search for structures.
+You can find structural information directly at the PDB database. The web site of the PDB consortium is located at http://www.wwpdb.org. This web site provides links to all members of the PDB (left side). It is a question of taste which resource you start off with. For X-ray structures, it is currently PDBe, RCSB PDB, PDBj. For NMR structres, you find the BMRB. In today's course, we focus on the PDB resources only.
 
-![Pdbsearchbox_RCSB.png](../../images/pdbsearchbox_RCSB.png "PDB Search Box")
+If we visit RCSB at [http://www.rcsb.org](http://rcsb.org) you can start your search for structures.
 
-The PDB file with ID **1DKX** contains the atomic coordinates of the molecular chaperone (DnaK) from *E. coli*.
+The PDB entry with ID **1DKX** contains the atomic coordinates of the molecular chaperone (DnaK) from *E. coli*.
 
-#### Search a structure on the RCSB web site
+> <i class="fa fa-pencil-alt"></i> **Explore a PDB structure on the Uniprot web site**
+>
+> 1. Go to the PDB website and type 1DKX in the search box 
+>
+> This will lead you to a page with similar information than on UniProt. 
 
-1. Go to the PDB website and type 1DKX in the search box
+************
 
-
-This will lead you to the same page we got earlier through UniProt.
-
-#### Via the Protein Data Bank by sequence
+                 {{2}}
+******************
+**Via the Protein Data Bank by sequence**
 
 In lots of cases we only have a sequence of which we would like to find out if there is structural information. The PDB can be searched using a sequence as input. Here is the sequence of the C-terminal substrate binding domain of DnaK:
+
 ```
-    DVKDVLLLDVTPLSLGIETMGGVMTTLIAKNTTIPTKHSQVFSTAEDNQSAVTIHVLQGE
-    RKRAADNKSLGQFNLDGINPAPRGMPQIEVTFDIDADGILHVSAKDKNSGKEQKITIKAS
-    SGLNEDEIQKMVRDAEANAEADRKFEELVQTRNQGDHLLHSTRKQVEEAGDKLPADDKTA
-    IESALTALETALKGEDKAAIEAKMQELAQVSQKLMEIAQQQHAQQQTAGADASANNAKDD
-    DVVDAEFEEVKDKK
+DVKDVLLLDVTPLSLGIETMGGVMTTLIAKNTTIPTKHSQVFSTAEDNQSAVTIHVLQGERKRAADNKSLGQFNLDGINPAPRGMPQIEVTFDIDADGILHVSAKDKNSGKEQKITIKASSGLNEDEIQKMVRDAEANAEADRKFEELVQTRNQGDHLLHSTRKQVEEAGDKLPADDKTAIESALTALETALKGEDKAAIEAKMQELAQVSQKLMEIAQQQHAQQQTAGADASANNAKDDDVVDAEFEEVKDKK
 ```
+
 The PDB allows sequence searches through the same search box we used before.
 
-![Pdbsearchbox_RCSB.png](../../images/pdbsearchbox_RCSB.png "PDB Search Box")
+![Search box RCSB](img/PSA01_01_pdbsearchbox_RCSB.png "PDB Search Box")
 
 There is also an Advanced Search section, with a Blast/Fasta option in the Sequence Features section.
 
-![Blastpdb.png](../../images/blastpdb.png "BLAST")
+![Blastpdb.png](img/AdvancedSearchBox.png "BLAST")
 
-> #### Hands-on: BLAST search for PDB structure
+> Hands-on: BLAST search for PDB structure
 >
 > 1. Go to the Advanced Search section
 > 2. Please select 'Sequence BLAST/PSI-BLAST' in the Query type drop down.
@@ -213,60 +188,66 @@ There is also an Advanced Search section, with a Blast/Fasta option in the Seque
 > 4. Press ''Submit query''.
 > 5. You should see the same structures popping up as you saw in the UniProt page of DnaK.
 
-# The PDB file
+*****************
 
-## Introduction
+## Exercise 2: Getting to know PDB entries 
+
+The primary data format for PDB data is the [PDBx/mmCIF format](https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/beginner%E2%80%99s-guide-to-pdb-structures-and-the-pdbx-mmcif-format). There is a legacy [PDB format](http://www.wwpdb.org/documentation/file-format-content/format33/v3.3.html) which is still very popular. 
 
 A PDB (Protein Data Bank) file is a plain text file that contains the
 atom coordinates of a solved 3D structure of a protein or even DNA. Such
 coordinate files can be obtained at the Protein Data Bank at
-<http://www.rcsb.org/pdb>. Each PDB file has a unique identifier (ID)
-consisting of 4 characters, the first one is always a number. Note: It
-has been announced that the 4 character code will change in the future
-<https://www.wwpdb.org/news/news?year=2017\#5910c8d8d3b1d333029d4ea8>.
+[http://www.rcsb.org/](http://www.rcsb.org/). Each PDB entry has a unique identifier (ID)
+consisting of 4 characters, the first one is always a number. 
+Note: It has been announced that the 4 character code will change in the [future](https://www.wwpdb.org/news/news?year=2017\#5910c8d8d3b1d333029d4ea8).
 
-The PDB file with ID **1DKX** contains the atomic coordinates of the
+### BLAST search for PDB structures
+
+The PDB entry with ID **1DKX** contains the atomic coordinates of the
 molecular chaperone (DnaK) from *E coli*.
 
-> ### {% icon hands_on %} Hands-on: BLAST search for PDB structure
+> <i class="fas fa-pencil-alt"></i> **Hands-on: BLAST search for PDB structure**
 >
-> 1. Go to the PDB website at <http://www.rcsb.org/pdb>
-> 2. Type 1DKX in the search and try to answer the following questions.
-{: .hands_on}
+> 1. Go to the PDB website at [http://www.rcsb.org/](http://www.rcsb.org/)
+> 2. Type 1DKX in the search and try to answer the questions in the following step.
 
-### {% icon question %} Questions
+> <i class="fas fa-question"></i> **Questions**
+>
+> 1. How many molecules were solved in this PDB file? What kind of molecules are these (proteins, peptides, DNA, ...)?
+> 2. Does the structure represent the full protein? If not, how many residues are missing? Hint: Click on the UniProt KB link in the Sequence tab to see the full sequence.
+> 3. Was this structure solved by X-Ray or NMR?
+> 4. What is the atomic resolution and R-factor?
 
-1. How many molecules were solved in this PDB file? What kind of molecules are these (proteins, peptides, DNA, ...)?
-2. Does the structure represent the full protein? If not, how many residues are missing? Hint: Click on the UniProt KB link in the Sequence tab to see the full sequence.
-3. Was this structure solved by X-Ray or NMR?
-4. What is the atomic resolution and R-factor?
+<details><summary><i class="fa fa-question-circle"></i> Solution</summary>
 
-> <details markdown="1">
-> <summary>{% icon solution %} Solution
-> </summary>
-> 1. Two, called polymers or chains: they are polypeptides ![Type](../../images/Mol_desc_1DKX.png)
-> 2. To answer this question you can go to the sequence tab at the top:
->    - ![Uniprot view](../../images/Pdb_firstresiduesmissing_1dkx.png)
->    - Summary: a large chunk of the N-terminus is missing from the structure, the C-terminus is virtually complete.
-> 3. X-RAY diffraction, as shown by Experimental Details
-> 4. Atomic resolution: 2.00 Ångstrom and R-factor of 0.206
-> </details>
-{: .question}
+>  1. Two, called polymers or chains: they are polypeptides ![Type](../../images/Mol_desc_1DKX.png)
+>  2. To answer this question you can go to the sequence tab at the top:i
+>
+>     * ![Uniprot view](../../images/Pdb_firstresiduesmissing_1dkx.png)
+>   * Summary: a large chunk of the N-terminus is missing from the structure, the C-terminus is virtually complete.
+>
+>  3. X-RAY diffraction, as shown by Experimental Details
+>  4. Atomic resolution: 2.00 Ångstrom and R-factor of 0.206
 
+</details>
 
-## Downloading the structure
+### Downloading the structure
 
-The file that holds the 3D coordinates can be downloaded by clicking on
-*Download files* in the top right corner and then choosing *PDB file (text)*.
-For convenience, save this file on your desktop. The filename is the
-4-character unique PDB ID.
+> <i class="fas fa-pencil-alt"></i> **Hands-on: BLAST search for PDB structure**
+>
+> 1. Go to the PDB website at [http://www.rcsb.org/](http://www.rcsb.org/)
+> 2. Type 1DKX in the search box. 
+> 3. The file that holds the 3D coordinates can be downloaded by clicking on
+>    *Download files* in the top right corner and then choosing *PDBx/mmCIF Format*. For convenience, save this file on your desktop. The filename is the 4-character unique PDB ID.
 
-![Pdbdownloadfile1.png](../../images/pdbdownloadfile1.png)
+![Pdbdownloadfile1.png](img/1DKX.png)
 
-> ### {% icon hands_on %} Hands-on: Open downloaded PDB file in an editor
+> <i class="fas fa-pencil-alt"></i> **Hands-on: Open downloaded PDB file in an editor**
+>
 > 1.   Open this file with a text editor, e.g. WordPad is an excellent tool for that.
 > 2. Do you see the different sections in the PDB file? Analyse some ATOM lines and try to explain what kind of data is in each column.
 
+Additional exercises on searching PDB can be found on the [basic bioinformatics exercises page](http://wiki.bits.vib.be/index.php/Exercises_on_Protein_Structure).
 
 ## PDB File Format
 
@@ -432,18 +413,14 @@ _citation.pdbx_database_id_DOI      ?
 
 ## Occupancy
 
-                 {{0}}
-************************************************
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/occupancy.png)<!-- width="750px" -->
 
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/occupancy.png)<!-- width="80%" -->
 [^1](https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/dealing-with-coordinates)
-
-************************************************
 
                  --{{0}}--
 Macromolecular crystals are composed of many individual molecules packed into a symmetrical arrangement. In some crystals, there are slight differences between each of these molecules. For instance, a sidechain on the surface may wag back and forth between several conformations, or a substrate may bind in two orientations in an active site, or a metal ion may be bound to only a few of the molecules. When researchers build the atomic model of these portions, they can use the occupancy to estimate the amount of each conformation that is observed in the crystal. For most atoms, the occupancy is given a value of 1, indicating that the atom is found in all of the molecules in the same place in the crystal. However, if a metal ion binds to only half of the molecules in the crystal, the researcher will see a weak image of the ion in the electron density map, and can assign an occupancy of 0.5 in the PDB structure file for this atom. Occupancies are also commonly used to identify side chains or ligands that are observed in multiple conformations. The occupancy value is used to indicate the fraction of molecules that have each of the conformations. Two (or more) atom records are included for each atom, with occupancies like 0.5 and 0.5, or 0.4 and 0.6, or other fractional occupancies that sum to a total of 1.
 
-## Related Web sites
+## Additional databases and services
 
 - Nucleic Acid Database: DNA and RNA structures
 
@@ -460,53 +437,6 @@ Macromolecular crystals are composed of many individual molecules packed into a 
 - Replaced Electron Density Server: convenient overview of quality parameters for crystal structures
 
   [http://www.ebi.ac.uk/pdbe/litemol](http://www.ebi.ac.uk/pdbe/litemol)
-
-## High-Resolution NMR Spectrometry - Principles
-
-
-                 {{0}}
-************************************************
-
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/nmr-peaks-to-structure.png)<!-- height="307px"-->
-
-************************************************
-
-                              --{{0}}--
-Many atomic nuclei, including the ubiquitous hydrogen nuclei,  resonate at specific radio frequencies when placed in a  strong, uniform magnetic field. The chemical environment of each individual atom slightly modulates its exact resonance  frequency. In macromolecules with thousands of atoms, many different  effects combine to generate an extremely complicated pattern of chemical shifts, which therefore more or less uniquely  identify each atom. Multidimensional spectra allow these  frequencies to be assigned to specific atoms.
-
-
-## High-Resolution NMR Spectroscopy - Nuclear Overhauser Effect
-
-                 {{0}}
-************************************************
-
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/nmr-noe.jpg)<!-- height="600px" -->
-
-************************************************
-
-                          --{{0}}--
-When two atoms are near each other in 3D space, they can exchange magnetization, giving rise to crosspeaks at the  intersection of their respective frequencies. This nuclear Overhauser effect (NOE) is used to effectively measure the distances between pairs of atoms, at least qualitatively.
-
-## High-Resolution NMR Spectroscopy
-
-                 {{0}}
-************************************************
-
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/nmr-model-example.png)<!-- height="600px" -->
-
-************************************************
-
-                --{{0}}--
-After identification of the atoms by means of their unique chemical shifts, distance restraints are derived from the Overhauser crosspeaks. An extended model of the protein is generated, and then condensed into a shape that is consistent with as many of distance restraints as possible.
-
-## Other methods
-
-- Electron microscopy (and especially Cryo-electron microscopy): Electron crystallography and single particle reconstruction
-- Small-angle X-ray and neutron scattering (SAXS and SANS)
-
-![](https://material.bits.vib.be/topics/protein-structure-analysis/images/saxs.png)<!-- height="600px" -->
-
-## Related Web sites
 
 - BioMagResBank: experimental data for NMR-  derived structures (lists of distance restraints  and other experimentally derived properties)
 
@@ -789,18 +719,19 @@ Different algorithms use different combinations of sequence- and secondary of te
 
 - Download the five provided PDB files and open them in ChimeraX.
 
-- Use the `Analyze|Align|Objects` with MUSTANG function to align the four last objects with the first one.
+- Use *matchmaker* function to align the four last structures with the first one.
 
-- Use the space bar to open the text console and  see the reported root mean square deviations as well as the number of residues matched.
+- Check the reported root mean square deviations as well as the number of residues matched.
 
 $$ rmsd = \sqrt{\frac{1}{N}\sum_{i=1}^{N}R_{i}^{2}} $$
 
-- Color all structures by B factor and compare the  distribution to the local variability of the structures.
+- Color all structures by B factor and compare the distribution to the local variability of the structures.
 
 ### Structural comparison and RMSD 
+
 We compare structures by structurally aligning them on top of each other. That is, we
 align structurally equivalent atoms. For now, we will only use CA atoms as a representation of the backbones. 
-But Yasara also can align on any type of atom you want. You always need to specify:
+You always need to specify:
 
 -  source object(s): the structure(s) that needs to be rotated and translated to superpose on anoth
 er structure
@@ -808,60 +739,54 @@ er structure
 
 An optimal alignment is found when the root-mean-square deviation (RMSD) is at a minimum. 
 The RMSD is given as:
-![RMSD](../../images/RMSD.gif "calculation of RMSD")
+
+$$ rmsd = \sqrt{\frac{1}{N}\sum_{i=1}^{N}R_{i}^{2}} $$
+
 where R is the distance between two structurally equivalent atom pairs (CA in our case) and n is the total number of atom pairs.
 
-> #### {% icon hands_on %} Hands-on: Data download
+> <i class="fas fa-pencil-alt"></i> **Hands-on: Data download**
 >
 > 1. Download the following adapted PDB files from [Zenodo](https://zenodo.org/record/3550492#.XdeNL1dKiUk) 
 >
 >    ```
->     1DKX_1.pdb 1DKY_1.pdb 1DKZ_1.pdb 3DPO_1.pdb 3DPP_1.pdb 
+>    1DKX_1.pdb 1DKY_1.pdb 1DKZ_1.pdb 3DPO_1.pdb 3DPP_1.pdb 
 >    ```
->
 
 ### Aligning multiple structures using YASARA
 
-Now load all of them in YASARA:
-
-```
-File > Load > PDB File
-```
-
-and select the CA (C-alpha) view (F4) and superpose with the MUSTANG algorithm:
-
-
-```
-Analyze > Align > Objects with MUSTANG
-```
-
-
-In the first window you have to select the source objects that will be repositioned. Select Objects 2 till 5. In the second window you select the target Object to superpose on. That would then be the first object.
-
-Notice that YASARA prints the RMSD of every structural alignment in the lower Console. Open the Console by pressing the spacebar once or twice to extend it.
-
-Color the atoms by their B-factor:
-
-```
-View > Color > Atom > Belongs to or has > All
-Then choose BFactor in the next window and press 'Apply unique color'.
-```
-
-High BFactors are yellow, low BFactors are blue.
-
-#### Questions
-
-Do you see a correlation between the BFactors and the variability in the structure?
-
-> <details markdown="1">
-> <summary>{% icon solution %} Solution
-> </summary>
-> 
-> ![Structural alignemnt](../../images/aligned-structures.png) 
+> <i class="fas fa-pencil-alt"></i> **Hands-on: Loading PDF files and structurally align them**
 >
-> 
-> </details>
+> 1. Now load all of them in :
+>
+>    ```
+>    File > Open 
+>    ```
+>
+> 2. Type the following command in the command interface:   
+>
+>    ```
+>    matchmaker #2-5 to #1 
+>    ```
+>
+> Notice that ChimeraX prints the RMSD of every structural alignment in the console.
+>
+> 3. Color the atoms by their B-factor:
+>
+>    ```
+>    Molecule Display > Coloring > Bfactor 
+>    ```
+>
+> High BFactors are red, low BFactors are blue.
 
+> <i class="fas fa-question"></i> **Questions**
+>
+> Do you see a correlation between the BFactors and the variability in the structure? 
+
+<details><summary><i class="fa fa-question-circle"></i> Solution</summary>
+
+> ![Structural alignment](img/aligned-structures.png) 
+
+</details>
 
 ## PDB File Surprises
 
@@ -1174,6 +1099,78 @@ This exports the object as a temporary PDB file,  starts FoldX with the appropri
 
 - Compare the original and repaired objects.  
 - Describe the changes that were introduced.
+
+## X-Ray Crystallography - Technical setup
+
+
+                     {{0-1}}
+*********************
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/xray-tech-setup.png)<!-- width="100%" -->
+
+![](https://www.youtube.com/watch?v=4HZoDjJ4A2k Lecture 01, concept 18: Protein structure determination - X-ray crystallography & Cryo-EM)
+*******************
+
+                       --{{0}}--
+In a crystal, a large number  of macromolecules are packed together in a regular grid, with consistent  orientations and relative distances.
+When exposed  to an X-ray beam, this  arrangement gives rise to diffracted rays in specific directions, resulting in discrete spots on the planar detector. By rotating the crystal, a series  of images is obtained. From these, the intensities of all the diffracted rays of the crystal can be derived.
+
+                      {{1}}
+*******************
+
+
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/diffraction-pattern.png)<!-- width="50%" -->
+
+*******************
+
+## X-Ray Crystallography - from diffraction pattern to atomic model
+
+![](img/X-ray-crystallography-1.png)<!-- width="100%" -->
+
+|Diffraction Spot Intensities and Phases| | Electron density|
+|:---------------------------------------:|:--------:|:----------------:|
+| $F_{obs}(h,k,l)$ and $\phi_{obs}(h,k,l)$ | $$R_{cryst} = \frac{\sum_{h,k,l}F_{obs}-F_{calc}}{\sum_{h,k,l}F_{obs}}$$ |  $\rho(x,y,z)$ |
+
+## High-Resolution NMR Spectrometry - Principles
+
+
+                 {{0}}
+************************************************
+
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/nmr-peaks-to-structure.png)<!-- height="307px"-->
+
+************************************************
+
+                              --{{0}}--
+Many atomic nuclei, including the ubiquitous hydrogen nuclei,  resonate at specific radio frequencies when placed in a  strong, uniform magnetic field. The chemical environment of each individual atom slightly modulates its exact resonance  frequency. In macromolecules with thousands of atoms, many different  effects combine to generate an extremely complicated pattern of chemical shifts, which therefore more or less uniquely  identify each atom. Multidimensional spectra allow these  frequencies to be assigned to specific atoms.
+
+
+## High-Resolution NMR Spectroscopy - Nuclear Overhauser Effect
+
+                 {{0}}
+************************************************
+
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/nmr-noe.jpg)<!-- height="600px" -->
+
+************************************************
+
+                          --{{0}}--
+When two atoms are near each other in 3D space, they can exchange magnetization, giving rise to crosspeaks at the  intersection of their respective frequencies. This nuclear Overhauser effect (NOE) is used to effectively measure the distances between pairs of atoms, at least qualitatively.
+
+************************************************
+
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/nmr-model-example.png)<!-- height="600px" -->
+
+************************************************
+
+                --{{0}}--
+After identification of the atoms by means of their unique chemical shifts, distance restraints are derived from the Overhauser crosspeaks. An extended model of the protein is generated, and then condensed into a shape that is consistent with as many of distance restraints as possible.
+
+## Other methods
+
+- Electron microscopy (and especially Cryo-electron microscopy): Electron crystallography and single particle reconstruction
+- Small-angle X-ray and neutron scattering (SAXS and SANS)
+
+![](https://material.bits.vib.be/topics/protein-structure-analysis/images/saxs.png)<!-- height="600px" -->
 
 ### Example tutorials
 
