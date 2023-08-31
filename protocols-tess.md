@@ -111,19 +111,11 @@ In the next section, you will find links where you can follow all scenarios.
 ## More background information about TeSS
 
 During the ELIXIR-EXCELERATE project, the TeSS platform has been established as the key application for bioinformatics training events and material aggregation. During a period of further adoption of the TeSS platform as such on the international level e.g. in Australia and in the Netherlands, it became obvious that the implementation of individual automatic content scrapers for more than 30 content providers lead to an enormous diversity of the code base and finally to a maintenance challenge. Therefore, during the last two to three years, a strategic reorientation of the automated harvesting procedure has been proposed and implemented in TeSS using the Bioschemas profiles for Course, CourseInstance and TrainingMaterial. This approach will put the content providers in a more prominent position since they are in turn responsible for a more structured delivery of more comprehensive metadata of their training events and material to TeSS as the aggregation platform. In the longer run, this will increase the quality level of the aggregated resources and its usefulness to TeSS user base.
-
-> Would be insteresting to add a  box explaining the specificity of each?
-> Course: text text text
-> Course Instance: text text text
-> Trainig Material: text text text
-> ToDo: link slide from Patricia
+TODO: Would be insteresting to add a box explaining the specificity of each?
 
 Content providers looking to promote use of particular tools and databases via their course offering or the specific training material can find information about them in other ELIXIR registries, such as [bio.tools](https://bio.tools) for tools and web services  and [FAIRsharing.org](https://fairsharing.org) for databases, standards and policies . Lately, such registries started to track training relating to the resources they list. Therefore, it is mutually beneficial that TeSS provides the relevant links, allowing users to search for resource-specific training; and the resource pages in bio.tools and FAIRsharing that contain reciprocal links for users to discover relevant training in TeSS.
 
-> Are TeSS, BioTools and FAIRsharing connected? In content? 
-> Is there are example of some tool with training material ou course linked in tess? 
-> I tried to find with a fast search, but couldn't find. Maybe I just need to dig a little more.
-> If so, I'll try to make an image to ilustrate it with one or two example.
+TODO: Are TeSS, BioTools and FAIRsharing connected? In content? 
 
 Related to the provisioning of persistent identifiers, TeSS provides the Digital Object Identifier (DOI) as a unique means to identify training material. Given that minting services by e.g. university libraries are not yet broadly available for teaching and learning material in contrast to research datasets and collections, associated workflows, software and models, we recommend to use services like OSF or zenodo to get own unique, persistent URLs and DOIs.
 
