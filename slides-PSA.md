@@ -111,7 +111,15 @@ debug: true
 
 The way of searching for a specific protein structure depends on the data you already have. You might already have the PDB ID (a unique identifier), that's an easy one. But mostly you have the protein name or you just have a sequence. In the last cases I recommend to start from the UniProt website at [http://www.uniprot.org](http://www.uniprot.org), which is the best annotated protein database in the world. Our first model protein will be the molecular chaperone DnaK from *E. coli*.
 
+<<<<<<< HEAD
 > <i class="fa fa-pencil-alt"></i> **Explore a PDB structure on the Uniprot web site**
+=======
+<i class="fa fa-question-circle" aria-hidden="true"></i>
+
+<i class="fas fa-cat"></i>
+
+> #### {% icon hands_on %} Explore a PDB structure on the Uniprot web site
+>>>>>>> 78a48339858bf8f1750b4a78d3d8f4e5eb9f82f0
 >
 > 1. Go to the UniProt website and search for the DnaK protein
 >
