@@ -12,6 +12,9 @@ logo: img/Logo.png
 link:     https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
 link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/img/org.css
 link:     https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css
+link: style.css
+
+@orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
 debug: true
 
@@ -536,40 +539,35 @@ The structure of insulin was crystallized together with some water molecules. In
 
 There are several ways to show the residues of interest:
 
-  From the menu: View > Show atoms in > Residue. Select Cys7 from Molecule A and press OK.
-
-  From the sequence selector. Hover the mouse on the bottom of the screen, you will see the sequence selector opening. Open it permanently by pressing the blue nailpin on the left side of it. Search for Cys7 from Molecule B, right-click and select Show > Residue.
+  From the sequence selector. Via `Tools > Sequence > Sequence Viewer`, you will see the sequence selector opening. Search for Cys7 from Molecule B, select the residue (will get green) and click on `Atoms > Show`..
 
 Now show the atoms of His5 in Molecule B using a method of choice.
 
 And now that we’re on it, what is special about the two cysteines we just visualized?
 
-Hiding individual atoms or residues works in the same way as showing them, only now you should go to Hide atoms in the menu.
+Hiding individual atoms or residues works in the same way as showing them, only now you should go to Hide in the menu.
 
 ### Showing and Hiding Secondary Structure
 
-Most published molecular images show a detailed active site and all the rest is hidden for clarity. From the previous exercise we show the atoms of 3 residues (let’s assume this is our active site). Now secondary structure of the rest of the molecule is also still visible. To hide all that, we do not have to hide atoms, but hide the secondary structure (the F5 tube view) from the rest of the structure. Atoms and residues in YASARA are not the same as the term ‘secondary structure’. Atoms and residues are balls and sticks, ‘secondary structure’ is an artistic impression of the structure (beta sheet arrows, helix ribbons, …). If you get this concept, you are a YASARA master.
+Most published molecular images show a detailed active site and all the rest is hidden for clarity. From the previous exercise we show the atoms of 3 residues (let’s assume this is our active site). Now secondary structure of the rest of the molecule is also still visible. To hide all that, we do not have to hide atoms, but hide the secondary structure from the rest of the structure. Atoms and residues are balls and sticks, ‘secondary structure’ is an artistic impression of the structure (beta sheet arrows, helix ribbons, …).
 
 So let’s hide many of the secondary structure, but keep just a few stretches around our active site. Our active site is Cys7 (A), Cys7 (B) and His 5 (B). This can be done in several ways. Since we would have to hide almost everything, I propose to hide first everything and then show again those stretches that we want. But if you have a better idea, I would like to hear it.
 
-Hide all secondary structure via View > Hide secondary structure of > All.
+Hide all secondary structure via Cartoons > Hide 
 
-Then show stretches of residues 2-10 in Mol B and residues 4-10 in Mol A in tube view via View > Show secondary structure > Tube through > Residue.
+Open the Sequence viewer and select the stretches via the mouse.
 
-Then select the correct stretches of residues by keeping the CTRL key pressed to select multiple residues.
+Then show stretches of residues 2-10 in Mol B and residues 4-10 in Mol A in Cartoons > Show.
 
-There are still some metal-bound histidines flying around that weren’t hidden because they are metal bound (a YASARA specific thing). Hide those histidines by clicking on one of the sidechain atoms, then
-right-click and select Hide atoms > Residue.
+There are still some metal-bound histidines flying around that weren’t hidden because they are metal bound. Hide those histidines by clicking on one of the sidechain atoms, go to `Select > Broaden ` and click `Atoms > Hide`.
 
-The nasty dative bonds and metals can be removed simply by deleting all of them via Edit > Delete > Residue > Name.
-
-In the name column select all the metals and ions you can find.
+The metal coordination bonds can be hidden simply by selecting the model 1.1 and hide it by un-checking the checkbox next to the colored square. 
 
 Et voilà, a publication ready image!
 
 ### Labels
 
-You can put labels on the residues you want to highlight by selecting an atom from a residue (right-click). Subsequently, you select `Label > Residue` and choose the formatting of the label.
+You can put labels on the residues you want to highlight by selecting an atom from a residue (right-click in default mode). Subsequently, you select `Actions > Label > Residues` and choose the formatting of the label.
 
 Via the same menu, you can change the height to 0.7 A or e.g. 20 pixels.
 
@@ -809,23 +807,33 @@ where R is the distance between two structurally equivalent atom pairs (CA in ou
 
 ## Exercise 5: Model a Mutation
 
-- Load the 2AC0.sce Yasara scene file.
+- Load the PDB entry 2AC0.
 - Set an appropriate structure representation.
-- Locate residue Ala159 using the sequence view, and right-click to access the `FoldX|Mutate` residue function. Change it to a Trp residue.
-- Look at the effect of the substitution on the structure, and use the space bar to open the text  console and read the output of the FoldX calculation.
-- Mutate Arg273 to an alanine side chain. Discuss  the effects of this substitution.
+- Locate residue Ala159 using the sequence view. 
+- Use the *swapaa* command to change it to a Trp residue.
+- Look at the effect of the substitution on the structure.
+- Mutate Arg273 to an alanine side chain. Discuss the effects of this substitution.
+
+      {{1}}
+*******
+
+```
+swapaa #6.2:159 trp log true
+```
+Additional exercise: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1304567/
+Further reading: https://dasher.wustl.edu/chem430/software/chimera/users-guide.pdf
+
+********
 
 ## Exercise 6: Study Protein-Ligand Interactions
 
 ### Introduction
-{:.no_toc}
-
-<!-- This is a comment. -->
 
 The goal of this exercise is appreciate how protein interactions can be studied through visual inspection and other software tools. Protein interactions can be classified into different groups regarding the molecular properties and functions of the interacting partners. (These groups are intertwined in several cases.) Some examples include:
 
 - the interactions of proteins with other proteins, small molecules, carbohydrates, lipids or nucleic acids;
 - Receptor-ligand interactions;
+- Peptide-protein interactions;
 - Antigen-antibody interactions;
 - Enzymatic interactions, enzyme-inhibitor interactions.
 
@@ -833,61 +841,80 @@ The goal of this exercise is appreciate how protein interactions can be studied 
 
 We will start with exploring one crystal structure of the β2 adrenoceptor. Together with the Steyaert lab from VIB, Kobilka published several crystal structures of the β2 adrenoceptor in its various activation states (Rasmussen et al. Nature 2011, 477)
 
-
-> #### {% icon hands_on %} Get the structure
+       {{1}}
+**********
+> <i class="fas fa-pencil-alt"></i> **Get the structure**
 >
-> 1. Download the crystal structure 3P0G from the PDB into YASARA. 
+> 1. Download the crystal structure 3P0G from the PDB into ChimeraX. 
 >
 >    ```
->    File - Load - PDB file from internet    
+>    open 3P0G   
 >    ```
 >    As you can immediately appreciate, it is a bigger crystal structure with more than one molecule. 
->
 
-> #### {% icon question %} Questions
+
+> <i class="fas fa-question"></i> **Questions**
 >
 > 1. How many molecules are present in the crystallized structures? 
 > 2. And how many chain identifiers are used? 
->
-> <details markdown="1">
-> <summary>{% icon solution %} Solution
-> </summary>
-> 
-> 1. There are three molecules, chain A Beta-2 adrenergic receptor; Endolysin, chain B Camelid Antibody Fragment, and a small molecule ligand. 
-     Also have a look at PDBe [3P0G](https://www.ebi.ac.uk/pdbe/entry/pdb/3p0g) which gives a very nice overview of the structure and its composition.
-> 2. Only two chain identifiers A and B. Sometimes, this leads to issues depending on the software you might want to use for downstream processing.
-> 
-> </details>
->
 
+<details><summary> Solution</summary>
+
+> 1. There are three molecules, chain A Beta-2 adrenergic receptor; Endolysin, chain B Camelid Antibody Fragment, and a small molecule ligand. 
+>     Also have a look at PDBe [3P0G](https://www.ebi.ac.uk/pdbe/entry/pdb/3p0g) which gives a very nice overview of the structure and its composition.
+> 2. Only two chain identifiers A and B. Sometimes, this leads to issues depending on the software you might want to use for downstream processing.
+
+</details>
+
+*****************
+
+           {{2}}
+*****************
 Some software routines need seperate chain identifiers for molecular entities to work correctly, so we suggest to rename the small molecule to chain L.
 
-> #### {% icon hands_on %}  
+> <i class="fas fa-pencil-alt"></i> **Rename the chain of a residue** 
 >
-> 1. Activate the Head-up display
-> 2. Select Rename
-> 3. Enter 'L' to proceed with the renaming. 
+> 1. Select the residue
+> 
+>    ```
+>    Tools - Structure Editing - Change Chain IDs
+>    ```
+>    In the subsequent dialogue enter 'L' while keeping 'To the one' highlighted.
 >
+> 2. Confirm with 'OK'
+ 
 
 We first have a look whether we can find out if there are specific interactions of the small molecule ligand with the adrenoreceptor.
 
-In order to do so, we first have to add Hydrogens to all present molecules.
+In order to do so, we could add hydrogens to all present molecules first.
 
-> #### {% icon hands_on %}  
+> <i class="fas fa-pencil-alt"></i> **Add hydrogens to the molecules** 
 >
-> 1. Edit - Add - hydrogens to : All 
-> 2. Change the display of the ligand to Sticks
-> 3. Select the amino acids of the binding pocket i.e. a sphere of 10 Angstrom around the ligand
->    ```
->    Select – in sphere around – Residue and drag with the mouse until the display says 10 Å
->    ``` 
-> 4. ```
->    View – show interactions – hydrogen bonds of - Residues
->    ```
->    select 'Selected' in the panel Belongs to or has
->    and press OK in the subsequent window
->
+> Tools - Structure Editing - Add hydrogens 
 
+Note: ChimeraX does not need hydrogens to be present to calculate hydrogen bonds.
+
+> <i class="fas fa-pencil-alt"></i> **Select the ligand**
+>
+> ```
+> Select - Residues - P0G
+> ```
+>
+> Note: in the Log panel on the right side, you identify that there is a non-standard residue present in the structure.
+
+> <i class="fas fa-pencil-alt"></i> **Calculate hydrogen bonds** 
+>
+> ```
+> Tools – Structure Analysis – H-bonds 
+> ```
+> check Limit by selection and
+> check the Log checkbox at the bottom of the dialogue
+> and press OK in the subsequent window
+
+***************
+
+         {{3}}
+*************
 Given that hydrogen bonding is dependent on the definition of a hydrogen bond in the program, it is not a bad idea to use other tools to compare the analysis. There are many options to do this online if you look at published crystal structures. Next to the tools which are directly linked out from the web site of the crystal structure at the PDB database you can use the [ProteinPlus server](http://proteinsplus.zbh.uni-hamburg.de/)
 
 Go to the web site of ProteinPlus and enter the PDB code 3P0G into the search box. After clicking on Go, you should be presented with on overview of tools the ProteinPlus server provides.
@@ -898,27 +925,24 @@ We do not go into great detail on all the tools but only mention PoseView. With 
 ![Zoom on ligand of 3P0G](../../images/3P0G_A_PoseView_Input.png "Zoom on ligand co-crystallized with 3P0G")
 
 
-> #### {% icon question %} Questions
+> <i class="fas fa-question"></i> **Questions**
 >
-> 1. Between which amino acids and the ligand do you see hydrogen bonds using YASARA? 
+> 1. Between which amino acids and the ligand do you see hydrogen bonds using ChimeraX? 
 > 2. According to PoseView, between which amino acids and the ligand do you see hydrogen bonds?
 > 3. What other interactions are presented in the sketch?
-> 4. Inspect the visualisation in Yasara: Do you see the interactions in Yasara as well?
->
-> <details markdown="1">
-> <summary>{% icon solution %} Solution
-> </summary>
-> 
-> 1. In YASARA, you observe hydrogen bonds between Asp113A as well as the carbonyl function of Asn312A and the charged amine function.
->    
-> 2. PoseView indicates hydrogen bonds between Asp113A as well as the carbonyl function of Asn312A and the charged amine function. Furthermore, hydrogen bonds are indicated between the phenolic OH and Ser207A and Ser203A as well as the amine function and Ser203A.
-> 
-> 3. Furthermore, hydrophobic interactions are indicated for the methylbenzyl moiety and pi-pi interactions of Phe290A and the phenolic moiety.
->
-> 4. With YASARA Structure license, those hydrophobic interactions can also be visualised. 
-> </details>
-{: .question}
+> 4. Inspect the visualisation in ChimeraX: Do you see the interactions in ChimeraX as well?
 
+<details><summary>Solution</summary>
+
+> 1. TODO In ChimeraX, you observe hydrogen bonds between Asp113A as well as the carbonyl function of Asn312A and the charged amine function.
+> 2. PoseView indicates hydrogen bonds between Asp113A as well as the carbonyl function of Asn312A and the charged amine function. Furthermore, hydrogen bonds are indicated between the phenolic OH and Ser207A and Ser203A as well as the amine function and Ser203A.
+> 3. Furthermore, hydrophobic interactions are indicated for the methylbenzyl moiety and pi-pi interactions of Phe290A and the phenolic moiety.
+> 4. With ChimeraX, those hydrophobic interactions can also be visualised.
+> 5. TODO 
+
+</details>
+
+*****************
 
 ### Exploring the structure of a nanobody-stabilized active state of the β2 adrenoceptor - the nanobody 
 
@@ -926,7 +950,7 @@ In order to estimate the binding energy between the nanobody and the β2 adrenoc
 
 ### Use the tool FoldX tool AnalyseComplex 
 
-> #### {% icon hands_on %} 
+>  
 >
 > 1. Given that energy-minimization takes a while for this rather large complex,
 >     please download the Yasara scene [here](http://data.bits.vib.be/pub/trainingen/PSA/3P0G_1.sce)  
@@ -937,22 +961,21 @@ In order to estimate the binding energy between the nanobody and the β2 adrenoc
 >    ```
 >    Analyze - FoldX - Interaction energy of molecules
 >    ```
-{: .hands_on}
 
-> #### {% icon question %} Questions
+> <i class="fas fa-question"></i> **Questions**
 >
 > 1. What is the dG in the two cases? 
 > 2. Any idea why the difference is rather hugh?
->
-> <details markdown="1">
-> <summary>{% icon solution %} Solution
-> </summary>
-> 
+
+<details><summary>Solution
+</summary>
+
 > 1. first case (X-ray structure): Interaction energy between molecule(s) A and B in object 1 = -9.86 (kcal/mol)
 >    second case: 
 >    Interaction energy between molecule(s) A and B in object 2 = -20.19 (kcal/mol)
 > 2. Through the energy minimisation of the Repair Object function, the interactions of the amino acids are optimised.  
-> </details>
+
+</details>
 
 
 This command also creates a list of residues forming the interface of the two proteins. Hit space to see the list of residues in the interface.
@@ -969,10 +992,11 @@ Plugin>TA66 TA68 IA72 IA127 RA131 AA134 IA135 TA136 SA137 PA138 FA139 KA140 QA14
 In case, there is still time, I would recommend to try to use some of your capabilities you learned today and create a superposition of the inactive and active conformation of the β2 adrenoceptor. We take one of the crystal structures which are available: 3SN6
 
 ```
-File - Load - PDB file from Internet
+open 3SN6
 ```
 
-You will be kind of overwhelmed once the structure is loaded into YASARA. In order to get a first quick overview, click on the 'Center' buttom in the menu of YASARA (5th buttom from the left). Then, it is time to look at the PDB entry of 3SN6 in the PDB database to have a first idea on what molecules are in the PDB file.
+You might be overwhelmed once the structure is loaded into ChimeraX. 
+TODO In order to get a first quick overview, click on the 'Center' buttom in the menu of YASARA (5th buttom from the left). Then, it is time to look at the PDB entry of 3SN6 in the PDB database to have a first idea on what molecules are in the PDB file.
 
 As you see on the website [3SN6](http://www.rcsb.org/pdb/explore/explore.do?structureId=3SN6i), the chain R consists of 2 molecules, the β2 adrenoceptor and lysozyme. 
 In the corresponding article, it is stated that 'the unstructured amino terminus of the β2AR is replaced with T4 lysozyme (T4L)'.
@@ -981,13 +1005,13 @@ Since this is an extra molecule in the crystal structure which disturbes our vie
 
 After the manipulation, the overall picture should look roughly like this.
 
-![Superposition](../../images/3SN6_withoutLysozyme.png "Overview of 3SN6 without lysozyme")
+![Superposition](/img/3SN6_withoutLysozyme.png "Overview of 3SN6 without lysozyme")
 
 In the following step, we structurally align only the receptors. The rest of the structures will move along.
-It is suggested to use the first chain A from 3P0G as target. In order to do a structural alignment, it is suggested to use the first chain A from 3P0G as target.
+It is suggested to use the first chain A from 3P0G as target.
 
 ```
-Analyze - Align - Pairwise, based on structure - Molecules with MUSTANG
+
 ```
 
 Investigate the differences in TM helices and the binding of the nanobody compared to the subunit of the G protein.
@@ -1195,3 +1219,11 @@ https://pubmed.ncbi.nlm.nih.gov/35001912/
 **Foldseek**
 
 https://academic.oup.com/bioinformaticsadvances/article/2/1/vbac072/6749558
+
+**Further reading**
+
+https://kpwulab.com/2021/03/02/chimerax-example-scripts-commands/
+
+https://rbvi.github.io/chimerax-recipes/sidechains/sidechains.html
+
+
