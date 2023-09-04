@@ -674,27 +674,28 @@ Structure of query protein is known and aligned to PDB structures
 - [DALI](http://ekhidna.biocenter.helsinki.fi/dali_server/)
 - [VAST+](https://www.ncbi.nlm.nih.gov/Structure/vastplus/vastplus.cgi)
 
+Further reading:
+
 !?[Presentation by Martin Steinegger about FoldSeek](https://www.youtube.com/watch?v=k5Rbi22TtOA)
+
 
 Compare proteins with low sequence similarity: similar structure implies homology -> same function
 
 ## Exercise 4: Use FoldSeek to find similar structures from distinct organisms
 
-[Link to exercise 3](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/compare-structures/tutorial.html)
+Imagine that we would like to find out whether there are similar structures of the MEAK7 protein from human in proteome from S. pombe.
 
-- Compare directed search via BlastP of protein A
+Usually, we would start with doing a BLAST using Uniprot and limit the search space to the proteome from S. pombe. 
 
-- Download the five provided PDB files and open them in Yasara.
+How many hits do you find and is there any useful hit?
 
-- Use the `Analyze|Align|Objects` with MUSTANG function to align the four last objects with the first one.
+Alternatively, we can use FoldSeek to find similar 3D structures.
 
-- Use the space bar to open the text console and  see the reported root mean square deviations as well as the number of residues matched.
+How would you find out what structural information is available about MEAK7?
 
-$$ rmsd = \sqrt{\frac{1}{N}\sum_{i=1}^{N}R_{i}^{2}} $$
+Execute a search in FoldSeek using restriction on the search space for the PDB and AlphaFoldDB.
 
-- Color all structures by B factor and compare the  distribution to the local variability of the structures.
-
-[Additional information](https://web.stanford.edu/class/cs279/lectures/lecture5.pdf)
+Did you find anything interesting from this search?
 
 ## Structure Alignment
 
