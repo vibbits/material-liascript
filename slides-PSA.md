@@ -750,7 +750,7 @@ where R is the distance between two structurally equivalent atom pairs (CA in ou
 >    1DKX_1.pdb 1DKY_1.pdb 1DKZ_1.pdb 3DPO_1.pdb 3DPP_1.pdb 
 >    ```
 
-### Aligning multiple structures using YASARA
+### Aligning multiple structures using ChimeraX
 
 > <i class="fas fa-pencil-alt"></i> **Hands-on: Loading PDF files and structurally align them**
 >
