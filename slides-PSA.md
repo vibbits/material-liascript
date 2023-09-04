@@ -114,15 +114,7 @@ debug: true
 
 The way of searching for a specific protein structure depends on the data you already have. You might already have the PDB ID (a unique identifier), that's an easy one. But mostly you have the protein name or you just have a sequence. In the last cases I recommend to start from the UniProt website at [http://www.uniprot.org](http://www.uniprot.org), which is the best annotated protein database in the world. Our first model protein will be the molecular chaperone DnaK from *E. coli*.
 
-<<<<<<< HEAD
 > <i class="fa fa-pencil-alt"></i> **Explore a PDB structure on the Uniprot web site**
-=======
-<i class="fa fa-question-circle" aria-hidden="true"></i>
-
-<i class="fas fa-cat"></i>
-
-> #### {% icon hands_on %} Explore a PDB structure on the Uniprot web site
->>>>>>> 78a48339858bf8f1750b4a78d3d8f4e5eb9f82f0
 >
 > 1. Go to the UniProt website and search for the DnaK protein
 >
@@ -135,22 +127,19 @@ Guidelines which PDB structures to select
 
 Which structures (give the 4-character PDB ID) of the C-terminal domain of DnaK should preferentially be use for analysis and why?
 
-> <details>
->  
+<details>
+
 > <summary>Solution</summary>
 >
->>
->>  Usually, the recommended selection criteria are using an X-ray structure with low resolution and low $R_{free}$ factor. Furthermore, the PDB database has pre-calculated a validation report for all of the structures.
->>
->>  As an example, have a look at https://www.ebi.ac.uk/pdbe/entry/pdb/4EZX under the section 'Experiments and Validation'. 
->>  For many PDB structures, there is also a re-done structure available with a vast amount of information on the quality of the X-ray structure and suggested 'better' models e.g. (https://pdb-redo.eu/db/4ezx). 
->>  In our case, we could opt for the structures 1DKX and 4EZX.
->>
->>  This is a difficult example since there are so many high resolution structures available. So, it is recommended to study the articles and compare the available structures to find your favorite structure for further analysis.
->> 
+> Usually, the recommended selection criteria are using an X-ray structure with low resolution and low $R_{free}$ factor. Furthermore, the PDB database has pre-calculated a validation report for all of the structures.
 >
+> As an example, have a look at https://www.ebi.ac.uk/pdbe/entry/pdb/4EZX under the section 'Experiments and Validation'. 
+> For many PDB structures, there is also a re-done structure available with a vast amount of information on the quality of the X-ray structure and suggested 'better' models e.g. (https://pdb-redo.eu/db/4ezx). 
+> In our case, we could opt for the structures 1DKX and 4EZX.
 >
-> </details>
+> This is a difficult example since there are so many high resolution structures available. So, it is recommended to study the articles and compare the available structures to find your favorite structure for further analysis.
+
+</details>
 
 ****************
 
@@ -231,10 +220,9 @@ molecular chaperone (DnaK) from *E coli*.
 
 <details><summary><i class="fa fa-question-circle"></i> Solution</summary>
 
->  1. Two, called polymers or chains: they are polypeptides ![Type](../../images/Mol_desc_1DKX.png)
->  2. To answer this question you can go to the sequence tab at the top:i
+>  1. Two, called polymers or chains: they are polypeptides
+>  2. To answer this question you can go to the sequence tab at the top:
 >
->     * ![Uniprot view](../../images/Pdb_firstresiduesmissing_1dkx.png)
 >   * Summary: a large chunk of the N-terminus is missing from the structure, the C-terminus is virtually complete.
 >
 >  3. X-RAY diffraction, as shown by Experimental Details
@@ -503,9 +491,7 @@ General geometric properties (bond lengths and angles, Ramachandran distribution
 
 - Integration with AlphaFold and ESMFold AI-predicted protein structures (fetch existing or calculate new) 
 
-## Exercise 2: Show a structure
-
-[Link to exercise 2](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/visualise-structures/tutorial.html)
+## Exercise 3: Show a structure
 
 - Load PDB entry 1TRZ using the File menu.
 
@@ -565,6 +551,8 @@ The metal coordination bonds can be hidden simply by selecting the model 1.1 and
 
 Et voilà, a publication ready image!
 
+![](https://elearning.vib.be/wp-content/uploads/2020/08/PSA01_02_Insulin_hires.jpg)
+
 ### Labels
 
 You can put labels on the residues you want to highlight by selecting an atom from a residue (right-click in default mode). Subsequently, you select `Actions > Label > Residues` and choose the formatting of the label.
@@ -593,9 +581,9 @@ To save the current view to a high quality publication ready image file, click o
 
 Distances between atoms are calculated as follows:
 
-    Select the first atom
-    Keep CTRL pressed and select the second atom.
-    Left of the screen indicates the Marked Distance in Angstrom.
+ * Select the first atom
+ * Keep SHIFT pressed and select the second atom.
+ * Go to `Tools > Structure Analysis > Distances` and click on 'Create'.
 
 ### Hydrogen bonds
 
@@ -611,36 +599,40 @@ In our case, 4 surfaces will be calculated which display status and color can be
 
 ### Another exercise
 
-represenation of the insulin structure – pdb code: 1TRZ
+Try to recreate the rendering of the insulin structure – pdb code: 1TRZ as shown below.
+
+![](https://elearning.vib.be/wp-content/uploads/2020/08/PSA01_02_Insulin.png)
 
 Hints:
 
-    Choose the proper secondary structure scene style (F6 was used here);
-    Find the correct orientation first;
-    Color all backbone atoms in gray;
-    Find the residue numbers of the 2 colored helices;
-    Color those residues magenta;
-    Show the sidechain atoms and the CA of the two histidines and the
+* Choose the proper secondary structure scene style;
+* Find the correct orientation first;
+* Color all backbone atoms in gray;
+* Find the residue numbers of the 2 colored helices;
+* Color those residues magenta;
+* Show the sidechain atoms and the CA of the two histidines and the
     glutamate;
-    Color the sidechain atoms of all residues in the Element color;
-    Label the histidines and the glutamate;
-    If you need some help how to change the parameters for the label,
+* Color the sidechain atoms of all residues in the Element color;
+* Label the histidines and the glutamate;
+* If you need some help how to change the parameters for the label,
     please have a look at Help > User guide and search for the label command.
 
 ### More coloring
 
-Download GroEL via PDB code 1WE3 in YASARA.
+Download GroEL via PDB code 1WE3 in ChimeraX.
 
 Try to reproduce (approximately) the following image (hints below):
 
+![]((https://elearning.vib.be/wp-content/uploads/2020/08/PSA01_02_Groel.png)
+
 Hints:
 
-> Load the PDB via `open 1we3` 
-> Zoom out and find the correct orientation
-> Delete the ADP, DMS and Mg molecules (are treated as residues in YASARA). So Edit > Delete > Residue > Adp …
-> Color by molecule (every molecule will get another color) and color by gradient (now you need to specify 2 colors, the begin and end color).
-> Choose a first color (eg. color with code 0)
-> Choose a second color (eg. color with code 300, so you go over the entire color wheel spectrum)
+* Load the PDB via `open 1we3` 
+* Zoom out and find the correct orientation
+* Delete the ADP, DMS and Mg molecules. 
+* Color by molecule (every molecule will get another color) and color by gradient (now you need to specify 2 colors, the begin and end color).
+* Choose a first color (eg. color with code 0)
+* Choose a second color (eg. color with code 300, so you go over the entire color wheel spectrum)
 
 ### Conclusion
 
@@ -686,7 +678,7 @@ Structure of query protein is known and aligned to PDB structures
 
 Compare proteins with low sequence similarity: similar structure implies homology -> same function
 
-## Exercise 3: Use FoldSeek to find similar structures from distinct organisms
+## Exercise 4: Use FoldSeek to find similar structures from distinct organisms
 
 [Link to exercise 3](https://material.bits.vib.be/topics/protein-structure-analysis/tutorials/compare-structures/tutorial.html)
 
@@ -721,7 +713,7 @@ Different algorithms use different combinations of sequence- and secondary of te
 - [MUSTANG](http://lcb.infotech.monash.edu.au/mustang/mustang_psfb-final.pdf)
 - [MMLigner](https://doi.org/10.1093/bioinformatics/btw757)
 
-## Exercise 4: Compare Structures
+## Exercise 5: Compare Structures
 
 - Download the five provided PDB files and open them in ChimeraX.
 
@@ -805,7 +797,48 @@ where R is the distance between two structurally equivalent atom pairs (CA in ou
 - use of B factors to represent other properties  
 - other non-standard extensions (PDBQT, ...)
 
-## Exercise 5: Model a Mutation
+## Force Fields
+
+- Energy terms representing physical interactions
+
+  - Covalent bond lengths and angles
+  - Dihedral angles and van der Waals forces (steric effects)
+  - Electrostatic interactions and hydrogen bonds
+  - …
+
+- Energy can be minimized, and forces can literally be derived from the potential function.
+
+- Consistency and careful consideration of the properties to be simulated are essential.
+
+### Force Field Terms
+
+Each energy term has a functional form, which includes one or more parameters:
+
+- Covalent bond energy term
+
+  $ E_{bond} = k(r-r_{0})^{2} $ with $r_0$ being the equilibrium length
+
+- Van der Waals contact energy term
+
+  $ E_{VdW} = C_6r^{-6} + C_{12}r^{-12} $ with $C_6$ attractive, $C_{12}$ repulsive term
+
+The parameters are collectively optimized to  reproduce a chosen set of experimentally observed parameters.
+
+A given force field should be used as a  consistent system, and can only be used to predict properties that are covered by the  training set.
+
+### FoldX
+
+Is designed for quantitative modelling of the contribution of structural interactions to the stability of proteins and protein complexes. It also supports  protein/DNA complexes.
+
+The force field describes the different interactions in a protein structure or complex in analytical terms. It has  been calibrated using a set of experimentally determined  stabilities.
+
+Applications include the optimisation of structures, the calculation of the stability of complexes, and predicting  the effect of amino-acid or base-pair mutations on these  properties.
+
+![FoldX Force Field](img/foldx-formula.PNG)
+
+[FoldX](https://dx.doi.org/10.1093%2Fnar%2Fgki387)
+
+## Exercise 6: Model a Mutation
 
 - Load the PDB entry 2AC0.
 - Set an appropriate structure representation.
@@ -825,7 +858,7 @@ Further reading: https://dasher.wustl.edu/chem430/software/chimera/users-guide.p
 
 ********
 
-## Exercise 6: Study Protein-Ligand Interactions
+## Exercise 7: Study Protein-Ligand Interactions
 
 ### Introduction
 
@@ -921,8 +954,8 @@ Go to the web site of ProteinPlus and enter the PDB code 3P0G into the search bo
 
 We do not go into great detail on all the tools but only mention PoseView. With this tool, you can prepare an automatic sketch of the small molecule-protein interactions.
 
-![Protein Plus Server](../../images/ProteinPlusPoseView.png "Overview of 3P0G")
-![Zoom on ligand of 3P0G](../../images/3P0G_A_PoseView_Input.png "Zoom on ligand co-crystallized with 3P0G")
+![Protein Plus Server](https://elearning.vib.be/wp-content/uploads/2020/08/PSA01_06_ProteinPlusPoseView.png "Overview of 3P0G")
+![Zoom on ligand of 3P0G](https://elearning.vib.be/wp-content/uploads/2020/08/PSA01_06_3P0G_A_PoseView_Input.png "Zoom on ligand co-crystallized with 3P0G")
 
 
 > <i class="fas fa-question"></i> **Questions**
@@ -934,11 +967,11 @@ We do not go into great detail on all the tools but only mention PoseView. With 
 
 <details><summary>Solution</summary>
 
-> 1. TODO In ChimeraX, you observe hydrogen bonds between Asp113A as well as the carbonyl function of Asn312A and the charged amine function.
+> 1. In ChimeraX, you observe hydrogen bonds between Asp113A as well as the carbonyl function of Asn312A and the charged amine function.
 > 2. PoseView indicates hydrogen bonds between Asp113A as well as the carbonyl function of Asn312A and the charged amine function. Furthermore, hydrogen bonds are indicated between the phenolic OH and Ser207A and Ser203A as well as the amine function and Ser203A.
 > 3. Furthermore, hydrophobic interactions are indicated for the methylbenzyl moiety and pi-pi interactions of Phe290A and the phenolic moiety.
 > 4. With ChimeraX, those hydrophobic interactions can also be visualised.
-> 5. TODO 
+> 5. Explore the tool in `Tools > Structure Analysis > Contacts` and the help of ChimeraX. 
 
 </details>
 
@@ -948,15 +981,42 @@ We do not go into great detail on all the tools but only mention PoseView. With 
 
 In order to estimate the binding energy between the nanobody and the β2 adrenoceptor, we can use the FoldX tool AnalyseComplex. It is recommended to calculate these binding energies on energy-minimized structures. To illustrate the effect of the energy minimization, we compare the interaction energy of the current crystal structure and its minimized structure.
 
-### Use the tool FoldX tool AnalyseComplex 
+#### Comparing the active and the inactive conformation of the β2 adrenoceptor 
 
->  
+In case, there is still time, I would recommend to try to use some of your capabilities you learned today and create a superposition of the inactive and active conformation of the β2 adrenoceptor. We take one of the crystal structures which are available: 3SN6
+
+```
+open 3SN6
+```
+
+You might be overwhelmed once the structure is loaded into ChimeraX. 
+In order to get a first quick overview, click on the 'View' buttom in the right menu of the Models window. Then, it is time to look at the PDB entry of 3SN6 in the PDB database to have a first idea on what molecules are in the PDB file.
+
+As you see on the website [3SN6](http://www.rcsb.org/pdb/explore/explore.do?structureId=3SN6i), the chain R consists of 2 molecules, the β2 adrenoceptor and lysozyme. 
+In the corresponding article, it is stated that 'the unstructured amino terminus of the β2AR is replaced with T4 lysozyme (T4L)'.
+
+Since this is an extra molecule in the crystal structure which disturbes our view, we will delete it.
+
+After the manipulation, the overall picture should look roughly like this.
+
+![Superposition](https://elearning.vib.be/wp-content/uploads/2020/08/PSA01_06_3SN6_withoutLysozyme.png "Overview of 3SN6 without lysozyme")
+
+In the following step, we structurally align only the receptors. The rest of the structures will move along.
+It is suggested to use the first chain A from 3P0G as target and structurally align the receptor from 3SN6.
+
+Investigate the differences in TM helices and the binding of the nanobody compared to the subunit of the G protein.
+
+Tip: Color the secondary structures to better identify the individual chains/units of G protein.
+
+#### Extra: Use the tool FoldX tool AnalyseComplex
+
+>
 >
 > 1. Given that energy-minimization takes a while for this rather large complex,
->     please download the Yasara scene [here](http://data.bits.vib.be/pub/trainingen/PSA/3P0G_1.sce)  
->    
->    Calculate the interaction energies between the chain A and B of the object 3P0G 
->    and the RepairObj1, respectively. 
+>     please download the Yasara scene [here](http://data.bits.vib.be/pub/trainingen/PSA/3P0G_1.sce)
+>
+>    Calculate the interaction energies between the chain A and B of the object 3P0G
+>    and the RepairObj1, respectively.
 >
 >    ```
 >    Analyze - FoldX - Interaction energy of molecules
@@ -964,16 +1024,16 @@ In order to estimate the binding energy between the nanobody and the β2 adrenoc
 
 > <i class="fas fa-question"></i> **Questions**
 >
-> 1. What is the dG in the two cases? 
+> 1. What is the dG in the two cases?
 > 2. Any idea why the difference is rather hugh?
 
 <details><summary>Solution
 </summary>
 
 > 1. first case (X-ray structure): Interaction energy between molecule(s) A and B in object 1 = -9.86 (kcal/mol)
->    second case: 
+>    second case:
 >    Interaction energy between molecule(s) A and B in object 2 = -20.19 (kcal/mol)
-> 2. Through the energy minimisation of the Repair Object function, the interactions of the amino acids are optimised.  
+> 2. Through the energy minimisation of the Repair Object function, the interactions of the amino acids are optimised.
 
 </details>
 
@@ -987,36 +1047,6 @@ Plugin>interface residues between A and B
 Plugin>TA66 TA68 IA72 IA127 RA131 AA134 IA135 TA136 SA137 PA138 FA139 KA140 QA142 YA219 VA222 EA225 AA226 LA266 KA267 EA268 AA271 LA272 TA274 LA275 IA278 IA325 YA326 RA328 SA329 PA330 SB27 IB28 FB29 SB30 IB31 TB33 AB50 IB51 eB52 SB56 TB57 NB58 YB100 AB102 VB103 LB104 YB105 EB106 YB107
 ```
 
-### Comparing the active and the inactive conformation of the β2 adrenoceptor 
-
-In case, there is still time, I would recommend to try to use some of your capabilities you learned today and create a superposition of the inactive and active conformation of the β2 adrenoceptor. We take one of the crystal structures which are available: 3SN6
-
-```
-open 3SN6
-```
-
-You might be overwhelmed once the structure is loaded into ChimeraX. 
-TODO In order to get a first quick overview, click on the 'Center' buttom in the menu of YASARA (5th buttom from the left). Then, it is time to look at the PDB entry of 3SN6 in the PDB database to have a first idea on what molecules are in the PDB file.
-
-As you see on the website [3SN6](http://www.rcsb.org/pdb/explore/explore.do?structureId=3SN6i), the chain R consists of 2 molecules, the β2 adrenoceptor and lysozyme. 
-In the corresponding article, it is stated that 'the unstructured amino terminus of the β2AR is replaced with T4 lysozyme (T4L)'.
-
-Since this is an extra molecule in the crystal structure which disturbes our view, we will delete it.
-
-After the manipulation, the overall picture should look roughly like this.
-
-![Superposition](/img/3SN6_withoutLysozyme.png "Overview of 3SN6 without lysozyme")
-
-In the following step, we structurally align only the receptors. The rest of the structures will move along.
-It is suggested to use the first chain A from 3P0G as target.
-
-```
-
-```
-
-Investigate the differences in TM helices and the binding of the nanobody compared to the subunit of the G protein.
-
-Tip: Color the secondary structures to better identify the individual chains/units of G protein.
 
 ## On-Line References
 
