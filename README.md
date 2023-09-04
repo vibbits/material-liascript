@@ -16,6 +16,10 @@ debug: true
 
 -->
 
+# Protein Structure Analysis
+
+[Slides](https://liascript.github.io/course/?https://raw.githubusercontent.com/vibbits/material-liascript/master/slides-PSA.md)
+
 # How to write a Data Management Plan (DMP)
 
 Welcome to this self-study course about research data management. In this course you will learn more about how you can manage your research data.
