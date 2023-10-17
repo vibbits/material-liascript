@@ -135,6 +135,11 @@ More information about TeSS can be found in [this publication](https://doi.org/1
 
 (Work in progress...)
 
+- Inconsistent annottions can affect findability (There are best ways to do the search for now)
+- Manual and Automatic annotation are not in the same level of maturity due technical challanges (a work in progress)
+- 
+
+
 ### More background information about TeSS
 
 
@@ -146,6 +151,8 @@ More information about TeSS can be found in [this publication](https://doi.org/1
 During the ELIXIR-EXCELERATE project, the TeSS platform has been established as the **key application** for bioinformatics **training events and material aggregation**. During a period of further adoption of the TeSS platform as such on the international level e.g. in Australia and in the Netherlands, it became obvious that the implementation of individual automatic content scrapers for more than 30 content providers lead to an **enormous diversity** of the code base and finally to a **maintenance challenge**. 
 
 Therefore, since ~2020 , a strategic **reorientation of the automated harvesting** procedure has been proposed and implemented in TeSS **using the Bioschemas profiles** for Course, CourseInstance and TrainingMaterial. 
+
+--------------------------------------------------------------------
 
 **************************
 
@@ -159,6 +166,8 @@ This approach will put the content providers in a more prominent position since 
 
 Related to the provisioning of persistent identifiers, TeSS provides the Digital Object Identifier (DOI) as a unique means to identify training material. Given that minting services by e.g. university libraries are not yet broadly available for teaching and learning material in contrast to research datasets and collections, associated workflows, software and models, **we recommend to use services like OSF or zenodo to get own unique, persistent URLs and DOIs**.
 
+--------------------------------------------------------------------
+
 **************************
 
                      {{2}}
@@ -167,6 +176,8 @@ Related to the provisioning of persistent identifiers, TeSS provides the Digital
 - Egagement and Good practice
 
 Given the engagement of the ELIXIR Train the Trainer instructor's community to create a vibrant environment for reciprocal support and exchange of experiences via the ELIXIR Train the Trainer programme, the TeSS content providers are **encouraged to  follow best-practice** guidance on course and training material development (Via et al., 2020). Therefore, we recommend applying the **Bloom hierarchy** of cognitive skills to formulate the **Learning objectives** for the courses as well as for training material. For more detailed information about our pedagogical model, please browse to the course material of the [ELIXIR Train the Trainer course](https://github.com/TrainTheTrainer/ELIXIR-EXCELERATE-TtT). 
+
+--------------------------------------------------------------------
 
 **************************
 
@@ -177,6 +188,8 @@ Given the engagement of the ELIXIR Train the Trainer instructor's community to c
 - Aditionally (other content)
 
 Content providers looking to promote use of **particular tools and databases** via their course offering or the specific training material can find information about them in other ELIXIR registries, such as [**bio.tools**](https://bio.tools) for tools and web services and [**FAIRsharing.org**](https://fairsharing.org) for databases, standards and policies . Lately, such registries started to track training relating to the resources they list. Therefore, it is mutually beneficial that TeSS provides the relevant links, allowing users to search for resource-specific training; and the resource pages in bio.tools and FAIRsharing that contain reciprocal links for users to discover relevant training in TeSS.
+
+--------------------------------------------------------------------
 
 *****************
 

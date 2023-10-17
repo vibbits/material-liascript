@@ -2,6 +2,7 @@
 
 >  (This is the 1st draft of the program)
 
+### Morning session, Discussion and Activity
 - Introduction to TeSS
   
   - What is TeSS
@@ -51,3 +52,16 @@
     - Advantages
     
     - How to do
+
+------------------------------------------
+
+> Real word cases
+> Examples
+> Pre-course survey (What plataform to use, etc ...) 
+  [as part of the registration maybe] 
+
+
+
+### Morning session, Discussion and Activity
+
+- Bring your own material workshop
