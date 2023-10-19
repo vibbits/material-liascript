@@ -1,7 +1,7 @@
 <!--
 author:   Alexander Botzki
 email:    Alexander.Botzki@vib.be
-version:  0.1.1
+version:  0.2
 language: en
 narrator: US English Female
 
@@ -40,3 +40,29 @@ Some text
 1. Yes, add explanation here
 **TODO**: add image
 </details>
+
+## TeSS Widgets
+
+<div>
+<link rel="stylesheet" property="stylesheet" href="https://elixirtess.github.io/TeSS_widgets/css/tess-widget.css"/>
+<div id="tess-widget-materials-table" class="tess-widget tess-widget-faceted-table"></div>
+<script>
+function initTeSSWidgets() {
+    TessWidget.Materials(document.getElementById('tess-widget-materials-table'),
+        'FacetedTable',
+        {
+            opts: {
+                columns: [{name: 'Name', field: 'title'},
+                    {name: 'Description', field: 'description'}],
+                allowedFacets: ['scientific-topics', 'target-audience'],
+                facetOptionLimit: 5
+            },
+            params: {
+                pageSize: 5,
+                q: 'Python'
+            }
+        });
+}
+</script>
+<script async="" defer="" src="https://elixirtess.github.io/TeSS_widgets/js/tess-widget-standalone.js" onload="initTeSSWidgets()"></script>
+</div>
