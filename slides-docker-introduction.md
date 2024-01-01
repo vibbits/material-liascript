@@ -27,6 +27,9 @@ link:     https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min
 
 # Introduction to Docker and Singularity
 
+## Analogy with Docker and Container from harbour
+
+TODO: add illustrations and photos from Bruna
 
 ## Background about Docker
 
@@ -107,6 +110,15 @@ Docker is the ideal way of deploying applications such as:
         Examples: PennCNV, hap.py
     Self-contained analyses that need a specific and reproducible environment
         Examples: Jupyter notebooks, particularly Docker Stacks
+
+## Other container software
+
+• Singularity/[apptainer](https://apptainer.org/) (HPC)
+• [Shifter](https://shifter.readthedocs.io/en/latest/index.html) (HPC)
+• [Charliecloud](https://hpc.github.io/charliecloud/) (HPC)
+• [Podman](https://podman.io/) (daemonless docker)
+
+TODO: add images of products
 
 ## Reproducibility stack
 
