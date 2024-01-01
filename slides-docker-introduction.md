@@ -7,19 +7,49 @@ narrator: US English Female
 
 comment:  slides Docker Introduction
 
-logo: img/Logo.png
+icon:     https://raw.githubusercontent.com/vibbits/nextflow-workshop/2024-liascript/docs/img/logo_VIB_noTagline.svg
+logo:     https://raw.githubusercontent.com/vibbits/nextflow-workshop/2024-liascript/docs/img/logo_VIB_noTagline.svg
 
-link:     https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
+comment:  This document provide the resources for the Research Data Management Course
+
+script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
+          https://felixhao28.github.io/JSCPP/dist/JSCPP.es5.min.js
+
+link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
+link:     https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
 link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/img/org.css
+link:     https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css
 
-debug: true
+@orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
 -->
 
 
 # Introduction to Docker and Singularity
 
-24.02.2020 UGent
+
+## Background about Docker
+
+- Platform for developing, shipping and running applications
+- First version: 2013
+- Company. Original dotCloud (2010), later named Docker
+- Established [Open Container Initiative](https://www.opencontainers.org/)
+
+As a software:
+
+- [Docker Community Edition](https://docs.docker.com/get-docker/)
+- [Docker Enterprise Edition](https://www.docker.com/products/container-runtime)
+
+## Docker Components
+
+> A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment > to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code,
+> runtime, system tools, system libraries and settings.
+>
+>  -- docker.com/what-container
+
+Docker images are read-only templates, archive containing all the “data” needed to run the application. Containers are run from them, so they can be started and stopped and deleted without affecting the image. You can have many containers running the same image.
+
+
 
 ## Reproducibility stack
 
