@@ -27,9 +27,11 @@ link:     https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min
 
 # Introduction to Docker and Singularity
 
-## Analogy with Docker and Container from harbour
+## Another perspective
 
 TODO: add illustrations and photos from Bruna
+What is a container? 
+What is a docker?
 
 ## Background about Docker
 
@@ -53,6 +55,9 @@ As a software:
 
 Docker images are read-only templates, archive containing all the “data” needed to run the application. Containers are run from them, so they can be started and stopped and deleted without affecting the image. You can have many containers running the same image.
 
+- containers gives you instant application portability and easy to deploy in a cloud
+- make applications and workloads more portable in an effective, standardized, and repeatable way
+
 ## Image and Container: two important concepts
 
 | Image      | Container  |
@@ -63,53 +68,50 @@ Docker images are read-only templates, archive containing all the “data” nee
 | - stored on longer term | - short-lived |
 | - can be used as a base | - usually only minor adjustments |
 
+## The Docker Dance
+
 ![Docker Dance](https://github.com/elixir-europe-training/ELIXIR-TrP-ContainersPython-CodeRep/blob/main/docs/assets/images/6090-g1689.png?raw=true)
-
-    containers gives you instant application portability and easy to deploy in a cloud
-    make applications and workloads more portable in an effective, standardized, and repeatable way
-
-
-
-    usually built from existing images
-        ubuntu, alpine
-    base images can be created with tools such as debootstrap
-
-    any modification from the base image is a new layer ( tip: use && )
-    images have several layers
 
 ## What is containerization?
 
-    Containerization is any system that allows multiple isolated operating systems to run inside a larger, host system.
-    The most basic type of containerization is chroot, which runs an application in a jail where it cannot see or access anything outside of its jail.
-    The most popular and well supported system for containerization is Docker.
-    We will also touch on Singularity if time permits.
+- Containerization is any system that allows multiple isolated operating systems to run inside a larger, host system.
+- The most basic type of containerization is `chroot`, which runs an application in a jail where it cannot see or access anything outside of its jail.
+- The most popular and well supported system for containerization is Docker.
 
 ## Advantages of containers
 
 Distributing and using software as a Docker image gives you:
 
-    Bundled Dependencies – Docker images contain all their own dependencies, which means you don’t have to do any installation yourself (compared to an application that is just source code or a .deb installer)
-    Cross-platform Installation – Docker containers contain their own operating system, so they will run on any platform (even Windows!)
-    Easy Distribution – Can be distributed as a single .tar image file, or put on docker hub so it can be docker pull‘d
-    Safety – Files in a container can’t access files on the host machine, so users can trust dockerized applications
-    Ease-of-Use – Docker containers can always be run using one single docker run command
-    Easy Upgrades – Docker containers can be easily swapped out for newer versions, while all persistent data can be retained in a data volume
+> * __Bundled Dependencies__ – Docker images contain all their own dependencies, which means you don’t have to do any installation yourself (compared to an application that is just source code or a .deb installer)
+> * __Cross-platform Installation__ – Docker containers contain their own operating system, so they will run on any platform (even Windows!)
+> * __Easy Distribution__ – Can be distributed as a single .tar image file, or put on docker hub so it can be docker pull‘d
+> * __Safety__ – Files in a container can’t access files on the host machine, so users can trust dockerized applications
+> * __Ease-of-Use__ – Docker containers can always be run using one single docker run command
+> * __Easy Upgrades__ – Docker containers can be easily swapped out for newer versions, while all persistent data can be retained in a data volume
 
 ## Typical use cases
 
 Docker is the ideal way of deploying applications such as:
 
-    Web applications that need a proxy server, database and application code, and a consistent operating environment
-        Examples: Galaxy (a bioinformatics platform), GitLab (a git host), Ghost (blogging platform)
-    Analysis pipelines or pipeline stages that require many runtimes (Python, Perl, Java etc.) and many tools (Samtools, GATK, VEP)
-        Examples: Pipelines written in CWL, WDL, Snakemake, Nextflow
+> __Web applications__ that need a proxy server, database and application code, and a consistent operating environment
+>
+> - Examples: Galaxy (a bioinformatics platform), GitLab (a git host), Ghost (blogging platform)
 
-    Testing and continuous integration, allowing your tests to run in a consistent environment with a very precisely defined set of dependencies
-        Examples: Jenkins, Drone CI
-    Complex or fragile applications that would be difficult to compile locally
-        Examples: PennCNV, hap.py
-    Self-contained analyses that need a specific and reproducible environment
-        Examples: Jupyter notebooks, particularly Docker Stacks
+> Analysis pipelines or pipeline stages that require many runtimes (Python, Perl, Java etc.) and many tools (Samtools, GATK, VEP)
+>
+> - Examples: Pipelines written in CWL, WDL, Snakemake, Nextflow
+
+> Testing and continuous integration, allowing your tests to run in a consistent environment with a very precisely defined set of dependencies
+>
+> - Examples: Jenkins, Drone CI
+
+>   Complex or fragile applications that would be difficult to compile locally
+>
+> - Examples: PennCNV, hap.py
+
+>   Self-contained analyses that need a specific and reproducible environment
+> 
+> - Examples: Jupyter notebooks, particularly Docker Stacks
 
 ## Other container software
 
