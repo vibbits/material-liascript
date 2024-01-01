@@ -42,14 +42,71 @@ As a software:
 
 ## Docker Components
 
-> A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment > to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code,
+> A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment 
+> to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code,
 > runtime, system tools, system libraries and settings.
 >
 >  -- docker.com/what-container
 
 Docker images are read-only templates, archive containing all the “data” needed to run the application. Containers are run from them, so they can be started and stopped and deleted without affecting the image. You can have many containers running the same image.
 
+## Image and Container: two important concepts
 
+| Image      | Container  |
+| :--------- | :--------- |
+| enter image| link image |
+|            |            |
+| - read-only | - based on the image |
+| - stored on longer term | - short-lived |
+| - can be used as a base | - usually only minor adjustments |
+
+![Docker Dance](https://github.com/elixir-europe-training/ELIXIR-TrP-ContainersPython-CodeRep/blob/main/docs/assets/images/6090-g1689.png?raw=true)
+
+    containers gives you instant application portability and easy to deploy in a cloud
+    make applications and workloads more portable in an effective, standardized, and repeatable way
+
+
+
+    usually built from existing images
+        ubuntu, alpine
+    base images can be created with tools such as debootstrap
+
+    any modification from the base image is a new layer ( tip: use && )
+    images have several layers
+
+## What is containerization?
+
+    Containerization is any system that allows multiple isolated operating systems to run inside a larger, host system.
+    The most basic type of containerization is chroot, which runs an application in a jail where it cannot see or access anything outside of its jail.
+    The most popular and well supported system for containerization is Docker.
+    We will also touch on Singularity if time permits.
+
+## Advantages of containers
+
+Distributing and using software as a Docker image gives you:
+
+    Bundled Dependencies – Docker images contain all their own dependencies, which means you don’t have to do any installation yourself (compared to an application that is just source code or a .deb installer)
+    Cross-platform Installation – Docker containers contain their own operating system, so they will run on any platform (even Windows!)
+    Easy Distribution – Can be distributed as a single .tar image file, or put on docker hub so it can be docker pull‘d
+    Safety – Files in a container can’t access files on the host machine, so users can trust dockerized applications
+    Ease-of-Use – Docker containers can always be run using one single docker run command
+    Easy Upgrades – Docker containers can be easily swapped out for newer versions, while all persistent data can be retained in a data volume
+
+## Typical use cases
+
+Docker is the ideal way of deploying applications such as:
+
+    Web applications that need a proxy server, database and application code, and a consistent operating environment
+        Examples: Galaxy (a bioinformatics platform), GitLab (a git host), Ghost (blogging platform)
+    Analysis pipelines or pipeline stages that require many runtimes (Python, Perl, Java etc.) and many tools (Samtools, GATK, VEP)
+        Examples: Pipelines written in CWL, WDL, Snakemake, Nextflow
+
+    Testing and continuous integration, allowing your tests to run in a consistent environment with a very precisely defined set of dependencies
+        Examples: Jenkins, Drone CI
+    Complex or fragile applications that would be difficult to compile locally
+        Examples: PennCNV, hap.py
+    Self-contained analyses that need a specific and reproducible environment
+        Examples: Jupyter notebooks, particularly Docker Stacks
 
 ## Reproducibility stack
 
