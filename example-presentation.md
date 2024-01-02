@@ -14,9 +14,9 @@ resources:
   - demo.pdf
 ---
 
-## Hello, There
+# Hello, There
 
-This presentation will show you examples of what you can do with Liascript (https://revealjs.com), including:
+This presentation will show you examples of what you can do with Liascript (https://liascript.github.io), including:
 
 -   Presenting code and LaTeX equations
 -   Including computations in slide output
@@ -26,7 +26,7 @@ This presentation will show you examples of what you can do with Liascript (http
 
 ...and much more
 
-## Pretty Code {auto-animate="true"}
+## Pretty Code
 
 -   Over 20 syntax highlighting themes available
 -   Default theme optimized for accessibility
@@ -42,9 +42,8 @@ function(input, output) {
 }
 ```
 
-::: footer
-Learn more: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)
-:::
+Learn more: [^1] 
+[^1]: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)
 
 ## Code Animations {auto-animate="true"}
 
