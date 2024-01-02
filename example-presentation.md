@@ -1,22 +1,14 @@
----
+<!--
 title: "Quarto Presentations"
-subtitle: "Create beautiful interactive slide decks with Liascript"
-format:
-  revealjs: 
-    slide-number: true
-    chalkboard: 
-      buttons: false
-    preview-links: auto
-    logo: images/quarto.png
-    css: styles.css
-    footer: <https://quarto.org>
-resources:
-  - demo.pdf
----
+
+import: https://github.com/LiaScript/CodeRunner/blob/master/README.md
+
+@runR: @LIA.eval(["main.R"], none, Rscript main.R)
+-->
 
 # Hello, There
 
-This presentation will show you examples of what you can do with Liascript (https://liascript.github.io), including:
+This presentation will show you examples of what you can do with [Liascript](https://liascript.github.io), including:
 
 -   Presenting code and LaTeX equations
 -   Including computations in slide output
@@ -28,8 +20,10 @@ This presentation will show you examples of what you can do with Liascript (http
 
 ## Pretty Code
 
--   Over 20 syntax highlighting themes available
--   Default theme optimized for accessibility
+-   Many syntax highlighting themes available[^1]
+-   Three subsequent backticks indicate a stack code block
+
+Example for an R script
 
 ``` r
 # Define a server for the Shiny app
@@ -42,70 +36,44 @@ function(input, output) {
 }
 ```
 
-Learn more: [^1] 
-[^1]: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)
+[^1]: Learn more about [Syntax Highlighting](https://github.com/LiaScript/docs/blob/master/Code.md)
 
-## Code Animations {auto-animate="true"}
+## Code Blocks
 
--   Over 20 syntax highlighting themes available
--   Default theme optimized for accessibility
+- grouped code-blocks are simply attached to each other[^1]
+- code-blocks can be visible or hidden
 
-``` r
-# Define a server for the Shiny app
-function(input, output) {
-  
-  # Fill in the spot we created for a plot
-  output$phonePlot <- renderPlot({
-    # Render a barplot
-    barplot(WorldPhones[,input$region]*1000, 
-            main=input$region,
-            ylab="Number of Telephones",
-            xlab="Year")
-  })
+``` js     -EvalScript.js
+let who = data.first_name + " " + data.last_name;
+
+if(data.online) {
+  who + " is online"; }
+else {
+  who + " is NOT online"; }
+```
+``` json    +Data.json
+{
+  "first_name" :  "Sammy",
+  "last_name"  :  "Shark",
+  "online"     :  true
 }
 ```
 
-::: footer
-Learn more: [Code Animations](https://quarto.org/docs/presentations/revealjs/advanced.html#code-animations)
-:::
-
-## Line Highlighting
-
--   Highlight specific lines for emphasis
--   Incrementally highlight additional lines
-
-``` {.python code-line-numbers="4-5|7|10"}
-import numpy as np
-import matplotlib.pyplot as plt
-
-r = np.arange(0, 2, 0.01)
-theta = 2 * np.pi * r
-fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
-```
-
-::: footer
-Learn more: [Line Highlighting](https://quarto.org/docs/presentations/revealjs/#line-highlighting)
-:::
+[^1]: Learn more about [Projects](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#41)
 
 ## Executable Code
 
-```{r}
+``` R
 #| echo: true
 #| fig-width: 10
 #| fig-height: 4.5
 library(ggplot2)
-ggplot(mtcars, aes(hp, mpg, color = am)) +
-  geom_point() +
-  geom_smooth(formula = y ~ x, method = "loess")
+png(file="out2.png")
+qplot(wt, mpg, data = mtcars, colour = factor(cyl))
 ```
+@runR
 
-::: footer
-Learn more: [Executable Code](https://quarto.org/docs/presentations/revealjs/#executable-code)
-:::
+[^1]: Learn more about [Interactive code](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#41)
 
 ## LaTeX Equations
 
