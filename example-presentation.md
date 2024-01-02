@@ -81,11 +81,10 @@ ggplot(mtcars, aes(hp, mpg, color = am)) +
 
 ## LaTeX Equations
 
-[MathJax](https://www.mathjax.org/) rendering of equations to HTML
+[MathJax](https://www.mathjax.org/) rendering of equations to HTML[^1]
 
-::: columns
-::: {.column width="40%"}
-``` tex
+<article class="main-info">
+$$
 \begin{gather*}
 a_1=b_1+c_1\\
 a_2=b_2+c_2-d_2+e_2
@@ -97,30 +96,28 @@ a_{11}& =b_{11}&
 a_{21}& =b_{21}&
   a_{22}& =b_{22}+c_{22}
 \end{align}
-```
-:::
+$$
 
-::: {.column width="60%"}
-```{=tex}
+</article>
+
+<!-- class="sub-info" -->
+$$
 \begin{gather*}
 a_1=b_1+c_1\\
 a_2=b_2+c_2-d_2+e_2
 \end{gather*}
-```
-```{=tex}
+$$
+$$
 \begin{align}
 a_{11}& =b_{11}&
   a_{12}& =b_{12}\\
 a_{21}& =b_{21}&
   a_{22}& =b_{22}+c_{22}
 \end{align}
-```
-:::
-:::
+$$
 
-::: footer
-Learn more: [LaTeX Equations](https://quarto.org/docs/authoring/markdown-basics.html#equations)
-:::
+
+[^1]: Learn more: [LaTeX Equations](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#52)
 
 ## Column Layout {.smaller}
 
