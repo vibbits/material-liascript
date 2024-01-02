@@ -3,7 +3,7 @@ title: "Quarto Presentations"
 
 import: https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.md
 
-@runR: @LIA.eval(["main.R"], none, Rscript main.R)
+@runR: @LIA.eval(`["main.R"]`, `none`, `Rscript main.R`)
 -->
 
 # Hello, There
@@ -25,7 +25,7 @@ This presentation will show you examples of what you can do with [Liascript](htt
 
 Example for an R script
 
-``` r
+``` R
 # Define a server for the Shiny app
 function(input, output) {
   
