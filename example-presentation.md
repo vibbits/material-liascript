@@ -1,7 +1,7 @@
 <!--
 title: "Quarto Presentations"
 
-import: https://github.com/LiaScript/CodeRunner/blob/master/README.md
+import: https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.md
 
 @runR: @LIA.eval(["main.R"], none, Rscript main.R)
 -->
