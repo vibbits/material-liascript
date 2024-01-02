@@ -69,7 +69,11 @@ else {
 #| fig-height: 4.5
 library(ggplot2)
 png(file="out2.png")
-qplot(wt, mpg, data = mtcars, colour = factor(cyl))
+
+ggplot(mtcars, aes(hp, mpg, color = am)) +
+  geom_point() +
+  geom_smooth(formula = y ~ x, method = "loess")
+
 ```
 @runR
 
