@@ -1,7 +1,9 @@
 <!--
-title: "Quarto Presentations"
+title: "Liascript Presentations"
 
 import: https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.md
+
+link: style.css
 
 @runR: @LIA.eval(`["main.R"]`, `none`, `Rscript main.R`)
 -->
@@ -97,7 +99,6 @@ a_{21}& =b_{21}&
   a_{22}& =b_{22}+c_{22}
 \end{align}
 $$
-
 </article>
 
 <!-- class="sub-info" -->
