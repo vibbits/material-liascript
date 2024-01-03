@@ -227,7 +227,8 @@ Learn more: [Auto-Animate](https://quarto.org/docs/presentations/revealjs/advanc
 
 Position images or other elements at precise locations
 
-![](mini/images/kitten-400-350.jpeg)<!-- style="text-align:center position=absolute top="170" left="30" width="400" height="400""-->
+    
+![](https://quarto.org/docs/presentations/revealjs/demo/mini/images/kitten-400-350.jpeg)<!-- style="top: 170px; left: 30px; width: 400px; height: 400px;"-->
 
 ![](mini/images/kitten-450-250.jpeg){.absolute .fragment top="150" right="80" width="450"}
 
