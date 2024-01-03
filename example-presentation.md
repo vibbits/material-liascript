@@ -159,16 +159,6 @@ Lists can optionally be displayed incrementally[^1]:
 
 [^1]: Learn more: [Incremental animations](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#103)
 
-## Slide Backgrounds (check slide from online symposium)
-
-Set the `background` attribute on a slide to change the background color (all CSS color formats are supported).
-
-Different background transitions are available via the `background-transition` option.
-
-::: footer
-Learn more: [Slide Backgrounds](https://quarto.org/docs/presentations/revealjs/#color-backgrounds)
-:::
-
 ## Display various media 
 
 You can also use the following as content elements[^1]
@@ -241,6 +231,33 @@ knitr::kable(mtcars)
 
 *************
 
+## Quiz
+
+Reading loud works best in Google Chrome and Edge. 
+
+                    {{English Female |>}}
+The film that I saw [[(that)|those|these|then]] night wasn’t very good.
+It was all [[ about ]] a man [[ who ]] built a
+time machine so he [[ could ]] travel back in time.
+It took him ages and ages [[ to ]] build the machine.
+
+[^1]: Learn more: [Quiz](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#61)
+
+## Display your organisation's logo
+ 
+Use the icon macro to display your organisation's logo on top of the slides.
+
+It works the same as for the logo macro.[^1]
+
+```
+<!--
+# define this in the sectio on top of the markdown file
+icon: ./pics/logo.png
+-->
+```
+
+[^1]: Learn more: [Special macros](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#176)
+
 
 ## Interactive Slides - widgets - show other templates
 
@@ -290,73 +307,25 @@ plotActors(actors, talentWeight, looksWeight, minimum)
 Learn more: [Observable](https://quarto.org/docs/interactive/ojs/), [Shiny](https://quarto.org/docs/interactive/shiny/), [Component Layout](https://quarto.org/docs/interactive/layout.html)
 :::
 
-## Preview Links (potentially not needed given it is in the browser)
-
-Navigate to hyperlinks without disrupting the flow of your presentation.
-
-Use the `preview-links` option to open links in an iframe on top of your slides. Try clicking the link below for a demonstration:
-
-::: {style="text-align: center; margin-top: 1em"}
-[Matplotlib: Visualization with Python](https://matplotlib.org/){preview-link="true" style="text-align: center"}
-:::
-
-::: footer
-Learn more: [Preview Links](https://quarto.org/docs/presentations/revealjs/presenting.html#preview-links)
-:::
-
-## Display your organisation's logo
- 
-Use the icon macro to display your organisation's logo on top of the slides.
-
-It works the same as for the logo macro.[^1]
-
-```
-<!--
-# define this in the sectio on top of the markdown file
-icon: ./pics/logo.png
--->
-```
-
-[^1]: Learn more: [Special macros](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#176)
-
-## Easy Navigation
+## Easy Navigation and different views
 
 Quickly jump to other parts of your presentation by opening the title panel on the left side. 
 
-## Presentation view
-
-
-
-## Textbook view
-
-
-
-## Slides view
-
+Presentation view, Slides view, and the Textbook view.
 
 ## Authoring Tools
 
 - Live side-by-side preview for any text document in Github.dev
 
-- Or LiveEditor 
+Learn more: 
 
+- Or LiveEditor 
 
 Learn more: [Jupyter](https://quarto.org/docs/tools/jupyter-lab.html), [VS Code](https://quarto.org/docs/tools/vscode.html), [Text Editors](https://quarto.org/docs/tools/text-editors.html)
 
-
-## Authoring Tools
-
-LiveEdit mode
-
-![](images/rstudio.png){.border width="900"}
-
-::: footer
-Learn more: [RStudio](https://quarto.org/docs/tools/rstudio.html)
-:::
-
 ## And More...
 
--   [Touch](https://quarto.org/docs/presentations/revealjs/advanced.html#touch-navigation) optimized (presentations look great on mobile, swipe to navigate slides)
+-   [Lia]() Android app (presentations look great on mobile, swipe to navigate slides)
 -   [Footer & Logo](https://quarto.org/docs/presentations/revealjs/#footer-logo) (optionally specify custom footer per-slide)
 -   [Auto-Slide](https://quarto.org/docs/presentations/revealjs/presenting.html#auto-slide) (step through slides automatically, without any user input)
 -   [Multiplex](https://quarto.org/docs/presentations/revealjs/presenting.html#multiplex) (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).
