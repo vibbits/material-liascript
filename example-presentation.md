@@ -14,9 +14,9 @@ This presentation will show you examples of what you can do with [Liascript](htt
 
 -   Presenting code and LaTeX equations
 -   Including computations in slide output
--   Image, video, and iframe backgrounds
--   Fancy transitions and animations
--   Printing to PDF
+-   Image, video, and iframe embedding
+-   Elegant transitions and animations
+-   Printing to PDF via Liascript Exporter
 
 ...and much more
 
@@ -159,26 +159,6 @@ Lists can optionally be displayed incrementally:
 Learn more: [Incremental Lists](https://quarto.org/docs/presentations/revealjs/#incremental-lists)
 :::
 
-## Auto-Animate {auto-animate="true" auto-animate-easing="ease-in-out"}
-
-Automatically animate matching elements across slides with Auto-Animate.
-
-::: r-hstack
-::: {data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px;"}
-:::
-
-::: {data-id="box2" auto-animate-delay="0.1" style="background: #3fb618; width: 200px; height: 150px; margin: 10px;"}
-:::
-
-::: {data-id="box3" auto-animate-delay="0.2" style="background: #e83e8c; width: 200px; height: 150px; margin: 10px;"}
-:::
-:::
-
-::: footer
-Learn more: [Auto-Animate](https://quarto.org/docs/presentations/revealjs/advanced.html#auto-animate)
-:::
-
-
 ## Slide Backgrounds (check slide from online symposium)
 
 Set the `background` attribute on a slide to change the background color (all CSS color formats are supported).
@@ -189,9 +169,9 @@ Different background transitions are available via the `background-transition` o
 Learn more: [Slide Backgrounds](https://quarto.org/docs/presentations/revealjs/#color-backgrounds)
 :::
 
-## Media Backgrounds {background="#43464B" background-image="images/milky-way.jpeg"}
+## Display various media 
 
-You can also use the following as a slide background:
+You can also use the following as content elements 
 
 -   An image: `background-image`
 
@@ -204,7 +184,7 @@ Learn more: [Media Backgrounds](https://quarto.org/docs/presentations/revealjs/#
 :::
 
 
-## Auto-Animate {auto-animate="true" auto-animate-easing="ease-in-out"}
+## Auto-Animate (not sure whether this is needed)
 
 Automatically animate matching elements across slides with Auto-Animate.
 
@@ -227,16 +207,13 @@ Learn more: [Auto-Animate](https://quarto.org/docs/presentations/revealjs/advanc
 
 Position images or other elements at precise locations
 
-    
-![](https://quarto.org/docs/presentations/revealjs/demo/mini/images/kitten-400-350.jpeg)<!-- style="top: 170px; left: 30px; width: 400px; height: 400px;"-->
 
-![](mini/images/kitten-450-250.jpeg){.absolute .fragment top="150" right="80" width="450"}
+![](https://quarto.org/docs/presentations/revealjs/demo/mini/images/kitten-400-350.jpeg)<!-- style="position: absolute; top: 170px; left: 30px; width: 400px; height: 400px;"-->
 
-![](mini/images/kitten-300-200.jpeg){.absolute .fragment bottom="110" right="130" width="300"}
+![](https://quarto.org/docs/presentations/revealjs/demo/mini/images/kitten-400-350.jpeg)<!-- style="position: absolute; top: 150px; right: 80px; width: 450px;"-->
 
-::: footer
-Learn more: [Absolute Position](https://quarto.org/docs/presentations/revealjs/advanced.html#absolute-position)
-:::
+![](https://quarto.org/docs/presentations/revealjs/demo/mini/images/kitten-400-350.jpeg)<!-- style="position: absolute; bottom: 110px; right: 130px; width: 300px;"-->
+
 
 ## Switch between graph and data table
 
@@ -268,6 +245,8 @@ knitr::kable(mtcars)
 
 Include Jupyter widgets and htmlwidgets in your presentations
 
+leaflet is not installed in the CodeRunner, most probably possible via templates
+
 ``` R
 #| echo: false
 #| fig-height: 5
@@ -282,7 +261,7 @@ leaflet() %>%
 Learn more: [Jupyter widgets](https://quarto.org/docs/interactive/widgets/jupyter.html), [htmlwidgets](https://quarto.org/docs/interactive/widgets/htmlwidgets.html)
 :::
 
-## Interactive Slides {.smaller transition="slide"}
+## Interactive Slides (probably out of scope / too R specific)
 
 Turn presentations into applications with Observable and Shiny. Use component layout to position inputs and outputs.
 
@@ -310,7 +289,7 @@ plotActors(actors, talentWeight, looksWeight, minimum)
 Learn more: [Observable](https://quarto.org/docs/interactive/ojs/), [Shiny](https://quarto.org/docs/interactive/shiny/), [Component Layout](https://quarto.org/docs/interactive/layout.html)
 :::
 
-## Preview Links
+## Preview Links (potentially not needed given it is in the browser)
 
 Navigate to hyperlinks without disrupting the flow of your presentation.
 
@@ -324,72 +303,45 @@ Use the `preview-links` option to open links in an iframe on top of your slides.
 Learn more: [Preview Links](https://quarto.org/docs/presentations/revealjs/presenting.html#preview-links)
 :::
 
-## Adapt your icon
+## Display your organisation's logo
+ 
+Use the icon macro to display your organisation's logo on top of the slides.
 
-10 Built-in Themes (or [create your own](https://quarto.org/docs/presentations/revealjs/themes.html#creating-themes))
+It works the same as for the logo macro.[^1]
 
-::: {layout-ncol="2"}
-![](images/moon.png)
+```
+<!--
+# define this in the sectio on top of the markdown file
+icon: ./pics/logo.png
+-->
+```
 
+[^1]: Learn more: [Special macros](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#176)
 
 ## Easy Navigation
 
-::: {style="margin-bottom: 0.9em;"}
-Quickly jump to other parts of your presentation
-:::
-
-
-::: footer
-Learn more: [Navigation](https://quarto.org/docs/presentations/revealjs/presenting.html#navigation-menu)
-:::
+Quickly jump to other parts of your presentation by opening the title panel on the left side. 
 
 ## Presentation view
-
-::: {style="margin-bottom: 0.9em;"}
-Free form drawing and slide annotations
-:::
 
 
 
 ## Textbook view
 
-Press `o` to toggle overview mode:
 
-![](images/overview-mode.png){.border}
-
-Hold down the `Alt` key (or `Ctrl` in Linux) and click on any element to zoom towards it---try it now on this slide.
-
-::: footer
-Learn more: [Overview Mode](https://quarto.org/docs/presentations/revealjs/presenting.html#overview-mode), [Slide Zoom](https://quarto.org/docs/presentations/revealjs/presenting.html#slide-zoom)
-:::
 
 ## Slides view
 
-Press `s` (or use the presentation menu) to open speaker view
-
-![](images/speaker-view.png){fig-align="center" style="border: 3px solid #dee2e6;" width="780"}
-
-::: footer
-Learn more: [Speaker View](https://quarto.org/docs/presentations/revealjs/presenting.html#speaker-view)
-:::
 
 ## Authoring Tools
 
-Live side-by-side preview for any text document in Github.dev
+- Live side-by-side preview for any text document in Github.dev
 
-::: columns
-::: {.column width="50%"}
-![](images/jupyter-edit.png){.border .border-thick}
-:::
+- Or LiveEditor 
 
-::: {.column width="50%"}
-![](images/jupyter-preview.png){.border .border-thick}
-:::
-:::
 
-::: footer
 Learn more: [Jupyter](https://quarto.org/docs/tools/jupyter-lab.html), [VS Code](https://quarto.org/docs/tools/vscode.html), [Text Editors](https://quarto.org/docs/tools/text-editors.html)
-:::
+
 
 ## Authoring Tools
 
