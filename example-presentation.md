@@ -3,6 +3,7 @@ title: "Liascript Presentations"
 
 import: https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.md
 
+link:   https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
 link: style.css
 
 @runR: @LIA.eval(`["main.R"]`, `none`, `Rscript main.R`)
@@ -85,7 +86,7 @@ ggplot(mtcars, aes(hp, mpg, color = am)) +
 
 [MathJax](https://www.mathjax.org/) rendering of equations to HTML[^1]
 
-<article class="main-info">
+
 $$
 \begin{gather*}
 a_1=b_1+c_1\\
@@ -114,9 +115,8 @@ a_{21}& =b_{21}&
   a_{22}& =b_{22}+c_{22}
 \end{align}
 $$
-</article>
 
-<!-- class="sub-info" -->
+
 [^1]: Learn more: [LaTeX Equations](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#52)
 
 
@@ -146,18 +146,18 @@ knitr::kable(head(mtcars)[,c("mpg",	"cyl", "disp", "hp", "wt")])
 ***************
 
 
-## Incremental Lists
+## Incremental animations of list elements
 
-Lists can optionally be displayed incrementally:
+Lists can optionally be displayed incrementally[^1]:
 
--   First item
--   Second item
--   Third item
+{1}{First item}
+
+{2}{Second item}
+
+{3}{Third item}
 
 
-::: footer
-Learn more: [Incremental Lists](https://quarto.org/docs/presentations/revealjs/#incremental-lists)
-:::
+[^1]: Learn more: [Incremental animations](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#103)
 
 ## Slide Backgrounds (check slide from online symposium)
 
@@ -171,37 +171,38 @@ Learn more: [Slide Backgrounds](https://quarto.org/docs/presentations/revealjs/#
 
 ## Display various media 
 
-You can also use the following as content elements 
+You can also use the following as content elements[^1]
 
--   An image: `background-image`
+          {{0-1}}
+**********************
 
--   A video: `background-video`
+-   An image
 
--   An iframe: `background-iframe`
+    - Syntax: `![Portrait of a lady](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Leonardo_da_Vinci_%28attrib%29-_la_Belle_Ferroniere.jpg/723px-Leonardo_da_Vinci_%28attrib%29-_la_Belle_Ferroniere.jpg "La Belle Ferronnière, c. 1490–1498")`
 
-::: footer
-Learn more: [Media Backgrounds](https://quarto.org/docs/presentations/revealjs/#image-backgrounds)
-:::
+-   An image gallery
 
+![Portrait of a lady](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Leonardo_da_Vinci_%28attrib%29-_la_Belle_Ferroniere.jpg/723px-Leonardo_da_Vinci_%28attrib%29-_la_Belle_Ferroniere.jpg "La Belle Ferronnière, c. 1490–1498")
+![Lady with an Ermine](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg/761px-Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg "Lady with an Ermine, c. 1489–1491, Czartoryski Museum, Kraków, Poland")
+![Mona Lisa](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/687px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg "Mona Lisa or La Gioconda c. 1503–1516, Louvre, Paris")
 
-## Auto-Animate (not sure whether this is needed)
+*******************
 
-Automatically animate matching elements across slides with Auto-Animate.
+          {{1}}
+**********************
 
-::: r-stack
-::: {data-id="box1" style="background: #2780e3; width: 350px; height: 350px; border-radius: 200px;"}
-:::
+-   A video
 
-::: {data-id="box2" style="background: #3fb618; width: 250px; height: 250px; border-radius: 200px;"}
-:::
+    - YouTube: `!?[The Future of Programming](https://www.youtube.com/watch?v=8pTEmbeENF4)`
 
-::: {data-id="box3" style="background: #e83e8c; width: 150px; height: 150px; border-radius: 200px;"}
-:::
-:::
+-   A sound clip 
 
-::: footer
-Learn more: [Auto-Animate](https://quarto.org/docs/presentations/revealjs/advanced.html#auto-animate)
-:::
+    - Syntax: `?[soundcloud](https://soundcloud.com/glennmorrison/beethoven-moonlight-sonata)`
+
+**************
+
+[^1]: Learn more: [Media References](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#17)
+
 
 ## Absolute Position
 
