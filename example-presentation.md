@@ -10,7 +10,80 @@ link: https://fonts.googleapis.com/css?family=Lato:400,400italic,700
 link: style.css
 
 @runR: @LIA.eval(`["main.R"]`, `none`, `Rscript main.R`)
+
+@JSONLD
+<script run-once>
+  let json = @0 
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.text = JSON.stringify(json);
+
+  document.head.appendChild(script);
+
+  // this is only needed to prevent and output,
+  // as long as the result of a script is undefined,
+  // it is not shown or rendered within LiaScript
+  console.debug("added json to head")
+</script>
+@end
 -->
+
+```json   @JSONLD
+{
+  "@context": "https://schema.org/",
+  "@type": "LearningResource",
+  "@id": "https://elixir-europe-training.github.io/ELIXIR-TrP-TeSS/",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@type": "CreativeWork",
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
+  },
+  "description": "TeSS, how can I help you? This is our interactive hands-on course about efficient use of the ELIXIR TeSS platform.",
+  "keywords": "FAIR, OPEN, Bioinformatics, Teaching, TeSS",
+  "name": "TeSS, how can I help you?",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "educationalLevel": "beginner",
+  "competencyRequired": "none",
+  "teaches": [
+    "search events and material in TeSS via direct and faceted search",
+    "add manually and automatically events and material to TeSS",
+    "extract events and material from TeSS by using TeSS widgets"
+  ],
+  "audience": "training providers",
+  "inLanguage": "en-US",
+  "learningResourceType": [
+    "tutorial"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bruna Piereck"
+    },
+    {
+      "@type": "Person",
+      "name": "Olivier Sand"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexander Botzki"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Person",
+      "name": "Yasmine Maes"
+    },
+    {
+      "@type": "Person",
+      "name": "Finn Bacall"
+    },
+    {
+      "@type": "Person",
+      "name": "Munazah Andrabi"
+    }
+  ]
+}
+```
 
 # Hello, There
 
