@@ -20,7 +20,13 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Lato', sans-serif !important;
+}
+
+h1.h1 {
+  font-size:5vw !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
 }
 
 
