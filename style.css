@@ -30,6 +30,13 @@ body {
   margin-right:auto !important;
 }
 
+.h2 {
+  font-family: 'Lato' !important;
+}
+
+.h3 {
+  font-family: 'Lato' !important;
+}
 
 details {
     border: 2px black solid;
