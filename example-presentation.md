@@ -29,6 +29,18 @@ link: style.css
 @end
 -->
 
+# Hello, There
+
+This presentation will show you examples of what you can do with [Liascript](https://liascript.github.io), including:
+
+-   Presenting code and LaTeX equations
+-   Including computations in slide output
+-   Image, video, and iframe embedding
+-   Elegant transitions and animations
+-   Printing to PDF via Liascript Exporter
+
+...and much more
+
 ```json   @JSONLD
 {
   "@context": "https://schema.org/",
@@ -84,18 +96,6 @@ link: style.css
   ]
 }
 ```
-
-# Hello, There
-
-This presentation will show you examples of what you can do with [Liascript](https://liascript.github.io), including:
-
--   Presenting code and LaTeX equations
--   Including computations in slide output
--   Image, video, and iframe embedding
--   Elegant transitions and animations
--   Printing to PDF via Liascript Exporter
-
-...and much more
 
 ## Pretty Code
 
