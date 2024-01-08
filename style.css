@@ -24,7 +24,8 @@ body {
 }
 
 h1.h1 {
-  font-size:5vw !important;
+  font-family: 'Lato' !important;
+  line-height:1.47 !important;
   margin-left:auto !important;
   margin-right:auto !important;
 }
