@@ -3,7 +3,7 @@ title: "Liascript Presentations"
 
 import: https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.md
 
-icon: https://elixir-europe.org/system/files/white-orange-logo.png
+logo: https://elixir-europe.org/system/files/white-orange-logo.png
 
 link:   https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
 link: style.css
