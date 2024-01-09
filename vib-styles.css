@@ -20,22 +20,22 @@
 }
 
 body {
-  font-family: 'Saira Condensed', sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 .h1 {
-  font-family: 'Lato' !important;
+  font-family: 'Saira Condensed' !important;
   line-height:1.47 !important;
   margin-left:auto !important;
   margin-right:auto !important;
 }
 
 .h2 {
-  font-family: 'Lato' !important;
+  font-family: 'Saira Condensed' !important;
 }
 
 .h3 {
-  font-family: 'Lato' !important;
+  font-family: 'Saira Condensed' !important;
 }
 
 details {
