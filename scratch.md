@@ -7,7 +7,7 @@ narrator: US English Female
 
 comment:  DMP Introduction
 
-logo: img/Logo.png
+icon: https://vib.be/sites/vib.sites.vib.be/files/logo_VIB_noTagline.svg
 
 link:     https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
 link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/img/org.css
