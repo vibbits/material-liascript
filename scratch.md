@@ -12,6 +12,8 @@ logo: img/Logo.png
 link:     https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
 link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/img/org.css
 link:     https://elixirtess.github.io/TeSS_widgets/css/tess-widget.css
+link:     https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap
+link:     vib-styles.css
 script:   https://elixirtess.github.io/TeSS_widgets/js/tess-widget-standalone.js" onload="initTeSSWidgets()
 
 debug: true
