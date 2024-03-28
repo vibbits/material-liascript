@@ -1,18 +1,17 @@
 <!--
 author:   Alexander Botzki
 email:    Alexander.Botzki@vib.be
+
 version:  0.1.1
 language: en
 narrator: US English Female
 
 comment:  DMP Introduction
 
-logo: img/liascript_img/Logo.png
+logo:     img/liascript_img/Logo.png
 
 link:     https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
 link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/img/org.css
-
-debug: true
 
 -->
 
@@ -63,13 +62,19 @@ __By VIB Bioinformatics Core, ELIXIR Belgium and Helis Academy__
 ### Welcome to the course
 
 The course consists of 6 chapters, divided in three categories.
+
 - Prepare
+
   - Data collection
   - Data documentation
+
 - Handle
+
   - Data storage
   - Data security
+
 - Share
+
   - Data selection and preservation
   - Data availability for reuse
 
@@ -118,16 +123,23 @@ Managing your data effectively is crucial to the success of your research. This 
 
                   {{1}}
 1. **Access, Re-use & Recognition**
+   
    * Facilitating future research by allowing others to build on or add to your research data.
    * Increased citations of research data and of publications based on that data.
+
 2. **Efficiency**
+
    * Increasing your research efficiency by saving time and resources.
    * Preventing duplication of effort by enabling others to use your data.
+
 3. **Quality & Security**
+
    * Ensuring the integrity and reproducibility of your research.
    * Ensuring that research data and records are accurate, complete, authentic and reliable.
    * Enhancing data security and minimising the risk of data loss.
+
 4. **Compliance**
+
    * Meeting legal obligations, restrictions and codes of conduct.
    * Meeting the University policy for research data requirements.
    * Meeting funding body grant requirements.
@@ -141,9 +153,8 @@ Marleen is an early career researcher. She completed her PhD about four years ag
 
 
     --{{1}}--
-
-    - What steps could Marleen take to verify her research findings?
-    - What evidence would she need to demonstrate that she hasn't falsified her data?
+- What steps could Marleen take to verify her research findings?
+- What evidence would she need to demonstrate that she hasn't falsified her data?
 
        {{1}}
 Think about your own research. If someone accused you of research misconduct, would you be in a position to defend your research and reputation? List some strategies you could implement right now that would assist you, should you ever find yourself in Marleen’s situation.
@@ -161,6 +172,7 @@ For the Flemish universities, it is important that all researchers honour scient
 This policy is intended to set out parameters to safeguard the quality, availability and accessibility of research data within any Flemish university. It provides a basis for evaluating compliance with laws, regulations and codes of conduct. The policy also clarifies the various roles and responsibilities of university staff in managing research data.
 
 The highlights of the policy are:
+
 * Archive (relevant and valuable) research data for a minimum of ten years;
 * Store data in a structure that is suitable for long-term preservation and later consultation;
 * Provide metadata to describe the data with sufficient clarity to ensure they are findable for further research;
@@ -219,15 +231,19 @@ We offer you DMPonline to create your Data Management Plan. DMPonline is an inte
 With DMPonline you can:
 
 * Write your plan and keep it up-to-date
+
   * You can easily update your DMP throughout the lifecycle of a project
 
 * Share plans online
+
   * DMPonline allows collaborative access, so you can share your DMP with other researchers, within and outside of Utrecht University.
 
 * Create multiple plans
+
   * You can store different DMPs for different projects. And you can make a copy of a previous plan as the basis for writing a new one.
 
 * Download plans
+
   * You can download your DMP in a variety of formats.
 
 We recommend that graduate researchers share their data management plans with their supervisor(s).
@@ -255,13 +271,16 @@ When you write your data management plan you will need to take into account the 
 **In this part of the course you will learn to:**
 
 * identify preferred file formats for your research data;
-transform your files into a preferred format;
-discover sources for existing data;
+
+* transform your files into a preferred format;
+
+* discover sources for existing data;
 
 * discover existing data yourself;
 
 * how to assess the usefulness of existing data;
-understand how a workflow leads to data products;
+
+* understand how a workflow leads to data products;
 
 * estimate costs involved with managing your data;
 
@@ -276,8 +295,8 @@ You can watch the video below, provided by TU Delft, about data collection. The 
 ### Preferred formats for your research data
 
                   {{0-1}}
-****************************** ![Introduction ](img/00_Preferred-formats.png)
-******************************
+![Introduction ](img/00_Preferred-formats.png)
+
 
                  --{{1}}--
 This e-module is based on the online Research Data Management training 'MANTRA' of The University of Edinburgh and Managing Data @ Melbourne
@@ -301,6 +320,7 @@ For example, a web browser is able to process and display a file in the HTML fil
 To identify the file format, files usually have a file name extension, or suffix that follows a full stop in the file name and contains three or four letters, like for example:
 
 TODO: add PDF with links to preferred file formats
+
 * .txt    text
 * .pdf    portable document format
 * .jpg    joint photographic experts group
