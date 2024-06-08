@@ -300,7 +300,7 @@ You can also use the following as content elements[^1]
 Position images or other elements at precise locations
 
 
-![](https://quarto.org/docs/presentations/revealjs/demo/mini/images/kitten-400-350.jpeg)<!-- style="position: absolute; top: 170px; left: 30px; width: 400px; height: 400px;"-->
+![](https://quarto.org/docs/presentations/revealjs/demo/mini/images/kitten-400-350.jpeg)<!-- style="position: absolute; top: 170px; left: 100px; width: 400px; height: 400px;"-->
 
 ![](https://quarto.org/docs/presentations/revealjs/demo/mini/images/kitten-400-350.jpeg)<!-- style="position: absolute; top: 150px; right: 80px; width: 450px;"-->
 
