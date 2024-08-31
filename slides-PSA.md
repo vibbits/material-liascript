@@ -857,6 +857,15 @@ Further reading: https://dasher.wustl.edu/chem430/software/chimera/users-guide.p
 
 ********
 
+## Computational deep mutational screen
+
+Structures can be structurally aligned to achieve the best possible match between corresponding atoms. It is  possible to consider all atoms, or only a subset  (such as the Cα atoms).
+
+![MutateX: Deep mutational screen using FoldX ](img/mutatex-overview.png)
+
+
+
+
 ## Exercise 7: Execute a deep mutational screen on the HPC using FoldX
 
 For the exercise, we will use the HPC Tier-2 of the UGent. Documentation on how to connect via the [Web portal](https://docs.hpc.ugent.be/macOS/web_portal/).
