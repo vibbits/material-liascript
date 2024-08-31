@@ -859,7 +859,26 @@ Further reading: https://dasher.wustl.edu/chem430/software/chimera/users-guide.p
 
 ********
 
-## Exercise 7: Study Protein-Ligand Interactions
+## Exercise 7: Execute a deep mutational screen on the HPC using FoldX
+
+For the exercise, we will use the HPC Tier-2 of the UGent. Documentation on how to connect via the [Web portal](https://docs.hpc.ugent.be/macOS/web_portal/).
+
+- Login to the VSC HPC Tier-2 of the UGent at [https://login.hpc.ugent.be](https://login.hpc.ugent.be)
+- TO BE ADDED
+
+      {{1}}
+*******
+
+```
+swapaa #6.2:159 trp log true
+```
+Additional exercise: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1304567/
+Further reading: https://dasher.wustl.edu/chem430/software/chimera/users-guide.pdf
+
+********
+
+
+## Exercise 8: Study Protein-Ligand Interactions
 
 ### Introduction
 
