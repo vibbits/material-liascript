@@ -16,8 +16,6 @@ link: style.css
 
 @orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
-debug: true
-
 -->
 
 # Protein Structure Analysis
