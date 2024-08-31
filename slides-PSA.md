@@ -862,7 +862,10 @@ Further reading: https://dasher.wustl.edu/chem430/software/chimera/users-guide.p
 For the exercise, we will use the HPC Tier-2 of the UGent. Documentation on how to connect via the [Web portal](https://docs.hpc.ugent.be/macOS/web_portal/).
 
 - Login to the VSC HPC Tier-2 of the UGent at [https://login.hpc.ugent.be](https://login.hpc.ugent.be)
-- TO BE ADDED
+- Open an interactive session on the login server via `Cluster` --> `login Shell Access`
+- Once you get the prompt, switch to your scratch folder by typing `cd $VSC_SCRATCH`
+- Copy two files from the `/tmp` folder to your scratch folder by typing `cp /tmp/mutatex-v1.sif .` and `cp /tmp/foldx_20241231 .`
+- With the subsequent command, we copy the necessary files from a remote repository to your scratch folder `git clone `
 
       {{1}}
 *******
